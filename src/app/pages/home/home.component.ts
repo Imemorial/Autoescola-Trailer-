@@ -1,33 +1,16 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { TopComponent } from "./components/top/top.component";
+import { SolutionsComponent } from "./components/solutions/solutions.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule],
+  imports: [TopComponent, SolutionsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
 
-  percents : number [] = [0, -100, -200, -300];
-  index : number = 0;
-
-  left() {
-    if(this.index > 0) this.index--;
-    else this.index = this.percents.length -1;
-  }
-
-  right(){
-    if(this.index < this.percents.length - 1) this.index++;
-    else{
-      this.index = 0;
-    }
-
-  }
-
-  getActualPercent () {
-    return this.percents[this.index];
-  }
+ 
 
 }
