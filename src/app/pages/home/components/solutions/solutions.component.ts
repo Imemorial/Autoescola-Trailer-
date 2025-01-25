@@ -16,11 +16,20 @@ export class SolutionsComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
-      new Splide('.splide', {
+      const splide = new Splide('.splide', {
         type: 'loop',
         perPage: 3,
-        speed: 1000
+        perMove: 1,
+        speed: 1000,
+        arrows: false, 
+        pagination: false,
       }).mount();
+  
+      const prevButton = document.querySelector('.custom-prev') as HTMLElement;
+      const nextButton = document.querySelector('.custom-next') as HTMLElement;
+  
+      prevButton.addEventListener('click', () => splide.go('<'));
+      nextButton.addEventListener('click', () => splide.go('>'));
     }
   }
 }

@@ -35,7 +35,9 @@
               "src/styles.scss",
               "node_modules/@splidejs/splide/dist/css/splide.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/@splidejs/splide/dist/js/splide.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
