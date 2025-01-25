@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import Splide from '@splidejs/splide';
+import { Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-solutions',
   standalone: true,
   imports: [],
   templateUrl: './solutions.component.html',
-  styleUrl: './solutions.component.scss'
+  styleUrls: ['./solutions.component.scss']
 })
-export class SolutionsComponent {
+export class SolutionsComponent implements AfterViewInit {
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      new Splide('.splide', {
+        type: 'loop',
+        perPage: 3,
+        speed: 1000
+      }).mount();
+    }
+  }
 }
