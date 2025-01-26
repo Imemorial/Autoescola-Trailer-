@@ -61,6 +61,8 @@ export class CaseStudiesComponent {
         arrows: false, 
         gap: '1rem',
         pagination: false,
+        autoplay: true,
+        interval: 3000
       }).mount();
   
       const prevButton = document.querySelector('.custom-prev') as HTMLElement;

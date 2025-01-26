@@ -82,6 +82,8 @@ export class SolutionsComponent implements AfterViewInit {
         speed: 1000,
         arrows: false, 
         pagination: false,
+        autoplay: true,
+        interval: 3000
       }).mount();
   
       const prevButton = document.querySelector('.custom-prev') as HTMLElement;
