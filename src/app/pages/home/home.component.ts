@@ -3,11 +3,12 @@ import { TopComponent } from "./components/top/top.component";
 import { SolutionsComponent } from "./components/solutions/solutions.component";
 import { GoSolutionsComponent } from "./components/go-solutions/go-solutions.component";
 import { CaseStudiesComponent } from "../../shaders/case-studies/case-studies.component";
+import { AdvantagesComponent } from "./components/advantages/advantages.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, SolutionsComponent, GoSolutionsComponent, CaseStudiesComponent],
+  imports: [TopComponent, SolutionsComponent, GoSolutionsComponent, CaseStudiesComponent, AdvantagesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
