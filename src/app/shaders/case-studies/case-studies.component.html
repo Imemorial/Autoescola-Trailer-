@@ -35,22 +35,42 @@
               </div>
           </div>
       
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li *ngFor="let caseItem of cases" class="splide__slide">
-            <div class="bg-white shadow-md rounded-lg p-4">
-              <div class="flex flex-col items-center">
-                <img [src]="caseItem.image" [alt]="caseItem.alt" class="rounded-t-lg mb-4 w-full">
-                <div class="text-left">
-                  <p class="text-orange-500 text-sm font-semibold mb-1">{{ caseItem.category }}</p>
-                  <h3 class="text-lg font-bold text-gray-800 mb-2">{{ caseItem.title }}</h3>
-                  <p class="text-sm text-gray-600">{{ caseItem.description }}</p>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li *ngFor="let case of cases" class="splide__slide flex justify-center">
+                <div class="bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col justify-between">
+                  <!-- Image Section -->
+                  <div class="relative group">
+                    <img
+                      [src]="case.image"
+                      [alt]="case.alt"
+                      class="rounded-lg filter grayscale group-hover:filter-none transition duration-300"
+                    />
+                  </div>
+                  <!-- Category -->
+                  <span class="text-orange-500 text-sm font-medium mt-4">{{ case.category }}</span>
+                  <!-- Title -->
+                  <h3 class="text-xl font-semibold text-gray-800 mt-2">{{ case.title }}</h3>
+                  <!-- Description -->
+                  <p class="text-gray-600 mt-2 text-sm">{{ case.description }}</p>
+                  <!-- Divider -->
+                  <div class="flex items-center mt-4">
+                    <div class="h-1 w-6 bg-orange-500 rounded"></div>
+                    <div class="flex-1 h-1 bg-gray-200 rounded ml-2"></div>
+                  </div>
+                  <!-- Learn More Button -->
+                  <div class="mt-6">
+                    <button class="flex items-center text-orange-500 font-semibold hover:underline">
+                      Aprende Más
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
+              </li>
+            </ul>
+          </div>
     </div>
   </div>
 </div>
