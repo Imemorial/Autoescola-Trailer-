@@ -20,8 +20,10 @@
   stroke: currentColor;
 }
 
-.splide__track {
-  padding: 0 40px; 
+
+.splide {
+  overflow: visible; 
+  padding-top: 40px !important;
 }
 
 
