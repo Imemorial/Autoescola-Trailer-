@@ -47,6 +47,17 @@ export class SolutionsComponent implements AfterViewInit {
       ],
     },
     {
+      title: 'Gestión de Redes Sociales',
+      description:
+        'Lleva tu presencia en redes sociales al siguiente nivel. Nosotros nos encargamos de que conectes con tu audiencia de manera efectiva y profesional.',
+      features: [
+        'Crea contenido impactante y atractivo para tus redes.',
+        'Optimiza tu estrategia para alcanzar a más personas.',
+        'Gestionamos tus perfiles para maximizar tu alcance.',
+        'Ahorra tiempo mientras aumentas tu impacto en línea.',
+      ],
+    },
+    {
       title: 'Servicio Técnico y Mantenimiento',
       description:
         'Mantén tus computadoras y equipos funcionando al 100% con nuestro servicio técnico confiable.',
@@ -68,6 +79,17 @@ export class SolutionsComponent implements AfterViewInit {
         'Soluciones personalizadas para tu seguridad.',
       ],
     },
+    {
+      title: 'Chatbox Inteligente para Tu Negocio',
+      description:
+        'Atiende a tus clientes 24/7 con un chatbox rápido y eficiente.',
+      features: [
+        'Responde preguntas frecuentes al instante.',
+        'Funciona en web, WhatsApp y redes sociales.',
+        'Personalizado con la identidad de tu marca.',
+        'Soporte multilingüe y autoaprendizaje.',
+      ],
+    }
   ];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
@@ -83,7 +105,7 @@ export class SolutionsComponent implements AfterViewInit {
         arrows: false, 
         pagination: false,
         autoplay: true,
-        interval: 3000
+        interval: 2000
       }).mount();
   
       const prevButton = document.querySelector('.custom-prev') as HTMLElement;
