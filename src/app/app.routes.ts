@@ -14,6 +14,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
     },
     {
+        path: 'contact',
+        loadComponent: () => import('./pages/contact/contact.component').then((c) => c.ContactComponent)
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
