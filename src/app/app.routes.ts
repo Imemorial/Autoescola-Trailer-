@@ -18,6 +18,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/ecommerce/ecommerce.component').then((c) => c.EcommerceComponent)
     },
     {
+        path: 'social',
+        loadComponent: () => import('./pages/social-media/social-media.component').then((c) => c.SocialMediaComponent)
+    },
+    {
         path: 'technicalService',
         loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
     },
