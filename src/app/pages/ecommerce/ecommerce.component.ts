@@ -84,69 +84,69 @@ export class EcommerceComponent {
     },
   ];
 
-  goContactTitle : string = 'Explora Más Soluciones';
-  goContactSecondTitle : string = '¿Tienes algún problema con tu <span hardware o necesitas servicio técnico?';
-  goContactParagraph : string = 'Estamos aquí para ayudarte. Contáctanos, pásate por nuestro local o llámanos y resolveremos tus problemas de la manera más rápida y eficiente posible.';
+  goContactTitle = 'Explora Más Servicios';
+  goContactSecondTitle = '¿Necesitas ayuda con tu tienda online o buscas soluciones personalizadas?';
+  goContactParagraph = 'Estamos aquí para ayudarte. Contáctanos para recibir asesoramiento, soporte técnico o soluciones específicas para llevar tu tienda online al siguiente nivel.';
 
   faqs = [
     {
-      question: '¿Qué tipos de problemas de hardware reparan?',
+      question: '¿Qué incluye el diseño personalizado de la tienda online?',
       answer:
-        'Reparamos una amplia gama de problemas, incluyendo fallos en discos duros, fuentes de alimentación defectuosas, problemas con placas base, tarjetas gráficas y más.',
+        'Incluye la creación de un diseño único y adaptado a tu marca, con una experiencia de usuario optimizada para tus clientes.',
       open: true
     },
     {
-      question: '¿Hacéis limpieza y mantenimiento preventivo de equipos?',
+      question: '¿Puedo gestionar yo mismo los productos en mi tienda?',
       answer:
-        'Sí, ofrecemos servicios de limpieza interna de componentes para prevenir problemas ocasionados por acumulación de polvo o sobrecalentamiento.',
+        'Sí, configuramos herramientas fáciles de usar para que puedas agregar, editar o eliminar productos de manera sencilla.',
       open: false
     },
     {
-      question: '¿Podéis ayudarme a montar un PC personalizado?',
+      question: '¿Qué métodos de pago pueden integrarse en la tienda?',
       answer:
-        'Por supuesto, te ayudamos a elegir los componentes y montar un PC a medida según tus necesidades, ya sea para gaming, diseño gráfico o uso general.',
+        'Podemos integrar múltiples métodos de pago como tarjetas de crédito, PayPal, transferencias bancarias y opciones locales según tu región.',
       open: false
     },
     {
-      question: '¿Ofrecéis diagnóstico gratuito?',
+      question: '¿Ofrecéis soporte después del lanzamiento de la tienda?',
       answer:
-        'Sí, realizamos un diagnóstico inicial gratuito para identificar el problema y darte un presupuesto antes de proceder con cualquier reparación.',
+        'Sí, ofrecemos soporte técnico continuo para asegurarnos de que tu tienda funcione perfectamente y esté siempre actualizada.',
       open: false
     },
     {
-      question: '¿Reparáis portátiles además de PCs de sobremesa?',
+      question: '¿Podéis ayudarme a mejorar la visibilidad de mi tienda en Internet?',
       answer:
-        'Sí, reparamos portátiles, incluyendo problemas con pantallas, teclados, baterías, puertos de carga y otros componentes.',
+        'Por supuesto, implementamos estrategias de SEO y marketing digital para mejorar la visibilidad de tu tienda y atraer más clientes.',
       open: false
     },
     {
-      question: '¿Ofrecéis garantías por las reparaciones realizadas?',
+      question: '¿Puedo tener un sistema de análisis de ventas en mi tienda?',
       answer:
-        'Sí, todas nuestras reparaciones incluyen garantía, cuya duración dependerá del tipo de servicio realizado.',
+        'Sí, configuramos herramientas de análisis para que puedas monitorear tus ventas, tráfico y rendimiento general de la tienda.',
       open: false
     },
     {
-      question: '¿Podéis recuperar datos de un disco duro dañado?',
+      question: '¿Puedo vender productos digitales en la tienda?',
       answer:
-        'Ofrecemos servicios de recuperación de datos siempre que el daño no sea extremo. Evaluaremos tu caso y te informaremos sobre las posibilidades.',
+        'Sí, configuramos tu tienda para que puedas vender tanto productos físicos como digitales, como ebooks, cursos, música, y más.',
       open: false
     },
     {
-      question: '¿Cuánto tiempo tardáis en reparar un equipo?',
+      question: '¿Qué pasa si tengo problemas técnicos con la tienda?',
       answer:
-        'El tiempo depende del tipo de reparación, pero generalmente entregamos dentro de 24 a 72 horas. Te proporcionaremos un estimado tras evaluar tu equipo.',
+        'Ofrecemos soporte técnico y mantenimiento continuo para resolver cualquier problema técnico que pueda surgir.',
       open: false
     },
     {
-      question: '¿Qué métodos de pago aceptáis?',
+      question: '¿Cuánto tiempo lleva desarrollar una tienda online?',
       answer:
-        'Aceptamos efectivo, tarjetas de crédito/débito y transferencias bancarias. También podemos ofrecer opciones de pago fraccionado en algunos casos.',
+        'El tiempo depende de los requisitos específicos, pero en general podemos entregarte una tienda funcional en 2 a 4 semanas.',
       open: false
     },
     {
-      question: '¿Ofrecéis soporte técnico remoto?',
+      question: '¿Puedo vincular mi tienda a redes sociales?',
       answer:
-        'Sí, podemos resolver ciertos problemas de software de forma remota. Solo necesitas una conexión a Internet estable.',
+        'Sí, configuramos tu tienda para que se integre con tus redes sociales, lo que facilita compartir productos y promociones.',
       open: false
     }
   ];
