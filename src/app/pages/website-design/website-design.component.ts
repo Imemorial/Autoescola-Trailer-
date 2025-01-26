@@ -3,11 +3,12 @@ import { TopComponent } from '../../shaders/top/top.component';
 import { WorkComponent } from '../../shaders/work/work.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
+import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 
 @Component({
   selector: 'app-website-design',
   standalone: true,
-  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent],
+  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent, FaqsComponent],
   templateUrl: './website-design.component.html',
   styleUrl: './website-design.component.scss'
 })
@@ -67,6 +68,75 @@ export class WebsiteDesignComponent {
       title: 'Velocidad y Rendimiento',
       description: 'Optimizamos la velocidad de carga de tu sitio para mejorar la experiencia del usuario y el posicionamiento SEO.'
     }
+  ];
+
+  goContactTitle: string = 'Descubre Nuestras Soluciones Web';
+  goContactSecondTitle: string = '¿Quieres una página web o estás pensando en dar un paso digital?';
+  goContactParagraph: string = 'Estamos aquí para ayudarte a hacer realidad tu proyecto online. Contáctanos, cuéntanos tu idea y juntos construiremos una solución web que se adapte a tus necesidades.';
+
+  faqs = [
+    
+      {
+        question: '¿Podéis ayudarme a registrar un dominio y configurar el hosting?',
+        answer:
+          'Sí, nosotros nos encargamos de buscar y registrar el dominio ideal para tu proyecto y alojar tu página web en un hosting confiable, listo para funcionar.',
+        open: true
+      },
+      {
+        question: '¿Ofrecéis mantenimiento para páginas web?',
+        answer:
+          'Sí, ofrecemos servicios de mantenimiento para que tu página web esté siempre actualizada, segura y funcionando de manera óptima.',
+        open: false
+      },
+      {
+        question: '¿Podéis diseñar una página web personalizada?',
+        answer:
+          'Por supuesto, desarrollamos páginas web a medida según tus necesidades, ya sea para un negocio, portafolio personal, e-commerce o cualquier otro proyecto.',
+        open: false
+      },
+      {
+        question: '¿Ofrecéis integración con herramientas externas?',
+        answer:
+          'Sí, podemos integrar tu página web con herramientas como Google Analytics, sistemas de pago, CRM, redes sociales y más.',
+        open: false
+      },
+      {
+        question: '¿Cómo aseguran que la página web sea rápida y eficiente?',
+        answer:
+          'Optimizamos la velocidad de carga y el rendimiento implementando prácticas modernas de desarrollo web, como el uso de un buen hosting y la compresión de recursos.',
+        open: false
+      },
+      {
+        question: '¿Puedo solicitar cambios después de que la página esté publicada?',
+        answer:
+          'Sí, ofrecemos servicios de actualización y mejoras para realizar cualquier cambio que necesites tras la publicación de tu web.',
+        open: false
+      },
+      {
+        question: '¿La página web será responsive y compatible con dispositivos móviles?',
+        answer:
+          'Sí, todas nuestras páginas web están diseñadas para ser completamente responsivas y adaptarse a cualquier dispositivo, ya sea móvil, tablet o escritorio.',
+        open: false
+      },
+      {
+        question: '¿Ofrecéis soporte para optimización SEO?',
+        answer:
+          'Sí, implementamos prácticas de SEO básico para mejorar la visibilidad de tu página en los motores de búsqueda. También podemos ofrecer servicios avanzados si lo necesitas.',
+        open: false
+      },
+      {
+        question: '¿Cómo funciona el proceso de desarrollo web con vosotros?',
+        answer:
+          'Primero entendemos tus necesidades y objetivos, luego diseñamos y desarrollamos la página, y finalmente la publicamos y te ofrecemos soporte continuo.',
+        open: false
+      },
+      {
+        question: '¿Qué métodos de pago aceptáis?',
+        answer:
+          'Aceptamos efectivo, tarjetas de crédito/débito, transferencias bancarias y opciones de pago fraccionado para adaptarnos a tus necesidades.',
+        open: false
+      }
+    
   ];
 
 }
