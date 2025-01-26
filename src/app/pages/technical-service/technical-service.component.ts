@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { TopComponent } from '../../shaders/top/top.component';
-import { ServicesComponent } from './services/services.component';
 import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
 import { FaqsComponent } from "../../shaders/faqs/faqs.component";
 import { WorkComponent } from '../../shaders/work/work.component';
+import { ServicesComponent } from '../../shaders/services/services.component';
 
 @Component({
   selector: 'app-technical-service',
   standalone: true,
-  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent, FaqsComponent],
+  imports: [TopComponent, WorkComponent, GoContactComponent, FaqsComponent, ServicesComponent],
   templateUrl: './technical-service.component.html',
   styleUrl: './technical-service.component.scss'
 })
