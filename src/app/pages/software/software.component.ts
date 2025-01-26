@@ -82,69 +82,64 @@ gridItems = [
 ];
 
 
-  goContactTitle : string = 'Explora Más Soluciones';
-  goContactSecondTitle : string = '¿Tienes algún problema con tu <span hardware o necesitas servicio técnico?';
-  goContactParagraph : string = 'Estamos aquí para ayudarte. Contáctanos, pásate por nuestro local o llámanos y resolveremos tus problemas de la manera más rápida y eficiente posible.';
+goContactTitle: string = 'Explora Más Soluciones';
+goContactSecondTitle: string = '¿Tienes una idea para un software o necesitas una solución digital personalizada?';
+goContactParagraph: string = 'Estamos aquí para hacerlo realidad. Contáctanos, cuéntanos tu idea y juntos desarrollaremos el software que necesitas de manera rápida y eficiente.';
+
 
   faqs = [
     {
-      question: '¿Qué tipos de problemas de hardware reparan?',
+      question: '¿Qué tipo de software desarrolláis?',
       answer:
-        'Reparamos una amplia gama de problemas, incluyendo fallos en discos duros, fuentes de alimentación defectuosas, problemas con placas base, tarjetas gráficas y más.',
+        'Desarrollamos todo tipo de software personalizado, desde aplicaciones móviles y sistemas web hasta herramientas específicas para gestión de negocios.',
       open: true
     },
     {
-      question: '¿Hacéis limpieza y mantenimiento preventivo de equipos?',
+      question: '¿Puedo pedir funciones específicas para mi software?',
       answer:
-        'Sí, ofrecemos servicios de limpieza interna de componentes para prevenir problemas ocasionados por acumulación de polvo o sobrecalentamiento.',
+        '¡Por supuesto! Trabajamos contigo para definir las funcionalidades que necesitas, adaptándonos completamente a tus requisitos.',
       open: false
     },
     {
-      question: '¿Podéis ayudarme a montar un PC personalizado?',
+      question: '¿Cuánto tiempo tardáis en desarrollar un software?',
       answer:
-        'Por supuesto, te ayudamos a elegir los componentes y montar un PC a medida según tus necesidades, ya sea para gaming, diseño gráfico o uso general.',
+        'El tiempo depende de la complejidad del proyecto. Generalmente, los plazos van desde unas semanas para proyectos pequeños hasta varios meses para soluciones más complejas.',
       open: false
     },
     {
-      question: '¿Ofrecéis diagnóstico gratuito?',
+      question: '¿Ofrecéis soporte después de entregar el software?',
       answer:
-        'Sí, realizamos un diagnóstico inicial gratuito para identificar el problema y darte un presupuesto antes de proceder con cualquier reparación.',
+        'Sí, ofrecemos soporte técnico continuo para solucionar problemas, realizar actualizaciones y asegurar el buen funcionamiento de tu software.',
       open: false
     },
     {
-      question: '¿Reparáis portátiles además de PCs de sobremesa?',
+      question: '¿Podéis integrar el software con sistemas que ya uso?',
       answer:
-        'Sí, reparamos portátiles, incluyendo problemas con pantallas, teclados, baterías, puertos de carga y otros componentes.',
+        'Sí, podemos integrar el software con tus sistemas actuales, como CRMs, ERPs u otras herramientas que uses en tu negocio.',
       open: false
     },
     {
-      question: '¿Ofrecéis garantías por las reparaciones realizadas?',
+      question: '¿El software será compatible con dispositivos móviles?',
       answer:
-        'Sí, todas nuestras reparaciones incluyen garantía, cuya duración dependerá del tipo de servicio realizado.',
+        'Sí, diseñamos software adaptable para que funcione perfectamente en móviles, tablets y computadoras.',
       open: false
     },
     {
-      question: '¿Podéis recuperar datos de un disco duro dañado?',
+      question: '¿Qué garantías ofrecéis sobre el software?',
       answer:
-        'Ofrecemos servicios de recuperación de datos siempre que el daño no sea extremo. Evaluaremos tu caso y te informaremos sobre las posibilidades.',
+        'Ofrecemos garantías que cubren errores o fallos durante un período determinado después de la entrega, y también brindamos opciones de mantenimiento continuo.',
       open: false
     },
     {
-      question: '¿Cuánto tiempo tardáis en reparar un equipo?',
+      question: '¿Podéis trabajar con ideas que todavía no están muy definidas?',
       answer:
-        'El tiempo depende del tipo de reparación, pero generalmente entregamos dentro de 24 a 72 horas. Te proporcionaremos un estimado tras evaluar tu equipo.',
+        '¡Claro que sí! Te ayudaremos a aterrizar tu idea, definir funcionalidades clave y desarrollar un software a medida.',
       open: false
     },
     {
-      question: '¿Qué métodos de pago aceptáis?',
+      question: '¿Cómo se manejan los pagos por el desarrollo?',
       answer:
-        'Aceptamos efectivo, tarjetas de crédito/débito y transferencias bancarias. También podemos ofrecer opciones de pago fraccionado en algunos casos.',
-      open: false
-    },
-    {
-      question: '¿Ofrecéis soporte técnico remoto?',
-      answer:
-        'Sí, podemos resolver ciertos problemas de software de forma remota. Solo necesitas una conexión a Internet estable.',
+        'Dividimos los pagos en fases, como un adelanto inicial, pagos intermedios según hitos alcanzados, y un pago final al completar el proyecto.',
       open: false
     }
   ];
