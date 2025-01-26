@@ -1,11 +1,11 @@
 <div class="bg-gray-50 py-16 px-6">
   
   <div class="max-w-7xl mx-auto" aria-label="My Custom Carousel">
-      <div class="splide2 relative">
+      <div class="splide case-studies-slider relative">
           <div class="flex items-center justify-between">
               <div>
-                  <h2 class="text-sm text-orange-500 font-semibold mb-3">Nuestros Casos de Éxito</h2>
-                  <h1 class="text-4xl font-extrabold text-gray-900 mb-10">Historias Inspiradoras</h1>
+                  <h2 class="text-sm text-orange-500 font-semibold mb-3">Nuestros Servicios y Soluciones</h2>
+                  <h1 class="text-4xl font-extrabold text-gray-900 mb-10">Aplicaciones Tecnológicas</h1>
               </div>
       
               <div class="flex">
@@ -34,6 +34,23 @@
                   </button>
               </div>
           </div>
+      
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li *ngFor="let caseItem of cases" class="splide__slide">
+            <div class="bg-white shadow-md rounded-lg p-4">
+              <div class="flex flex-col items-center">
+                <img [src]="caseItem.image" [alt]="caseItem.alt" class="rounded-t-lg mb-4 w-full">
+                <div class="text-left">
+                  <p class="text-orange-500 text-sm font-semibold mb-1">{{ caseItem.category }}</p>
+                  <h3 class="text-lg font-bold text-gray-800 mb-2">{{ caseItem.title }}</h3>
+                  <p class="text-sm text-gray-600">{{ caseItem.description }}</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
