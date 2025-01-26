@@ -38,6 +38,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/contact/contact.component').then((c) => c.ContactComponent)
     },
     {
+        path: 'about-us',
+        loadComponent: () => import('./pages/about-us/about-us.component').then((c) => c.AboutUsComponent)
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
