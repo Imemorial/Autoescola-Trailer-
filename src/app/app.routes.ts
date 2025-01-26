@@ -10,6 +10,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/website-design/website-design.component').then((c) => c.WebsiteDesignComponent)
     },
     {
+        path: 'software',
+        loadComponent: () => import('./pages/software/software.component').then((c) => c.SoftwareComponent)
+    },
+    {
         path: 'technicalService',
         loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
     },
