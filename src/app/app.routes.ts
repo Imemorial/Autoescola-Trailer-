@@ -22,6 +22,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/social-media/social-media.component').then((c) => c.SocialMediaComponent)
     },
     {
+        path: 'cameras',
+        loadComponent: () => import('./pages/cameras/cameras.component').then((c) => c.CamerasComponent)
+    },
+    {
         path: 'technicalService',
         loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
     },
