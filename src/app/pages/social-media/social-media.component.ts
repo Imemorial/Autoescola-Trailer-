@@ -72,66 +72,65 @@ gridItems = [
 ];
 
 
-goContactTitle: string = 'Explora Más Soluciones';
-goContactSecondTitle: string = '¿Tienes una idea para un software o necesitas una solución digital personalizada?';
-goContactParagraph: string = 'Estamos aquí para hacerlo realidad. Contáctanos, cuéntanos tu idea y juntos desarrollaremos el software que necesitas de manera rápida y eficiente.';
+goContactTitle : string = 'Descubre Cómo Podemos Ayudarte';
+goContactSecondTitle : string = '¿Quieres que administremos las redes sociales de tu negocio?';
+goContactParagraph : string = 'Estamos aquí para gestionar tus redes sociales y ayudarte a potenciar tu negocio. Contáctanos, visítanos o llámanos, y juntos lograremos el éxito digital que mereces.';
 
-
-  faqs = [
-    {
-      question: '¿Qué tipo de software desarrolláis?',
-      answer:
-        'Desarrollamos todo tipo de software personalizado, desde aplicaciones móviles y sistemas web hasta herramientas específicas para gestión de negocios.',
-      open: true
-    },
-    {
-      question: '¿Puedo pedir funciones específicas para mi software?',
-      answer:
-        '¡Por supuesto! Trabajamos contigo para definir las funcionalidades que necesitas, adaptándonos completamente a tus requisitos.',
-      open: false
-    },
-    {
-      question: '¿Cuánto tiempo tardáis en desarrollar un software?',
-      answer:
-        'El tiempo depende de la complejidad del proyecto. Generalmente, los plazos van desde unas semanas para proyectos pequeños hasta varios meses para soluciones más complejas.',
-      open: false
-    },
-    {
-      question: '¿Ofrecéis soporte después de entregar el software?',
-      answer:
-        'Sí, ofrecemos soporte técnico continuo para solucionar problemas, realizar actualizaciones y asegurar el buen funcionamiento de tu software.',
-      open: false
-    },
-    {
-      question: '¿Podéis integrar el software con sistemas que ya uso?',
-      answer:
-        'Sí, podemos integrar el software con tus sistemas actuales, como CRMs, ERPs u otras herramientas que uses en tu negocio.',
-      open: false
-    },
-    {
-      question: '¿El software será compatible con dispositivos móviles?',
-      answer:
-        'Sí, diseñamos software adaptable para que funcione perfectamente en móviles, tablets y computadoras.',
-      open: false
-    },
-    {
-      question: '¿Qué garantías ofrecéis sobre el software?',
-      answer:
-        'Ofrecemos garantías que cubren errores o fallos durante un período determinado después de la entrega, y también brindamos opciones de mantenimiento continuo.',
-      open: false
-    },
-    {
-      question: '¿Podéis trabajar con ideas que todavía no están muy definidas?',
-      answer:
-        '¡Claro que sí! Te ayudaremos a aterrizar tu idea, definir funcionalidades clave y desarrollar un software a medida.',
-      open: false
-    },
-    {
-      question: '¿Cómo se manejan los pagos por el desarrollo?',
-      answer:
-        'Dividimos los pagos en fases, como un adelanto inicial, pagos intermedios según hitos alcanzados, y un pago final al completar el proyecto.',
-      open: false
-    }
-  ];
+faqs = [
+  {
+    question: '¿Qué servicios ofrecéis para la gestión de redes sociales?',
+    answer:
+      'Ofrecemos servicios integrales que incluyen la creación de contenido, planificación de publicaciones, gestión de campañas publicitarias y análisis de rendimiento.',
+    open: true
+  },
+  {
+    question: '¿Puedo elegir en qué redes sociales trabajaréis?',
+    answer:
+      '¡Por supuesto! Trabajamos en las redes sociales que sean más relevantes para tu negocio, como Instagram, Facebook, TikTok, LinkedIn y más.',
+    open: false
+  },
+  {
+    question: '¿Cuánto tiempo se tarda en ver resultados?',
+    answer:
+      'Los resultados dependen de tus objetivos y del mercado, pero generalmente comenzamos a ver impacto en el engagement y alcance en las primeras semanas.',
+    open: false
+  },
+  {
+    question: '¿Ofrecéis diseño gráfico para las publicaciones?',
+    answer:
+      'Sí, contamos con un equipo de diseñadores que crea contenido visual atractivo y alineado con la identidad de tu marca.',
+    open: false
+  },
+  {
+    question: '¿Podéis gestionar campañas publicitarias en redes sociales?',
+    answer:
+      'Sí, gestionamos campañas publicitarias enfocadas en aumentar el alcance, las conversiones y el crecimiento de tu negocio.',
+    open: false
+  },
+  {
+    question: '¿Qué tipo de informes proporcionáis?',
+    answer:
+      'Ofrecemos informes detallados con métricas clave, como alcance, engagement, crecimiento de seguidores y resultados de campañas publicitarias.',
+    open: false
+  },
+  {
+    question: '¿Puedo participar en la creación del contenido?',
+    answer:
+      '¡Claro que sí! Trabajamos contigo para asegurarnos de que el contenido refleje tu visión y los valores de tu negocio.',
+    open: false
+  },
+  {
+    question: '¿Ofrecéis soporte continuo para emergencias?',
+    answer:
+      'Sí, ofrecemos soporte continuo para resolver cualquier problema o responder a situaciones urgentes en las redes sociales.',
+    open: false
+  },
+  {
+    question: '¿Cómo se manejan los pagos por vuestros servicios?',
+    answer:
+      'Dividimos los pagos en mensualidades según el paquete elegido. También ofrecemos opciones personalizadas según tus necesidades.',
+    open: false
+  }
+];
 
 }
