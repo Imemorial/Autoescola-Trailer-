@@ -6,6 +6,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent)
     },
     {
+        path: 'technicalService',
+        loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
