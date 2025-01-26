@@ -38,8 +38,7 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li *ngFor="let case of cases" class="splide__slide flex justify-center">
-                <div class="bg-white shadow-md rounded-2xl p-6 max-w-sm flex flex-col justify-between">
-                  <!-- Image Section -->
+                <div class="bg-white border border-gray-300 rounded-2xl p-6 max-w-sm flex flex-col justify-between hover:border-primaryColor transition-colors duration-200">
                   <div class="relative group">
                     <img
                       [src]="case.image"
@@ -47,18 +46,13 @@
                       class="rounded-lg filter grayscale group-hover:filter-none transition duration-300"
                     />
                   </div>
-                  <!-- Category -->
                   <span class="text-orange-500 text-sm font-medium mt-4">{{ case.category }}</span>
-                  <!-- Title -->
                   <h3 class="text-xl font-semibold text-gray-800 mt-2">{{ case.title }}</h3>
-                  <!-- Description -->
                   <p class="text-gray-600 mt-2 text-sm">{{ case.description }}</p>
-                  <!-- Divider -->
                   <div class="flex items-center mt-4">
                     <div class="h-1 w-6 bg-orange-500 rounded"></div>
                     <div class="flex-1 h-1 bg-gray-200 rounded ml-2"></div>
                   </div>
-                  <!-- Learn More Button -->
                   <div class="mt-6">
                     <button class="flex items-center text-orange-500 font-semibold hover:underline">
                       Aprende Más
