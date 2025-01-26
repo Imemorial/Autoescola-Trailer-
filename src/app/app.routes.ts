@@ -30,6 +30,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
     },
     {
+        path: 'ia',
+        loadComponent: () => import('./pages/ia/ia.component').then((c) => c.IaComponent)
+    },
+    {
         path: 'contact',
         loadComponent: () => import('./pages/contact/contact.component').then((c) => c.ContactComponent)
     },
