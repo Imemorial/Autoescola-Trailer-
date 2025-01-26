@@ -70,4 +70,8 @@ export class TechnicalServiceComponent {
     }
   ];
 
+  goContactTitle : string = 'Explora Más Soluciones';
+  goContactSecondTitle : string = '¿Tienes algún problema con tu <span hardware o necesitas servicio técnico?';
+  goContactParagraph : string = 'Estamos aquí para ayudarte. Contáctanos, pásate por nuestro local o llámanos y resolveremos tus problemas de la manera más rápida y eficiente posible.';
+
 }

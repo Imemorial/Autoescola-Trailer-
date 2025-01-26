@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { TopComponent } from '../../shaders/top/top.component';
 import { WorkComponent } from '../../shaders/work/work.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
+import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
 
 @Component({
   selector: 'app-website-design',
   standalone: true,
-  imports: [TopComponent, WorkComponent, ServicesComponent],
+  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent],
   templateUrl: './website-design.component.html',
   styleUrl: './website-design.component.scss'
 })
