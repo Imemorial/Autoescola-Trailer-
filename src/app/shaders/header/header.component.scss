@@ -61,3 +61,29 @@ header {
         }
     }
 }
+
+
+@media screen and (max-width: 600px) {
+  
+    header{
+
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 9999 !important;
+            background-color: #fff;
+
+            a,
+            .drop{
+                margin-top: 10px !important;
+            }
+        }
+    }
+}
