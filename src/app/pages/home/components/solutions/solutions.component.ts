@@ -96,23 +96,26 @@ export class SolutionsComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
+      const isMobile = window.innerWidth <= 768; 
       const splide = new Splide('.splide', {
         type: 'loop',
-        perPage: 3,
+        perPage: isMobile ? 1 : 3,
         perMove: 1,
         height: '400px',
         speed: 1000,
-        arrows: false, 
+        arrows: false,
         pagination: false,
         autoplay: true,
         interval: 2000
       }).mount();
-  
+
       const prevButton = document.querySelector('.custom-prev') as HTMLElement;
       const nextButton = document.querySelector('.custom-next') as HTMLElement;
-  
-      prevButton.addEventListener('click', () => splide.go('<'));
-      nextButton.addEventListener('click', () => splide.go('>'));
+
+      if (prevButton && nextButton) {
+        prevButton.addEventListener('click', () => splide.go('<'));
+        nextButton.addEventListener('click', () => splide.go('>'));
+      }
     }
   }
 }

@@ -53,23 +53,27 @@ export class CaseStudiesComponent {
 
   ngAfterViewInit(): void {
     if (isPlatformBrowser(this.platformId)) {
+      const isMobile = window.innerWidth <= 768; 
+  
       const splide = new Splide('.case-studies-slider', {
         type: 'loop',
-        perPage: 3,
+        perPage: isMobile ? 1 : 3, 
         perMove: 1,
         speed: 1000,
-        arrows: false, 
+        arrows: false,
         gap: '1rem',
         pagination: false,
         autoplay: true,
         interval: 3000
       }).mount();
   
-      const prevButton = document.querySelector('.custom-prev') as HTMLElement;
-      const nextButton = document.querySelector('.custom-next') as HTMLElement;
+      const prevButton = document.querySelector('.custom-prev-2') as HTMLElement;
+      const nextButton = document.querySelector('.custom-next-2') as HTMLElement;
   
-      prevButton.addEventListener('click', () => splide.go('<'));
-      nextButton.addEventListener('click', () => splide.go('>'));
+      if (prevButton && nextButton) {
+        prevButton.addEventListener('click', () => splide.go('<'));
+        nextButton.addEventListener('click', () => splide.go('>'));
+      }
     }
   }
 
