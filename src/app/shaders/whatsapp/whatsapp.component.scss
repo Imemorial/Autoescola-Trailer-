@@ -1,3 +1,7 @@
+a{
+    cursor: pointer;
+}
+
 .whatsapp-ico{
     fill: white;
     width: 50px;
@@ -11,6 +15,13 @@
     right : 20px;
     z-index: 9999 !important;
     animation: pulse 2s infinite;
+}
+
+.open{
+    position: fixed;
+    bottom: 20px;
+    right : 20px;
+    z-index: 9999 !important;
 }
 
 .whatsapp-ico:hover{
