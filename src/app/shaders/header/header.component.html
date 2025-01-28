@@ -19,7 +19,10 @@
           <a routerLink="/nosotros">Sobre nosotros</a>
         <a routerLink="/contacto">Contacto</a>
         <!-- <a href="#">Blog</a> -->
-        <a routerLink="#">Pedir presupuesto</a>
+        <a routerLink="#" 
+       class="bg-primaryColor go text-white font-semibold py-3 text-sm px-6 rounded-sm shadow-lg hover:bg-[#e65500] hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+        Pedir presupuesto
+        </a>
     </nav>
 
     <button id="open" *ngIf="!opened" (click)="setOpened(true)">
