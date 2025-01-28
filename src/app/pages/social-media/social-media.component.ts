@@ -4,11 +4,12 @@ import { WorkComponent } from '../../shaders/work/work.component';
 import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
+import { InfoComponent } from '../../shaders/info/info.component';
 
 @Component({
   selector: 'app-social-media',
   standalone: true,
-  imports: [TopComponent, WorkComponent, GoContactComponent, FaqsComponent, ServicesComponent],
+  imports: [TopComponent, WorkComponent, GoContactComponent, FaqsComponent, ServicesComponent, InfoComponent],
   templateUrl: './social-media.component.html',
   styleUrl: './social-media.component.scss'
 })

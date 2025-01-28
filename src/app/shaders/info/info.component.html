@@ -1,0 +1,15 @@
+
+    <div class="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-20">
+      <div class="flex flex-col gap-8 sm:gap-16 lg:flex-row">
+        <img [src]="image" alt="{{title}} img" class="rounded-sm inline-block h-full w-full max-w-2xl lg:max-w-xl" />
+        <div class="flex flex-col items-start">
+          <p class="mb-2 text-sm font-semibold uppercase text-primaryColor"> ITNOVASTUDIO </p>
+          <h2 class="mb-4 text-2xl font-bold md:text-5xl"> {{title}} <span class="text-2xl text-primaryColor" *ngIf="price">(a partir de {{price}}€).</span></h2>
+          <p class="mb-6 max-w-lg text-sm text-gray-500 sm:text-xl md:mb-10 lg:mb-12"> {{parragraph}} </p>
+          
+          <div class="mb-5 w-full pb-8 md:mb-6 lg:mb-4">
+            <input type="submit" value="Subscribe" class="inline-block w-full cursor-pointer rounded-md bg-primaryColor px-8 py-4 text-center font-semibold text-white" />
+            </div>
+        </div>
+      </div>
+    </div>

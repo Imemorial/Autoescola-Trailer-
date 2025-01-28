@@ -4,11 +4,12 @@ import { WorkComponent } from '../../shaders/work/work.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
+import { InfoComponent } from '../../shaders/info/info.component';
 
 @Component({
   selector: 'app-website-design',
   standalone: true,
-  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent, FaqsComponent],
+  imports: [TopComponent, WorkComponent, ServicesComponent, GoContactComponent, FaqsComponent, InfoComponent],
   templateUrl: './website-design.component.html',
   styleUrl: './website-design.component.scss'
 })
