@@ -66,6 +66,7 @@ header {
 .menu{
     width: 25px;
     height: 25px;
+    display: none;
 
     svg{
         width: 100%;
@@ -75,6 +76,10 @@ header {
 
 @media screen and (max-width: 600px) {
   
+    .menu{
+        display: block;
+    }
+
     header{
 
         nav{
@@ -92,7 +97,7 @@ header {
             clip-path: circle(0.0% at 0 100%) !important;
             padding: 25px 50px;
 
-            .menu{
+            .menu-nav{
                 position: absolute;
                 top: 25px;
                 right: 50px;

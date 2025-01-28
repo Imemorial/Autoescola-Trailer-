@@ -13,6 +13,8 @@ body {
 .splide__track {
 
     .splide__list{
+      display: flex !important;
+      flex-direction: row !important;
       padding: 40px 0 !important;
     }
   }

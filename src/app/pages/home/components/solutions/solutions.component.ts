@@ -101,7 +101,6 @@ export class SolutionsComponent implements AfterViewInit {
         type: 'loop',
         perPage: isMobile ? 1 : 3,
         perMove: 1,
-        height: '400px',
         speed: 1000,
         arrows: false,
         pagination: false,
