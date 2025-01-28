@@ -1,26 +1,25 @@
 <header>
 
-    <h1 class="uppercase"><span class="text-primaryColor">It</span>novastudio</h1>
+    <h1 routerLink="/inicio" class="uppercase"><span class="text-primaryColor">It</span>novastudio</h1>
 
     <nav [ngClass]="{'opened' : opened}">
-        <a href="#">Inicio</a>
+        <a routerLink="/inicio">Inicio</a>
         <div class="dropdown">
             <span>Servicios</span>
             <div class="dropdown-content">
-                <a href="#">Diseño web</a>
-                <a href="#">Software personalizado</a>
-                <a href="#">Tiendas onlinne</a>
-                <a href="#">Gestión redes</a>
-                <a href="#">Servicio técnico</a>
-                <a href="#">Cámaras de Seguridad</a>
-                <a href="#">IA</a>
+                <a routerLink="/diseno-web">Diseño web</a>
+                <a routerLink="/software">Software personalizado</a>
+                <a routerLink="/comercio-electronico">Tiendas online</a>
+                <a routerLink="/redes-sociales">Gestión redes</a>
+                <a routerLink="/servicio-tecnico">Servicio técnico</a>
+                <a routerLink="/camaras">Cámaras de Seguridad</a>
+                <a routerLink="/ia">IA</a>
             </div>
           </div>
-        <a href="#">Sobre nosotros</a>
-        <a href="#">Contacto</a>
-        <a href="#">Blog</a>
-        <a href="#">Contacto</a>
-        <a href="#">Pedir presupuesto</a>
+          <a routerLink="/nosotros">Sobre nosotros</a>
+        <a routerLink="/contacto">Contacto</a>
+        <!-- <a href="#">Blog</a> -->
+        <a routerLink="#">Pedir presupuesto</a>
     </nav>
 
     <button id="open" *ngIf="!opened" (click)="setOpened(true)">

@@ -11,5 +11,6 @@ export class TopComponent {
 
   @Input() title !: string;
   @Input() photo !: string;
+  @Input() url !: string;
 
 }
