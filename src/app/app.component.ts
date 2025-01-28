@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shaders/header/header.component';
 import { FooterComponent } from "./shaders/footer/footer.component";
 import { LoaderComponent } from './shaders/loader/loader.component';
+import { WhatsappComponent } from './shaders/whatsapp/whatsapp.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, LoaderComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, LoaderComponent, WhatsappComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

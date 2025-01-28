@@ -42,6 +42,14 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/about-us/about-us.component').then((c) => c.AboutUsComponent)
     },
     {
+        path: 'terms',
+        loadComponent: () => import('./pages/terms/terms.component').then((c) => c.TermsComponent)
+    },
+    {
+        path: 'policy',
+        loadComponent: () => import('./pages/policity/policity.component').then((c) => c.PolicityComponent)
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full'
