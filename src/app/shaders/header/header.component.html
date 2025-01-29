@@ -17,12 +17,11 @@
             </div>
           </div>
           <a routerLink="/nosotros">Sobre nosotros</a>
-        <a routerLink="/contacto">Contacto</a>
         <!-- <a href="#">Blog</a> -->
-        <a routerLink="#" 
-       class="bg-primaryColor go text-white font-semibold py-3 text-sm px-6 rounded-sm shadow-lg hover:bg-[#e65500] hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-        Pedir presupuesto
-        </a>
+        <a routerLink="/contacto"
+   class="bg-primaryColor go no-effect text-white font-semibold py-3 text-sm px-6 rounded-sm shadow-lg hover:bg-[#e65500] hover:shadow-xl transition-all duration-300 transform hover:scale-105 contactar">
+    Contactar
+</a>
     </nav>
 
     <button id="open" *ngIf="!opened" (click)="setOpened(true)">

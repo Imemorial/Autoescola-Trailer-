@@ -83,6 +83,11 @@ header{
     }
 }
 
+.no-effect::before{
+    content: none !important;
+
+}
+
 @media only screen and (max-width: 950px) {
 
     
