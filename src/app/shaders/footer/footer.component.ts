@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
+  year !: number;
+
+  ngOnInit()
+  {
+    this.year = new Date().getFullYear();
+  }
+
 }
