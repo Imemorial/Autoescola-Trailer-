@@ -3,8 +3,8 @@
     <h1 routerLink="/inicio" class="uppercase"><span class="text-primaryColor">It</span>novastudio</h1>
 
     <nav [ngClass]="{'opened' : opened}">
-        <a routerLink="/inicio">Inicio</a>
-        <div class="dropdown">
+        <a routerLink="/inicio" class="effect">Inicio</a>
+        <div class="dropdown effect">
             <span>Servicios</span>
             <div class="dropdown-content">
                 <a routerLink="/diseno-web">Diseño web</a>
@@ -16,7 +16,7 @@
                 <a routerLink="/ia">IA</a>
             </div>
           </div>
-          <a routerLink="/nosotros">Sobre nosotros</a>
+          <a routerLink="/nosotros" class="effect">Sobre nosotros</a>
         <!-- <a href="#">Blog</a> -->
         <a routerLink="/contacto"
    class="bg-primaryColor go no-effect text-white font-semibold py-3 text-sm px-6 rounded-sm shadow-lg hover:bg-[#e65500] hover:shadow-xl transition-all duration-300 transform hover:scale-105 contactar">

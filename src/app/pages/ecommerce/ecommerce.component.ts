@@ -5,7 +5,7 @@ import { GoContactComponent } from '../../shaders/go-contact/go-contact.componen
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { InfoComponent } from '../../shaders/info/info.component';
-
+import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-ecommerce',
   standalone: true,
@@ -14,6 +14,20 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './ecommerce.component.scss'
 })
 export class EcommerceComponent {
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsEcommerce() {
+  this.titleService.setTitle('ItnovaStudio - Ecommerce');
+  this.meta.addTag({ name: 'description', content: 'En ItnovaStudio diseñamos soluciones de ecommerce personalizadas para ayudarte a vender online de forma eficiente y segura.' });
+  this.meta.addTag({ name: 'keywords', content: 'ecommerce, ItnovaStudio, tienda online, soluciones ecommerce, desarrollo ecommerce, ventas online, plataformas ecommerce' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Ecommerce' });
+  this.meta.addTag({ property: 'og:description', content: 'Transforma tu negocio con una tienda online a medida. Descubre nuestras soluciones ecommerce adaptadas a tus necesidades.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsEcommerce();
+}
 
   steps = [
     {

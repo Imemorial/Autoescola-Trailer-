@@ -4,6 +4,7 @@ import { HeaderComponent } from './shaders/header/header.component';
 import { FooterComponent } from "./shaders/footer/footer.component";
 import { LoaderComponent } from './shaders/loader/loader.component';
 import { WhatsappComponent } from './shaders/whatsapp/whatsapp.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,21 @@ import { WhatsappComponent } from './shaders/whatsapp/whatsapp.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'it-solutions';
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+  updateMetaTags() {
+    this.titleService.setTitle('ItnovaStudio - Desarrollo Web, Software Personalizado, Ecommerce');
+  
+    this.meta.addTag({ name: 'description', content: 'ItnovaStudio se especializa en desarrollo web, software personalizado y soluciones ecommerce de alta calidad.' });
+    this.meta.addTag({ name: 'keywords', content: 'ItnovaStudio, desarrollo web, software personalizado, ecommerce, soluciones digitales, desarrollo a medida' });
+  
+    this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Desarrollo Web, Software Personalizado, Ecommerce' });
+    this.meta.addTag({ property: 'og:description', content: 'Descubre cómo ItnovaStudio puede ayudarte con desarrollo web, software personalizado y ecommerce.' });
+  }
+
+  ngOnInit() {
+    this.updateMetaTags();
+  }
 
 }

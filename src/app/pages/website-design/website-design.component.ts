@@ -5,6 +5,7 @@ import { ServicesComponent } from '../../shaders/services/services.component';
 import { GoContactComponent } from '../../shaders/go-contact/go-contact.component';
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { InfoComponent } from '../../shaders/info/info.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-website-design',
@@ -14,6 +15,20 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './website-design.component.scss'
 })
 export class WebsiteDesignComponent {
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsDisenoWeb() {
+  this.titleService.setTitle('ItnovaStudio - Diseño Web');
+  this.meta.addTag({ name: 'description', content: 'ItnovaStudio ofrece servicios de diseño web personalizado, creando sitios web atractivos, funcionales y optimizados para mejorar tu presencia online.' });
+  this.meta.addTag({ name: 'keywords', content: 'diseño web, ItnovaStudio, desarrollo web, páginas web, sitios web personalizados, diseño responsive, diseño a medida' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Diseño Web' });
+  this.meta.addTag({ property: 'og:description', content: 'Crea una página web moderna y funcional con ItnovaStudio. Diseño web personalizado para mejorar la experiencia de tus usuarios y la visibilidad de tu negocio.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsDisenoWeb();
+}
 
   steps = [
     {

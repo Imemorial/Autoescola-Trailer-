@@ -5,6 +5,7 @@ import { GoContactComponent } from '../../shaders/go-contact/go-contact.componen
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { InfoComponent } from '../../shaders/info/info.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-cameras',
@@ -14,6 +15,17 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './cameras.component.scss'
 })
 export class CamerasComponent {
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+  updateMetaTagsInstalacionesCamarasSeguridad() {
+    this.titleService.setTitle('ItnovaStudio - Instalación de Cámaras de Seguridad');
+    this.meta.addTag({ name: 'description', content: 'En ItnovaStudio ofrecemos servicios profesionales de instalación de cámaras de seguridad para proteger tu hogar o empresa con tecnología de vanguardia.' });
+  }
+
+  ngOnInit() {
+    this.updateMetaTagsInstalacionesCamarasSeguridad();
+}
 
   steps = [
     {

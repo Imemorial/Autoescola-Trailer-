@@ -4,6 +4,7 @@ import { GoContactComponent } from '../../shaders/go-contact/go-contact.componen
 import { FaqsComponent } from "../../shaders/faqs/faqs.component";
 import { WorkComponent } from '../../shaders/work/work.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-technical-service',
@@ -14,6 +15,20 @@ import { ServicesComponent } from '../../shaders/services/services.component';
 })
 export class TechnicalServiceComponent {
   
+  constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsServicioTecnico() {
+  this.titleService.setTitle('ItnovaStudio - Servicio Técnico');
+  this.meta.addTag({ name: 'description', content: 'ItnovaStudio ofrece un servicio técnico especializado para reparación y mantenimiento de equipos informáticos, software y dispositivos tecnológicos.' });
+  this.meta.addTag({ name: 'keywords', content: 'servicio técnico, ItnovaStudio, reparación equipos, mantenimiento informático, soporte técnico, reparación software, asistencia tecnológica' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Servicio Técnico' });
+  this.meta.addTag({ property: 'og:description', content: 'Recibe un servicio técnico profesional para reparar y mantener tus dispositivos y equipos informáticos, con soluciones rápidas y efectivas.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsServicioTecnico();
+}
+
   steps = [
     {
       title: 'Contáctanos',

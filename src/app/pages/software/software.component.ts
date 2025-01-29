@@ -5,7 +5,7 @@ import { ServicesComponent } from '../../shaders/services/services.component';
 import { TopComponent } from '../../shaders/top/top.component';
 import { WorkComponent } from '../../shaders/work/work.component';
 import { InfoComponent } from '../../shaders/info/info.component';
-
+import { Meta, Title } from '@angular/platform-browser';
 @Component({
   selector: 'app-software',
   standalone: true,
@@ -14,6 +14,20 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './software.component.scss'
 })
 export class SoftwareComponent {
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsSoftwarePersonalizado() {
+  this.titleService.setTitle('ItnovaStudio - Software Personalizado');
+  this.meta.addTag({ name: 'description', content: 'ItnovaStudio crea soluciones de software personalizado adaptadas a las necesidades específicas de tu negocio para optimizar procesos y mejorar la eficiencia.' });
+  this.meta.addTag({ name: 'keywords', content: 'software personalizado, ItnovaStudio, soluciones a medida, desarrollo de software, aplicaciones personalizadas, tecnología a medida' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Software Personalizado' });
+  this.meta.addTag({ property: 'og:description', content: 'Desarrollamos software a medida para que tu empresa alcance su máximo potencial. Soluciones personalizadas y eficientes para tu negocio.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsSoftwarePersonalizado();
+}
 
   steps = [
     {

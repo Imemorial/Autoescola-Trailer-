@@ -5,6 +5,7 @@ import { GoContactComponent } from '../../shaders/go-contact/go-contact.componen
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { InfoComponent } from '../../shaders/info/info.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-ia',
@@ -14,6 +15,21 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './ia.component.scss'
 })
 export class IaComponent {
+
+
+constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsIAChatbots() {
+  this.titleService.setTitle('ItnovaStudio - IA y Chatbots');
+  this.meta.addTag({ name: 'description', content: 'ItnovaStudio ofrece soluciones de inteligencia artificial (IA) y chatbots personalizados para mejorar la interacción con tus clientes y optimizar procesos.' });
+  this.meta.addTag({ name: 'keywords', content: 'IA, chatbots, inteligencia artificial, soluciones IA, automatización, atención al cliente, tecnología avanzada, chatbots personalizados' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - IA y Chatbots' });
+  this.meta.addTag({ property: 'og:description', content: 'Mejora la atención al cliente y optimiza tus procesos con nuestras soluciones avanzadas de IA y chatbots a medida.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsIAChatbots();
+}
 
   steps = [
     {

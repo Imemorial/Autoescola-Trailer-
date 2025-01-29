@@ -5,6 +5,7 @@ import { GoContactComponent } from '../../shaders/go-contact/go-contact.componen
 import { FaqsComponent } from '../../shaders/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
 import { InfoComponent } from '../../shaders/info/info.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-social-media',
@@ -14,6 +15,20 @@ import { InfoComponent } from '../../shaders/info/info.component';
   styleUrl: './social-media.component.scss'
 })
 export class SocialMediaComponent {
+
+  constructor(private meta: Meta, private titleService: Title) { }
+
+updateMetaTagsGestionRedesSociales() {
+  this.titleService.setTitle('ItnovaStudio - Gestión de Redes Sociales');
+  this.meta.addTag({ name: 'description', content: 'En ItnovaStudio ofrecemos servicios profesionales de gestión de redes sociales para aumentar tu presencia online y conectar con tu audiencia.' });
+  this.meta.addTag({ name: 'keywords', content: 'gestión redes sociales, ItnovaStudio, marketing digital, social media, redes sociales, estrategias online, crecimiento redes sociales' });
+  this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Gestión de Redes Sociales' });
+  this.meta.addTag({ property: 'og:description', content: 'Potencia tu marca con nuestras estrategias personalizadas de gestión de redes sociales y marketing digital. Conéctate con tu público de manera efectiva.' });
+}
+
+ngOnInit() {
+  this.updateMetaTagsGestionRedesSociales();
+}
 
   steps = [
     {
