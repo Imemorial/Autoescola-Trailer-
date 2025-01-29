@@ -4,10 +4,11 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterLink],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
   animations: [
@@ -37,7 +38,8 @@ export class ContactComponent {
     this.form = this._formBuilder.group({
       name: ['', Validators.required], 
       email: ['', [Validators.required, Validators.email]], 
-      message: ['', Validators.required] 
+      message: ['', Validators.required] ,
+      acceptPolicies: [false, Validators.requiredTrue]
     });
   }
 
