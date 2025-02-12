@@ -17,3 +17,14 @@ body {
         padding: 40px 0 !important;
     }
 }
+
+.button{
+    transition: 500ms;
+
+    &:hover{
+
+        span{
+            color: #000;
+        }
+    }
+}
