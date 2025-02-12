@@ -1,31 +1,18 @@
 header{
+    background-color: #ff181e;
+    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px;
-    z-index: 999 !important;
-
-    h1{
-        cursor: pointer;
-    }
-
-    #open{
-        display: none;
-    }
-
-    #close{
-        display: none;
-    }
 
     nav{
 
-        a,
-        .dropdown{
-            cursor: pointer;
-            margin: 0 15px;
-        }
-
         a{
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 300;
             position: relative;
 
             &::before{
@@ -35,11 +22,9 @@ header{
                 position: absolute;
                 bottom: -5px;
                 left: 0;
-                right: 0;
-                margin: auto;
-                background-color: #FF6600;
-                border-radius: 10px;
-                transition: 250ms all;
+                background-color: #fff;
+                border-radius: 20px;
+                transition: 250ms;
             }
 
             &:hover::before{
@@ -47,107 +32,12 @@ header{
             }
         }
 
-        .effect{
+        .active{
+            font-weight: 800;
 
-            &::after{
-                content: "";
-                width: 5px;
-                height: 5px;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: -15px;
-                background-color: #FF6600;
-                border-radius: 50%;
-                margin: auto;
+            &::before{
+                width: 100%;
             }
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-          }
-          
-          .dropdown-content {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            z-index: 1000 !important;
-
-            a{
-                margin: 15px 0 !important;
-            }
-          }
-          
-          .dropdown:hover .dropdown-content {
-            display: flex;
-          }
-    }
-
-    button{
-        width: 25px;
-        height: 25px;
-
-        svg{
-            width: 100%;
-            height: 100%;
         }
     }
 }
-
-.no-effect::before{
-    content: none !important;
-
-}
-
-@media only screen and (max-width: 950px) {
-
-    
-    header{
-
-        #open{
-            display: block;
-        }
-
-        #close{
-            display: block;
-            position: absolute;
-            top: 25px;
-            right: 25px;
-            z-index: 9999 !important;
-        }
-
-        nav{
-            clip-path: circle(141.2% at 0 100%);
-            width: 100% !important;
-            height: 100vh !important;
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            justify-content: center !important;
-            position: fixed !important;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            z-index: 9999 !important;
-            clip-path: circle(0.0% at 0 100%);
-            transition: 500ms all;
-
-            a,
-            .dropdown{
-                margin: 15px 0;
-
-            }
-        }
-
-        .opened{
-            clip-path: circle(141.2% at 0 100%) !important;
-        }
-    }
-
-}
-  
