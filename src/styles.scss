@@ -4,10 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+$backgroundColor: #f3f3f4;
+
 body {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif !important;
-    background-color: #f3f3f4 !important;
 }
 
 .splide__track {
@@ -27,4 +28,8 @@ body {
             color: #000;
         }
     }
+}
+
+.special-section{
+    background-color: $backgroundColor !important;
 }
