@@ -11,23 +11,49 @@ import Splide from '@splidejs/splide';
 })
 export class ServicesComponent {
 
-  servicios: any[] = [
+  services: any[] = [
     {
-      imagen: 'ruta/a/imagen1.jpg', 
-      titulo: 'Curso Básico de Conducción',
-      descripcion: 'Curso para obtener tu carnet de conducir con formación teórica y práctica.'
+      imagen: 'ruta/a/imagen1.jpg',
+      titulo: 'Carnet AM',
+      descripcion: 'Curs per obtenir el teu carnet de conduir amb formació teòrica i pràctica.'
     },
     {
       imagen: 'ruta/a/imagen2.jpg',
-      titulo: 'Curso Avanzado de Conducción',
-      descripcion: 'Curso avanzado para conductores que buscan mejorar sus habilidades.'
+      titulo: 'Carnet A1',
+      descripcion: 'Curs per obtenir el carnet A1, per a motos de fins a 125cc, amb formació teòrica i pràctica.'
     },
     {
       imagen: 'ruta/a/imagen3.jpg',
-      titulo: 'Curso de Conducción para Extranjeros',
-      descripcion: 'Cursos adaptados a extranjeros que desean obtener su carnet de conducir.'
+      titulo: 'Carnet A2',
+      descripcion: 'Curs per obtenir el carnet A2, per a motos amb una potència màxima de 35 kW, amb formació teòrica i pràctica.'
+    },
+    {
+      imagen: 'ruta/a/imagen4.jpg',
+      titulo: 'Carnet A',
+      descripcion: 'Curs per obtenir el carnet A, per a motos sense límit de potència, amb formació teòrica i pràctica.'
+    },
+    {
+      imagen: 'ruta/a/imagen5.jpg',
+      titulo: 'Carnet B',
+      descripcion: 'Curs per obtenir el carnet B, per a conduir vehicles de fins a 3500 kg, amb formació teòrica i pràctica.'
+    },
+    {
+      imagen: 'ruta/a/imagen6.jpg',
+      titulo: 'Carnet B+E',
+      descripcion: 'Curs per obtenir el carnet B+E, que permet conduir vehicles amb remolc superior a 750 kg, amb formació teòrica i pràctica.'
+    },
+    {
+      imagen: 'ruta/a/imagen7.jpg',
+      titulo: 'Carnet C',
+      descripcion: 'Curs per obtenir el carnet C, per a conduir vehicles de més de 3500 kg, amb formació teòrica i pràctica.'
+    },
+    {
+      imagen: 'ruta/a/imagen8.jpg',
+      titulo: 'Carnet C+E',
+      descripcion: 'Curs per obtenir el carnet C+E, que permet conduir vehicles pesats amb remolc, amb formació teòrica i pràctica.'
     }
   ];
+  
 
   constructor() {}
 
@@ -38,7 +64,7 @@ export class ServicesComponent {
       autoplay: true,
       direction: 'rtl',
       arrows: false,
-      gap: '1em'
+      gap: '1em',
     }).mount();
   }
 
