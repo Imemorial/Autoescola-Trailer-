@@ -4,11 +4,12 @@ import { CaseStudiesComponent } from "../../shaders/case-studies/case-studies.co
 import { ContactComponent } from '../../shaders/contact/contact.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { AboutComponent } from "./components/about/about.component";
+import { ServicesComponent } from './components/services/services.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, ContactComponent, AboutComponent],
+  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
