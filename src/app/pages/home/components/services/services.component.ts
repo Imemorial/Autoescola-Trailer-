@@ -58,14 +58,24 @@ export class ServicesComponent {
   constructor() {}
 
   ngAfterViewInit(): void {
-    new Splide('.splide', {
+    const splide = new Splide('.splide', {
       type: 'loop',
       perPage: 2,
+      perMove: 1,
       autoplay: true,
       direction: 'rtl',
-      arrows: false,
+      arrows: false, 
       gap: '1em',
+      pagination: false
     }).mount();
+
+    const prevButton = document.getElementById('slider-button-left');
+    const nextButton = document.getElementById('slider-button-right');
+
+    if (prevButton && nextButton) {
+      prevButton.addEventListener('click', () => splide.go('>'));
+      nextButton.addEventListener('click', () => splide.go('<'));
+    }
   }
 
 }
