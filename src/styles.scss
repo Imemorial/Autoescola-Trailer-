@@ -19,7 +19,7 @@ body {
     }
 }
 
-.button{
+.btn-effect{
     transition: 500ms;
 
     &:hover{
@@ -32,4 +32,8 @@ body {
 
 .special-section{
     background-color: $backgroundColor !important;
+}
+
+.padding{
+    padding: 100px 0;
 }

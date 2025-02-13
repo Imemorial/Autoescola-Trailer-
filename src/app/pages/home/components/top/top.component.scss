@@ -1,6 +1,8 @@
-.top {
-    background-image: linear-gradient(to right, hsla(0, 0%, 0%, 0.800), #00000000), 
-                      url('/assets/images/top.jpg');
+.top{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.750), hsla(0, 0%, 0%, 0.750)),url('/assets/images/top.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

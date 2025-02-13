@@ -1,50 +1,30 @@
-<section class="py-24 relative bg-white">
-    <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-        <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
-            <div
-                class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
-                <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
-                    <img class="rounded-xl object-cover h-[35vh]" src="/assets/images/home/img-about-1.png" alt="about Us image" />
-                </div>
-                <img class="sm:ml-0 ml-auto rounded-xl object-cover h-[35vh]" src="/assets/images/home/img-about-2.png"
-                    alt="about Us image" />
-            </div>
-            <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                <div class="w-full flex-col justify-center items-start gap-8 flex">
-                    <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                        <h2
-                            class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                            Ajudant-te a aconseguir el teu objectiu</h2>
-                        <p class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                            A Autoescola Trailer Mollerussa, ens esforcem perquè cada alumne rebi la millor formació possible. Amb un equip de professionals dedicats, t'acompanyem en cada pas fins que aconsegueixis el teu permís de conduir amb confiança i seguretat.</p>
-                    </div>
-                    <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
-                        <div class="flex-col justify-start items-start inline-flex">
-                            <h3 class="text-gray-900 text-4xl font-bold font-manrope leading-normal ">30<span class="text-primaryColor">+</span></h3>
-                            <h6 class="text-gray-500 text-base font-normal leading-relaxed">Anys d'experiència</h6>
-                        </div>
-                        <div class="flex-col justify-start items-start inline-flex">
-                            <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal">500<span class="text-primaryColor">+</span></h4>
-                            <h6 class="text-gray-500 text-base font-normal leading-relaxed">Alumnes satisfets</h6>
-                        </div>
-                        <div class="flex-col justify-start items-start inline-flex">
-                            <h4 class="text-gray-900 text-4xl font-bold font-manrope leading-normal text-prim">10<span class="text-primaryColor">+</span></h4>
-                            <h6 class="text-gray-500 text-base font-normal leading-relaxed">Carnets disponibles</h6>
-                        </div>
-                    </div>
-                </div>
-                <button class="button group relative inline-flex h-[calc(48px+8px)] items-center justify-center rounded-full bg-primaryColor py-1 pl-6 pr-14 font-medium text-neutral-50 hover:text-white">
-                    <span class="z-10 pr-2">Sobre nosaltres</span>
-                    <div class="absolute right-1 inline-flex h-12 w-12 items-center justify-end rounded-full bg-[#fff] transition-[width] group-hover:w-[calc(100%-8px)]">
-                      <div class="mr-3.5 flex items-center justify-center">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-neutral-50">
-                          <path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="black" fill-rule="evenodd" clip-rule="evenodd"></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </button>
-                  
-            </div>
+<div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row items-center padding">
+    <!-- Secció d'Imatge -->
+    <div class="relative md:w-1/2">
+        <img src="/assets/images/home/img-about-1.png" alt="Dona al Cotxe" class="rounded-lg">
+        <div class="absolute top-4 left-4 bg-primaryColor text-white px-4 py-2 rounded-lg">
+            <p class="text-sm font-bold">25 Anys</p>
+            <p class="text-xs">D'Experiència</p>
+        </div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <button class="bg-white p-4 rounded-full shadow-lg">
+                <svg class="w-8 h-8 text-primaryColor" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 5v14l11-7z"></path>
+                </svg>
+            </button>
         </div>
     </div>
-</section>
+    
+    <div class="md:w-1/2 md:pl-10 mt-6 md:mt-0">
+        <h5 class="text-primaryColor font-bold">QUI SOM</h5>
+        <h2 class="text-3xl font-extrabold mt-2">Som la millor autoescola del país</h2>
+        <p class="text-gray-600 mt-4">A Autoescola Tràiler Mollerussa t’ajudem a aconseguir el teu permís de conduir amb els millors professionals i una formació de qualitat. Ens adaptem a tu amb mètodes moderns i vehicles equipats.</p>
+        
+        <div class="bg-gray-100 p-4 rounded-lg shadow-md mt-4">
+            <p class="text-gray-600 italic">"El nostre compromís és formar conductors segurs i responsables. Aprèn amb nosaltres i condueix amb confiança!"</p>
+            <p class="text-gray-900 font-bold mt-2">Adrian Salves, CEO & Co-fundador</p>
+        </div>
+        
+        <button class="mt-6 bg-primaryColor text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700">Més informació</button>
+    </div>
+</div>
