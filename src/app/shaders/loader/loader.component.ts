@@ -40,7 +40,7 @@ export class LoaderComponent {
       } else if (event instanceof NavigationEnd || event instanceof NavigationCancel || event instanceof NavigationError) {
         setTimeout(() => {
           this.loadingService.hideLoader();
-        }, 500); 
+        }, 800); 
       }
     });
   }

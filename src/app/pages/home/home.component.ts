@@ -5,11 +5,12 @@ import { ContactComponent } from '../../shaders/contact/contact.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { AboutComponent } from "./components/about/about.component";
 import { ServicesComponent } from './components/services/services.component';
+import { StatsComponent } from './components/stats/stats.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent],
+  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent, StatsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

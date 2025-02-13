@@ -1,44 +1,31 @@
-<section class="py-24 relative">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="flex items-start justify-center flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between gap-8">
-            <div class="w-full flex h-[40vh] justify-between flex-col lg:w-2/5">
-                <div class="block lg:text-left text-center">
-                    <h2 class="text-4xl font-bold text-gray-900 leading-[3.25rem] mb-5">Els nostres últims <span class=" text-primaryColor">carnets</span></h2>
-                    <p class="text-gray-500 mb-10  max-lg:max-w-xl max-lg:mx-auto">Benvinguts a la nostra secció de carnets, on t'oferim informació detallada sobre els carnets de conduir que pots obtenir a l'autoescola Trailer Mollerussa.</p>
-                    <button class="group relative h-12 overflow-hidden rounded-sm bg-primaryColor px-6 text-neutral-50 transition"><span>Veure tots</span><div class="absolute inset-0 h-full w-0 bg-white/30 transition-[width] group-hover:w-full"></div></button>
-                </div>
-                <div class="flex items-center lg:justify-start justify-center lg:mt-0 mt-8 gap-8 mb-4">
-                    <button id="slider-button-left" class="swiper-button-prev group flex justify-center items-center border border-solid border-primaryColor w-11 h-11 transition-all duration-500 rounded-full hover:bg-primaryColor" data-carousel-prev>
-                        <svg class="h-6 w-6 text-primaryColor group-hover:text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20.9999 12L4.99992 12M9.99992 6L4.70703 11.2929C4.3737 11.6262 4.20703 11.7929 4.20703 12C4.20703 12.2071 4.3737 12.3738 4.70703 12.7071L9.99992 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <button id="slider-button-right" class="swiper-button-next group flex justify-center items-center border border-solid border-primaryColor w-11 h-11 transition-all duration-500 rounded-full hover:bg-primaryColor" data-carousel-next>
-                        <svg class="h-6 w-6 text-primaryColor group-hover:text-white" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M3 12L19 12M14 18L19.2929 12.7071C19.6262 12.3738 19.7929 12.2071 19.7929 12C19.7929 11.7929 19.6262 11.6262 19.2929 11.2929L14 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div class="w-full h-[40vh] lg:w-3/6">
-                <div class="splide">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide" *ngFor="let service of services">
-                                <div class="swiper-slide w-full max-lg:max-w-xl group">
-                                    <div class="flex items-center mb-9">
-                                        <img [src]="service.imagen" alt="carnets autoescola" class="rounded-2xl w-full object-cover h-[20vh]">
-                                    </div>
-                                    <h3 class="text-xl text-gray-900 font-medium leading-8 mb-4 group-hover:text-primaryColor">{{service.titulo}}</h3>
-                                    <p class="text-gray-500 leading-6 transition-all duration-500 mb-8">
-                                        {{service.descripcion}}
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
+<div class="w-full mx-auto py-16 text-center special-section">
+    <h3 class="text-primaryColor font-semibold uppercase">Carnets de Conduir Disponibles</h3>
+    <h1 class="text-4xl font-bold mt-2">Oferim els Millors Cursos de Conduir</h1>
+    
+    <div class="mt-12 max-w-7xl mx-auto relative splide">
+        <button id="slider-button-left" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-primaryColor text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none z-10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide bg-white rounded-md overflow-hidden" *ngFor="let service of services; index as i">
+                    <img [src]="service.image" alt="Pre-Licensing Course" class="w-full h-[30vh] object-cover">
+                    <div class="p-6">
+                        <h2 class="text-xl font-bold mt-2">{{service.title}}</h2>
+                        <p class="text-gray-600 mt-2">{{service.description}}</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
+
+        <!-- Botón derecho -->
+        <button id="slider-button-right" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-primaryColor text-white p-2 rounded-full shadow-lg hover:bg-gray-700 focus:outline-none z-10">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
     </div>
-</section>
+</div>
