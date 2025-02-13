@@ -6,11 +6,13 @@ import { Meta, Title } from '@angular/platform-browser';
 import { AboutComponent } from "./components/about/about.component";
 import { ServicesComponent } from './components/services/services.component';
 import { StatsComponent } from './components/stats/stats.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent, StatsComponent],
+  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent, StatsComponent, GalleryComponent, FaqsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -1,0 +1,14 @@
+.gallery{
+    width: 100%;
+    height: 35vh;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.950), hsla(0, 0%, 0%, 0.700)),url('https://www.grangeinsurance.com/-/media/images/tips/grange/driving-at-night1200x630.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .info{
+        border: 1px solid #fff;
+        padding: 30px;
+    }
+}
