@@ -25,6 +25,22 @@ header{
             margin: 0 15px;
             text-transform: uppercase;
             font-weight: 700;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 0%;
+                height: 2px;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                background-color: #fff;
+                transition: 250ms all;
+            }
+
+            &:hover::before{
+                width: 100%;
+            }
         }
     }
 }
