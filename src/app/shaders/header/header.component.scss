@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,28 +9,29 @@ header{
     right: 0;
     margin: auto;
     width: 90%;
-    transition: 250ms all;
+    transition: ease-in-out 500ms; // Transición más lenta y fluida
+    z-index: 9999 !important;
 
-    h1{
+    h1 {
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
 
-        span{
+        span {
             color: #FF181E;
+            transition: ease-in-out 500ms; // También suaviza el cambio de color
         }
     }
 
-    nav{
-
-        a{
+    nav {
+        a {
             color: #fff;
             margin: 0 15px;
             text-transform: uppercase;
             font-weight: 700;
             position: relative;
 
-            &::before{
+            &::before {
                 content: "";
                 width: 0%;
                 height: 2px;
@@ -38,24 +39,25 @@ header{
                 bottom: -3px;
                 left: 0;
                 background-color: #fff;
-                transition: 250ms all;
+                transition: width 500ms ease-in-out; // Transición más suave
             }
 
-            &:hover::before{
+            &:hover::before {
                 width: 100%;
             }
         }
     }
 }
 
-.scrolled{
+.scrolled {
     width: 100%;
     background-color: #FF181E;
+    transition: ease-in-out 500ms; 
 
-    h1{
-
-        span{
+    h1 {
+        span {
             color: #000;
+            transition: ease-in-out 500ms; 
         }
     }
 }
