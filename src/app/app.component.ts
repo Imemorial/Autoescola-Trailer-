@@ -3,13 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shaders/header/header.component';
 import { FooterComponent } from "./shaders/footer/footer.component";
 import { LoaderComponent } from './shaders/loader/loader.component';
-import { WhatsappComponent } from './shaders/whatsapp/whatsapp.component';
 import { Meta, Title } from '@angular/platform-browser';
+import { UpComponent } from './shaders/up/up.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, LoaderComponent, WhatsappComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, LoaderComponent, UpComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

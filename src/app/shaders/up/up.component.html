@@ -1,1 +1,9 @@
-<p>up works!</p>
+<button 
+    [ngClass]="{'opacity-100': showScroll, 'opacity-0 pointer-events-none': !showScroll}" 
+    (click)="scrollToTop()" 
+    class="fixed bottom-4 right-4 bg-primaryColor text-white p-3 rounded-lg shadow-md transition-opacity duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12l7-7 7 7"></path>
+        <path d="M12 19V5"></path>
+    </svg>
+</button>
