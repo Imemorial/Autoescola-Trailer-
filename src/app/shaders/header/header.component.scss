@@ -3,12 +3,19 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 25px;
-    background-color: #FF181E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     h1{
         color: #fff;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 800;
+
+        span{
+            color: #FF181E;
+        }
     }
 
     nav{
@@ -16,6 +23,8 @@ header{
         a{
             color: #fff;
             margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: 700;
         }
     }
 }
