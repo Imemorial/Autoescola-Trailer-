@@ -1,43 +1,21 @@
 header{
-    background-color: #ff181e;
-    padding: 20px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px;
+    background-color: #FF181E;
+
+    h1{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
 
     nav{
 
         a{
-            margin: 0 15px;
             color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: 300;
-            position: relative;
-
-            &::before{
-                content: "";
-                width: 0%;
-                height: 3px;
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                background-color: #fff;
-                border-radius: 20px;
-                transition: 250ms;
-            }
-
-            &:hover::before{
-                width: 100%;
-            }
-        }
-
-        .active{
-            font-weight: 800;
-
-            &::before{
-                width: 100%;
-            }
+            margin: 0 15px;
         }
     }
 }
