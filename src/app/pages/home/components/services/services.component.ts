@@ -48,7 +48,7 @@ export class ServicesComponent {
       description: 'Curs per obtenir el carnet C, per a conduir vehicles de més de 3500 kg, amb formació teòrica i pràctica.'
     },
     {
-      image: '',
+      image: 'https://autoescuela-cordoba.es/wp-content/uploads/2017/06/CE.jpg',
       title: 'Carnet C+E',
       description: 'Curs per obtenir el carnet C+E, que permet conduir vehicles pesats amb remolc, amb formació teòrica i pràctica.'
     }
@@ -58,7 +58,7 @@ export class ServicesComponent {
   ngAfterViewInit(): void {
     const splide = new Splide('.splide', {
       type: 'loop',
-      perPage: 3,          // Número de elementos por página en pantallas grandes
+      perPage: 4,         
       perMove: 1,
       autoplay: true,
       arrows: false,
