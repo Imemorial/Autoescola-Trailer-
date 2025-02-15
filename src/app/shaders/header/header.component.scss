@@ -9,6 +9,7 @@ header{
     right: 0;
     margin: auto;
     width: 90%;
+    transition: 250ms all;
 
     h1{
         color: #fff;
@@ -43,6 +44,18 @@ header{
             &:hover::before{
                 width: 100%;
             }
+        }
+    }
+}
+
+.scrolled{
+    width: 100%;
+    background-color: #FF181E;
+
+    h1{
+
+        span{
+            color: #000;
         }
     }
 }

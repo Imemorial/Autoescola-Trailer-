@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -11,6 +11,8 @@ import { Subscription } from 'rxjs';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+
+  scrolled = false;
 
   opened : boolean = false;
 
@@ -35,6 +37,11 @@ export class HeaderComponent {
   setOpened(state : boolean) {
     this.opened = state;
     console.log('change');
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll(): void {
+    this.scrolled = window.scrollY > 50;
   }
 
 }
