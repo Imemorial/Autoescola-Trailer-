@@ -14,7 +14,7 @@ export class HeaderComponent {
 
   scrolled = false;
 
-  opened : boolean = false;
+  opened : boolean = true;
 
   private routerSubscription!: Subscription;
 

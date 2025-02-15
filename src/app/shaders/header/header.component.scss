@@ -9,8 +9,8 @@ header {
     right: 0;
     margin: auto;
     width: 90%;
-    transition: ease-in-out 500ms; // Transición más lenta y fluida
-    z-index: 9999 !important;
+    transition: ease-in-out 500ms; 
+    z-index: 999 !important;
 
     h1 {
         color: #fff;
@@ -19,7 +19,7 @@ header {
 
         span {
             color: #FF181E;
-            transition: ease-in-out 500ms; // También suaviza el cambio de color
+            transition: ease-in-out 500ms; 
         }
     }
 
@@ -60,6 +60,10 @@ header {
             height: 100%;
         }
     }
+
+    .close{
+        z-index: 9999 !important;
+    }
 }
 
 .scrolled {
@@ -96,6 +100,12 @@ header {
 
             a {
                 margin: 10px 0;
+            }
+
+            .close{
+                position: absolute;
+                top: 25px;
+                right: 25px;
             }
         }
 
