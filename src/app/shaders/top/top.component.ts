@@ -1,9 +1,10 @@
+import { NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-top',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './top.component.html',
   styleUrl: './top.component.scss'
 })
