@@ -4,15 +4,15 @@ import { CaseStudiesComponent } from "../../shaders/case-studies/case-studies.co
 import { ContactComponent } from '../../shaders/contact/contact.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { AboutComponent } from "./components/about/about.component";
-import { ServicesComponent } from './components/services/services.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
+import { ServicesComponent } from '../../shaders/services/services.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, ContactComponent, AboutComponent, ServicesComponent, StatsComponent, GalleryComponent, FaqsComponent],
+  imports: [TopComponent, ContactComponent, AboutComponent, StatsComponent, GalleryComponent, FaqsComponent, ServicesComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
