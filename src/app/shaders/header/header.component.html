@@ -1,9 +1,9 @@
 <header [ngClass]="{'scrolled': scrolled}">
-    <h1 class="text-2xl"><span>A</span>uto<span>t</span>railer</h1>
+    <h1 class="text-2xl" routerLink="/inicio"><span>A</span>uto<span>t</span>railer</h1>
 
     <nav [ngClass]="{'opened': opened}">
-        <a href="#" class="text-lg">Inici</a>
-        <a href="#" class="text-lg">Serveis</a>
+        <a routerLink="inicio" class="text-lg">Inici</a>
+        <a routerLink="servicios" class="text-lg">Serveis</a>
         <a routerLink="nosotros" class="text-lg">Sobre nosaltres</a>
         <a href="#" class="text-lg">Contacta</a>
 

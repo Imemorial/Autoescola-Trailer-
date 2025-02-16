@@ -6,32 +6,8 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent)
     },
     {
-        path: 'diseno-web',
-        loadComponent: () => import('./pages/website-design/website-design.component').then((c) => c.WebsiteDesignComponent)
-    },
-    {
-        path: 'software',
-        loadComponent: () => import('./pages/software/software.component').then((c) => c.SoftwareComponent)
-    },
-    {
-        path: 'comercio-electronico',
-        loadComponent: () => import('./pages/ecommerce/ecommerce.component').then((c) => c.EcommerceComponent)
-    },
-    {
-        path: 'redes-sociales',
-        loadComponent: () => import('./pages/social-media/social-media.component').then((c) => c.SocialMediaComponent)
-    },
-    {
-        path: 'camaras',
-        loadComponent: () => import('./pages/cameras/cameras.component').then((c) => c.CamerasComponent)
-    },
-    {
-        path: 'servicio-tecnico',
-        loadComponent: () => import('./pages/technical-service/technical-service.component').then((c) => c.TechnicalServiceComponent)
-    },
-    {
-        path: 'ia',
-        loadComponent: () => import('./pages/ia/ia.component').then((c) => c.IaComponent)
+        path: 'servicios',
+        loadComponent: () => import('./pages/services/services.component').then((c) => c.ServicesComponent)
     },
     {
         path: 'contacto',
