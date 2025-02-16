@@ -5,6 +5,7 @@ import { FooterComponent } from "./shaders/footer/footer.component";
 import { LoaderComponent } from './shaders/loader/loader.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { UpComponent } from './shaders/up/up.component';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,13 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    AOS.init({
+      duration: 1200,
+      once: true,
+      easing: 'ease-in-out',
+      delay: 100,
+    });
+
     this.updateMetaTags();
   }
 

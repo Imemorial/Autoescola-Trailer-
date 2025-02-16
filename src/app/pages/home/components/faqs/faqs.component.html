@@ -1,29 +1,34 @@
 <section class="padding">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mb-16">
-        <h6 class="text-lg text-primaryColor font-medium text-center">Preguntes Freqüents</h6>
-        <h2 class="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
-          Preguntes freqüents
-        </h2>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mb-16" data-aos="fade-up" data-aos-duration="1000">
+          <h6 class="text-lg text-primaryColor font-medium text-center">Preguntes Freqüents</h6>
+          <h2 class="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
+              Preguntes freqüents
+          </h2>
       </div>
 
       <div class="accordion-group">
-        <div *ngFor="let faq of faqs; index as i" class="accordion py-4 px-6 border-b border-solid border-gray-200 rounded-2xl hover:bg-indigo-50">
-          <button 
-            class="accordion-toggle w-full text-left font-medium text-gray-900 hover:text-indigo-600 flex justify-between items-center"
-            (click)="toggleFaq(i)">
-            <h5>{{ faq.question }}</h5>
-            <svg 
-              class="w-5 h-5 transition-transform" 
-              [ngClass]="{ 'rotate-180': faq.open }" 
-              fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div *ngIf="faq.open" class="accordion-content mt-2 text-gray-700">
-            <p>{{ faq.answer }}</p>
+          <div *ngFor="let faq of faqs; index as i" 
+              class="accordion py-4 px-6 border-b border-solid border-gray-200 rounded-2xl hover:bg-indigo-50" 
+              data-aos="fade-up" [attr.data-aos-delay]="200 * i" data-aos-duration="800">
+              
+              <button 
+                  class="accordion-toggle w-full text-left font-medium text-gray-900 hover:text-indigo-600 flex justify-between items-center"
+                  (click)="toggleFaq(i)">
+                  <h5>{{ faq.question }}</h5>
+                  <svg 
+                      class="w-5 h-5 transition-transform" 
+                      [ngClass]="{ 'rotate-180': faq.open }" 
+                      fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+              </button>
+              
+              <div *ngIf="faq.open" class="accordion-content mt-2 text-gray-700 transition-all duration-500 ease-in-out">
+                  <p>{{ faq.answer }}</p>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </div>
+</section>
+

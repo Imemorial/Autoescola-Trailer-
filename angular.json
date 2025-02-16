@@ -30,7 +30,8 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/@splidejs/splide/dist/css/splide.min.css"
+              "node_modules/@splidejs/splide/dist/css/splide.min.css",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "node_modules/@splidejs/splide/dist/js/splide.min.js"
@@ -88,7 +89,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           }
