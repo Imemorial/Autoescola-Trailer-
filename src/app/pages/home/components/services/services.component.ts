@@ -44,9 +44,6 @@ export class ServicesComponent {
       image: '/assets/icons/ce.png',
       title: 'Carnet C+E',
     },
-  ];
-
-  others: any[] = [
     {
       image: '/assets/icons/cap.png',
       title: 'Permís CAP',
