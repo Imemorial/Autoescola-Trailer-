@@ -26,5 +26,29 @@
           
       </button>
     </div>
+
+    <div class="splide splide2 w-7/12 mx-auto relative" id="permisos-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide" *ngFor="let service of others; index as i">
+              <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+                <img [src]="service.image" [alt]="service.title + 'img'">
+                <p class="mt-2 text-xl font-semibold">{{service.title}}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button id="slider-button-left2" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primaryColor text-white p-2 rounded-full focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button id="slider-button-right2" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primaryColor text-white p-2 rounded-full focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" transform="rotate(180)">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+      </div>
+   
+
   </div>
-  
