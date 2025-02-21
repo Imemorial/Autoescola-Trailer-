@@ -30,6 +30,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/cookies/cookies.component').then((c) => c.CookiesComponent)
     },
     {
+        path: 'test',
+        loadComponent: () => import('./pages/test/test.component').then((c) => c.TestComponent)
+    },
+    {
         path: '',
         redirectTo: 'inicio',
         pathMatch: 'full'

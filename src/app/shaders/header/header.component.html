@@ -1,11 +1,11 @@
 <header [ngClass]="{'scrolled': scrolled}">
-    <h1 class="text-2xl" routerLink="/inicio"><span>A</span>uto<span>t</span>railer</h1>
+    <h1 class="text-2xl" routerLink="/inicio"><span>A</span>utoescola<span>t</span>railer</h1>
 
     <nav [ngClass]="{'opened': opened}">
         <a routerLink="inicio" class="text-lg">Inici</a>
         <a routerLink="servicios" class="text-lg">Serveis</a>
         <a routerLink="nosotros" class="text-lg">Sobre nosaltres</a>
-        <a href="#" class="text-lg">Contacta</a>
+        <a routerLink="contacto" class="text-lg">Contacta</a>
 
         <button class="close" (click)="opened = false">
             <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">

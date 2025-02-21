@@ -16,6 +16,7 @@ header {
         color: #fff;
         text-transform: uppercase;
         font-weight: 800;
+        cursor: pointer;
 
         span {
             color: #FF181E;
@@ -24,13 +25,31 @@ header {
     }
 
     nav {
+        display: flex;
+        align-items: center;
+
+        .button{
+            width: fit-content;
+            display: flex;
+            background-color: red !important;
+            padding: 7px 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        
+            svg{
+                margin-left: 10px;
+            }
+        }
+
         transition: 500ms all;
 
         a {
             color: #fff;
             margin: 0 15px;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 500;
             position: relative;
 
             &::before {
@@ -48,6 +67,7 @@ header {
                 width: 100%;
             }
         }
+
     }
 
     button{
