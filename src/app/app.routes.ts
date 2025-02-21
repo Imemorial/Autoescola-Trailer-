@@ -34,6 +34,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/test/test.component').then((c) => c.TestComponent)
     },
     {
+        path: 'exam',
+        loadComponent: () => import('./pages/exam/exam.component').then((c) => c.ExamComponent)
+    },
+    {
         path: '',
         redirectTo: 'inicio',
         pathMatch: 'full'
