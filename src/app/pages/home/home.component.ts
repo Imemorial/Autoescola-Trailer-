@@ -8,11 +8,12 @@ import { StatsComponent } from './components/stats/stats.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
 import { ServicesComponent } from '../../shaders/services/services.component';
+import { TestimonialsComponent } from '../../shaders/testimonials/testimonials.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopComponent, ContactComponent, AboutComponent, StatsComponent, GalleryComponent, FaqsComponent, ServicesComponent],
+  imports: [TopComponent, ContactComponent, AboutComponent, StatsComponent, GalleryComponent, FaqsComponent, ServicesComponent, TestimonialsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
