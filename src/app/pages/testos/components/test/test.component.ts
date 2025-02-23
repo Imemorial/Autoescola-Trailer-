@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-test',
   standalone: true,
   imports: [],
   templateUrl: './test.component.html',
-  styleUrl: './test.component.scss'
+  styleUrls: ['./test.component.scss']
 })
 export class TestComponent {
 
-    doTest () {
-      console.log("Doing Test");
-    }      
+  @Output() stateModal: EventEmitter<boolean> = new EventEmitter<boolean>();
+
+  open() {
+    this.stateModal.emit(true);
+  }
 
 }

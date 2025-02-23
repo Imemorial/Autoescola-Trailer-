@@ -13,16 +13,12 @@ export const loadersInterceptor: HttpInterceptorFn = (req, next) => {
     tap({
       next: (event) => {
         if (event instanceof HttpResponse) {
-          setTimeout(() => {
-            console.log("ocultar")
-            loadingService.hideLoader();
-          }, 250);
+          loadingService.hideLoader();
         }
       },
       error: () => {
-        setTimeout(() => {
-          loadingService.hideLoader();
-        }, 250);
+        loadingService.hideLoader();
+
       }
     })
   );

@@ -18,7 +18,7 @@ export class DoTestComponent {
   timeLeft: number = 30 * 60;
   interval: any;
 
-  actualQuestion : number = 3;
+  actualQuestion : number = 0;
 
   constructor (private _examService : ExamService) {}
 

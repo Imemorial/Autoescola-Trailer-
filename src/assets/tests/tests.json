@@ -37,6 +37,7 @@
         },
         {
           "number": 4,
+          "img" : "https://img.freepik.com/fotos-premium/joven-hispano-sonriendo-seguro-pie-calle_839833-23905.jpg",
           "question": "A partir de quina edat es pot sol·licitar el permís de conduir tipus B?",
           "answers": [
             { "option": "A", "answer": "18 anys" },
@@ -47,6 +48,7 @@
         },
         {
           "number": 5,
+          "img" : "https://www.saicamotos.com/wp-content/uploads/2023/12/rutas-moto-valencia.jpg",
           "question": "Quin tipus de vehicles es poden conduir amb el permís tipus A?",
           "answers": [
             { "option": "A", "answer": "Motocicletes" },
@@ -57,6 +59,7 @@
         },
         {
           "number": 6,
+          "img" : "https://img.motor.mapfre.es/wp-content/uploads/2022/10/MicrosoftTeams-image-1-1.jpg",
           "question": "Quina és la velocitat màxima permesa en una autovia per vehicles amb el permís B?",
           "answers": [
             { "option": "A", "answer": "120 km/h" },
@@ -67,6 +70,7 @@
         },
         {
           "number": 7,
+          "img" : "https://i.ytimg.com/vi/tMWbT6tXwAI/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AHUBoAC4AOKAgwIABABGFogWyhlMA8=&rs=AOn4CLD54aBqUb7dK5Fw2jdEfwFt8ljMVg",
           "question": "Què cal fer per renovar el permís de conduir?",
           "answers": [
             { "option": "A", "answer": "Superar un examen de conducció" },
@@ -77,6 +81,7 @@
         },
         {
           "number": 8,
+          "img" : "https://cdn.prod.website-files.com/671b7cbc4fbe5e3315a507b9/671b8285ed65e347765000b4_change-in-legislation-3500kg-utility-vehicle.webp",
           "question": "Quin permís es necessita per conduir vehicles de més de 3500 kg?",
           "answers": [
             { "option": "A", "answer": "Permís C" },
@@ -87,6 +92,7 @@
         },
         {
           "number": 9,
+          "img" : "https://media.istockphoto.com/id/153011771/es/foto/senior-hombre-alegre.jpg?s=612x612&w=0&k=20&c=EB5J-b5zNSjL5W7VtoTamtCqCDd4oMydpitht1VMPQE=",
           "question": "Quina és la durada de la vigència d'un permís de conduir per a persones majors de 70 anys?",
           "answers": [
             { "option": "A", "answer": "5 anys" },
@@ -97,6 +103,7 @@
         },
         {
           "number": 10,
+          "img" : "https://remolquesalzaga.com/uploads/com-117988149.jpg",
           "question": "Quin permís es necessita per conduir un vehicle amb remolc?",
           "answers": [
             { "option": "A", "answer": "Permís B + A1" },
@@ -107,6 +114,7 @@
         },
         {
           "number": 11,
+          "img": "https://www.lavanguardia.com/files/image_449_220/uploads/2019/10/20/5f160232093d0.jpeg",
           "question": "Quan és obligatori portar les llums de conducció en el dia?",
           "answers": [
             { "option": "A", "answer": "Quan circules per una via ràpida o autovia" },
@@ -117,6 +125,7 @@
         },
         {
           "number": 12,
+          "img" : "https://www.autofacil.es/wp-content/uploads/2022/09/duplicado-carnet-de-conducir-e1662038184100.jpg",
           "question": "Què ha de fer un conductor si li caduca el permís de conduir?",
           "answers": [
             { "option": "A", "answer": "Ha de renovar-lo abans de conduir" },
@@ -127,6 +136,7 @@
         },
         {
           "number": 13,
+          "img" : "https://www.formulamoto.es/wp-content/uploads/2021/05/lasmotosdelasautoescuelas-1200x800.jpg",
           "question": "Què cal fer per obtenir el permís de conduir tipus A2?",
           "answers": [
             { "option": "A", "answer": "Ser major de 20 anys i tenir el tipus A" },
@@ -137,6 +147,7 @@
         },
         {
           "number": 14,
+          "img" : "https://www.autoescuelallorens.com/server/Portal_0011981/img/blogposts/carnet-a1-pasos-a-seguir-para-sacarse-el-carnet-de-moto-de-125_8838.jpg",
           "question": "Quin és l'objectiu del permís tipus A1?",
           "answers": [
             { "option": "A", "answer": "Conduir motocicletes de fins a 125cc" },
@@ -147,6 +158,7 @@
         },
         {
           "number": 15,
+          "img" : "https://upload.wikimedia.org/wikipedia/commons/b/b0/HK_Happy_Valley_%E8%B7%91%E9%A6%AC%E5%9C%B0_Kwai_Sing_Lane_%E6%A1%82%E6%88%90%E9%87%8C_Caltex_Station_Dangerous_Goods_Vehicle_Sep-2014_RedMi.jpg",
           "question": "Quin permís es necessita per conduir un vehicle de transport de mercaderies perilloses?",
           "answers": [
             { "option": "A", "answer": "Permís C1" },
@@ -157,6 +169,7 @@
         },
         {
           "number": 16,
+          "img" : "https://ajuntamentinforma.gramenet.cat/fileadmin/_processed_/d/1/csm_coches_policia_1_6ec9e2dad4.jpg",
           "question": "Què ha de portar un conductor en el moment de ser controlat per la policia?",
           "answers": [
             { "option": "A", "answer": "El permís de conduir i el vehicle registrat" },
@@ -167,6 +180,7 @@
         },
         {
           "number": 17,
+          "img" : "https://img.freepik.com/fotos-premium/apuesto-hombre-adulto-sonriendo_23-2148563511.jpg",
           "question": "Quina edat mínima es necessita per obtenir el permís A?",
           "answers": [
             { "option": "A", "answer": "18 anys" },
@@ -177,6 +191,7 @@
         },
         {
           "number": 18,
+          "img" : "https://www.autopista.es/uploads/s1/13/51/34/80/que-es-un-camion-trailer.jpeg",
           "question": "A quin tipus de vehicles pot conduir un titular del permís B?",
           "answers": [
             { "option": "A", "answer": "Cotxes i furgonetes" },
@@ -187,6 +202,7 @@
         },
         {
           "number": 19,
+          "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrY5habw7smN2FEqX-CrehFt-8x0qafjXFlg&s",
           "question": "Si no es presenta a l'examen de conduir, què passarà?",
           "answers": [
             { "option": "A", "answer": "Es pot tornar a presentar en una altra convocatòria" },
@@ -197,6 +213,7 @@
         },
         {
           "number": 20,
+          "img" : "https://m.media-amazon.com/images/I/61t+epJD+sL._AC_UY580_.jpg",
           "question": "És obligatori portar el permís de conduir a bord del vehicle?",
           "answers": [
             { "option": "A", "answer": "Sí" },
@@ -207,6 +224,7 @@
         },
         {
           "number": 21,
+          "img" : "https://media.istockphoto.com/id/504402647/es/foto/salud.jpg?s=612x612&w=0&k=20&c=KPilE3M6l-uTER14LkNMfQQCEHjo1d_ZpQgd30skP2E=",
           "question": "Què ha de fer un conductor si li han retirat el permís de conduir?",
           "answers": [
             { "option": "A", "answer": "Ha de sol·licitar una renovació del permís" },
@@ -217,6 +235,7 @@
         },
         {
           "number": 22,
+          "img" : "https://www.buslead.es/wp-content/uploads/cover-home.jpg",
           "question": "Quin permís es necessita per conduir un vehicle per a transportar més de 9 persones?",
           "answers": [
             { "option": "A", "answer": "Permís D" },
@@ -227,6 +246,7 @@
         },
         {
           "number": 23,
+          "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZ_sowCh1WjwSotkRvqYzBBmxq7aqYAZIOw&s",
           "question": "Quin tipus de vehicles es poden conduir amb el permís B?",
           "answers": [
             { "option": "A", "answer": "Cotxes i furgonetes" },
@@ -237,6 +257,7 @@
         },
         {
           "number": 24,
+          "img" : "https://m.media-amazon.com/images/I/61t+epJD+sL._AC_UY580_.jpg",
           "question": "Quant temps de vigència té el permís B?",
           "answers": [
             { "option": "A", "answer": "10 anys" },
@@ -247,6 +268,7 @@
         },
         {
           "number": 25,
+          "img" : "https://www.autofacil.es/wp-content/uploads/2022/09/duplicado-carnet-de-conducir-e1662038184100.jpg",
           "question": "Quina edat mínima es necessita per obtenir el permís A2?",
           "answers": [
             { "option": "A", "answer": "18 anys" },
@@ -257,6 +279,7 @@
         },
         {
           "number": 26,
+          "img" : "https://img.freepik.com/fotos-premium/apuesto-hombre-adulto-sonriendo_23-2148563511.jpg",
           "question": "Quin permís es necessita per conduir vehicles de més de 3500 kg?",
           "answers": [
             { "option": "A", "answer": "Permís C" },
@@ -267,6 +290,7 @@
         },
         {
           "number": 27,
+          "img" : "https://cdn.shopify.com/s/files/1/0608/7819/2888/files/ducati-panigale-2023.jpg?v=1674124748",
           "question": "Quin tipus de vehicles es poden conduir amb el permís A?",
           "answers": [
             { "option": "A", "answer": "Motocicletes i vehicles pesants" },
@@ -277,6 +301,7 @@
         },
         {
           "number": 28,
+          "img" : "https://upload.wikimedia.org/wikipedia/commons/b/b0/HK_Happy_Valley_%E8%B7%91%E9%A6%AC%E5%9C%B0_Kwai_Sing_Lane_%E6%A1%82%E6%88%90%E9%87%8C_Caltex_Station_Dangerous_Goods_Vehicle_Sep-2014_RedMi.jpg",
           "question": "Quin permís es necessita per conduir vehicles agrícoles?",
           "answers": [
             { "option": "A", "answer": "Permís B" },
@@ -287,6 +312,7 @@
         },
         {
           "number": 29,
+          "img" : "https://upload.wikimedia.org/wikipedia/commons/b/b0/HK_Happy_Valley_%E8%B7%91%E9%A6%AC%E5%9C%B0_Kwai_Sing_Lane_%E6%A1%82%E6%88%90%E9%87%8C_Caltex_Station_Dangerous_Goods_Vehicle_Sep-2014_RedMi.jpg",
           "question": "A partir de quina edat es pot sol·licitar el permís de conduir tipus A1?",
           "answers": [
             { "option": "A", "answer": "16 anys" },
@@ -297,6 +323,7 @@
         },
         {
           "number": 30,
+          "img" : "https://www.autoescuelallorens.com/server/Portal_0011981/img/blogposts/carnet-a1-pasos-a-seguir-para-sacarse-el-carnet-de-moto-de-125_8838.jpg",
           "question": "Quina és la durada mínima d'un permís de conduir per a vehicles de tipus B?",
           "answers": [
             { "option": "A", "answer": "10 anys" },
