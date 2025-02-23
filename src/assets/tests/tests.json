@@ -1,0 +1,311 @@
+{
+    "exam": {
+      "title": "Examen sobre permisos DGT",
+      "questions": [
+        {
+          "number": 1,
+          "img": "https://fotos.quecochemecompro.com/peugeot-308/peugeot-308-vista-lateral.jpg?size=750x400",
+          "question": "Quin permís de conduir és necessari per conduir un cotxe?",
+          "answers": [
+            { "option": "A", "answer": "Permís de conduir tipus B" },
+            { "option": "B", "answer": "Permís de conduir tipus A" },
+            { "option": "C", "answer": "Permís de conduir tipus B1" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 2,
+          "img": "https://www.emesa-m30.es/wp-content/uploads/2019/10/c%C3%B3digos-en-carnet-de-conducir.jpg",
+          "question": "Quant temps dura un permís de conduir per a vehicles de motor?",
+          "answers": [
+            { "option": "A", "answer": "10 anys" },
+            { "option": "B", "answer": "5 anys" },
+            { "option": "C", "answer": "3 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 3,
+          "img" : "https://i.ytimg.com/vi/_pKpZOi12Cs/sddefault.jpg",
+          "question": "Què cal per obtenir el permís de conduir B?",
+          "answers": [
+            { "option": "A", "answer": "Realitzar un examen teòric i pràctic" },
+            { "option": "B", "answer": "Només superar l'examen teòric" },
+            { "option": "C", "answer": "Només superar l'examen pràctic" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 4,
+          "question": "A partir de quina edat es pot sol·licitar el permís de conduir tipus B?",
+          "answers": [
+            { "option": "A", "answer": "18 anys" },
+            { "option": "B", "answer": "21 anys" },
+            { "option": "C", "answer": "16 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 5,
+          "question": "Quin tipus de vehicles es poden conduir amb el permís tipus A?",
+          "answers": [
+            { "option": "A", "answer": "Motocicletes" },
+            { "option": "B", "answer": "Cotxes i motocicletes" },
+            { "option": "C", "answer": "Vehicles pesats" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 6,
+          "question": "Quina és la velocitat màxima permesa en una autovia per vehicles amb el permís B?",
+          "answers": [
+            { "option": "A", "answer": "120 km/h" },
+            { "option": "B", "answer": "100 km/h" },
+            { "option": "C", "answer": "130 km/h" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 7,
+          "question": "Què cal fer per renovar el permís de conduir?",
+          "answers": [
+            { "option": "A", "answer": "Superar un examen de conducció" },
+            { "option": "B", "answer": "Passar una revisió mèdica" },
+            { "option": "C", "answer": "Realitzar una prova teòrica" }
+          ],
+          "correct_answer": "B"
+        },
+        {
+          "number": 8,
+          "question": "Quin permís es necessita per conduir vehicles de més de 3500 kg?",
+          "answers": [
+            { "option": "A", "answer": "Permís C" },
+            { "option": "B", "answer": "Permís B" },
+            { "option": "C", "answer": "Permís A" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 9,
+          "question": "Quina és la durada de la vigència d'un permís de conduir per a persones majors de 70 anys?",
+          "answers": [
+            { "option": "A", "answer": "5 anys" },
+            { "option": "B", "answer": "3 anys" },
+            { "option": "C", "answer": "10 anys" }
+          ],
+          "correct_answer": "B"
+        },
+        {
+          "number": 10,
+          "question": "Quin permís es necessita per conduir un vehicle amb remolc?",
+          "answers": [
+            { "option": "A", "answer": "Permís B + A1" },
+            { "option": "B", "answer": "Permís BE" },
+            { "option": "C", "answer": "Permís B" }
+          ],
+          "correct_answer": "B"
+        },
+        {
+          "number": 11,
+          "question": "Quan és obligatori portar les llums de conducció en el dia?",
+          "answers": [
+            { "option": "A", "answer": "Quan circules per una via ràpida o autovia" },
+            { "option": "B", "answer": "Només de nit" },
+            { "option": "C", "answer": "Sempre" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 12,
+          "question": "Què ha de fer un conductor si li caduca el permís de conduir?",
+          "answers": [
+            { "option": "A", "answer": "Ha de renovar-lo abans de conduir" },
+            { "option": "B", "answer": "Pot seguir conduint sense problema" },
+            { "option": "C", "answer": "Ha de presentar-se al jutjat" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 13,
+          "question": "Què cal fer per obtenir el permís de conduir tipus A2?",
+          "answers": [
+            { "option": "A", "answer": "Ser major de 20 anys i tenir el tipus A" },
+            { "option": "B", "answer": "Ser major de 18 anys i tenir el permís B" },
+            { "option": "C", "answer": "Ser major de 21 anys i tenir el permís B" }
+          ],
+          "correct_answer": "B"
+        },
+        {
+          "number": 14,
+          "question": "Quin és l'objectiu del permís tipus A1?",
+          "answers": [
+            { "option": "A", "answer": "Conduir motocicletes de fins a 125cc" },
+            { "option": "B", "answer": "Conduir cotxes" },
+            { "option": "C", "answer": "Conduir camions" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 15,
+          "question": "Quin permís es necessita per conduir un vehicle de transport de mercaderies perilloses?",
+          "answers": [
+            { "option": "A", "answer": "Permís C1" },
+            { "option": "B", "answer": "Permís D" },
+            { "option": "C", "answer": "Permís ADR" }
+          ],
+          "correct_answer": "C"
+        },
+        {
+          "number": 16,
+          "question": "Què ha de portar un conductor en el moment de ser controlat per la policia?",
+          "answers": [
+            { "option": "A", "answer": "El permís de conduir i el vehicle registrat" },
+            { "option": "B", "answer": "Només el DNI" },
+            { "option": "C", "answer": "Només el permís de conduir" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 17,
+          "question": "Quina edat mínima es necessita per obtenir el permís A?",
+          "answers": [
+            { "option": "A", "answer": "18 anys" },
+            { "option": "B", "answer": "21 anys" },
+            { "option": "C", "answer": "16 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 18,
+          "question": "A quin tipus de vehicles pot conduir un titular del permís B?",
+          "answers": [
+            { "option": "A", "answer": "Cotxes i furgonetes" },
+            { "option": "B", "answer": "Només cotxes" },
+            { "option": "C", "answer": "Motocicletes" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 19,
+          "question": "Si no es presenta a l'examen de conduir, què passarà?",
+          "answers": [
+            { "option": "A", "answer": "Es pot tornar a presentar en una altra convocatòria" },
+            { "option": "B", "answer": "Es cancel·la la sol·licitud de permís" },
+            { "option": "C", "answer": "Perd el pagament de les taxes" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 20,
+          "question": "És obligatori portar el permís de conduir a bord del vehicle?",
+          "answers": [
+            { "option": "A", "answer": "Sí" },
+            { "option": "B", "answer": "No" },
+            { "option": "C", "answer": "Només si conduïu a l'estranger" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 21,
+          "question": "Què ha de fer un conductor si li han retirat el permís de conduir?",
+          "answers": [
+            { "option": "A", "answer": "Ha de sol·licitar una renovació del permís" },
+            { "option": "B", "answer": "Ha de sol·licitar la revalidació" },
+            { "option": "C", "answer": "Ha de realitzar un curs de sensibilització" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 22,
+          "question": "Quin permís es necessita per conduir un vehicle per a transportar més de 9 persones?",
+          "answers": [
+            { "option": "A", "answer": "Permís D" },
+            { "option": "B", "answer": "Permís C" },
+            { "option": "C", "answer": "Permís A" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 23,
+          "question": "Quin tipus de vehicles es poden conduir amb el permís B?",
+          "answers": [
+            { "option": "A", "answer": "Cotxes i furgonetes" },
+            { "option": "B", "answer": "Motocicletes" },
+            { "option": "C", "answer": "Camions" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 24,
+          "question": "Quant temps de vigència té el permís B?",
+          "answers": [
+            { "option": "A", "answer": "10 anys" },
+            { "option": "B", "answer": "5 anys" },
+            { "option": "C", "answer": "3 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 25,
+          "question": "Quina edat mínima es necessita per obtenir el permís A2?",
+          "answers": [
+            { "option": "A", "answer": "18 anys" },
+            { "option": "B", "answer": "20 anys" },
+            { "option": "C", "answer": "21 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 26,
+          "question": "Quin permís es necessita per conduir vehicles de més de 3500 kg?",
+          "answers": [
+            { "option": "A", "answer": "Permís C" },
+            { "option": "B", "answer": "Permís B" },
+            { "option": "C", "answer": "Permís D" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 27,
+          "question": "Quin tipus de vehicles es poden conduir amb el permís A?",
+          "answers": [
+            { "option": "A", "answer": "Motocicletes i vehicles pesants" },
+            { "option": "B", "answer": "Cotxes" },
+            { "option": "C", "answer": "Camions" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 28,
+          "question": "Quin permís es necessita per conduir vehicles agrícoles?",
+          "answers": [
+            { "option": "A", "answer": "Permís B" },
+            { "option": "B", "answer": "Permís C" },
+            { "option": "C", "answer": "Permís B1" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 29,
+          "question": "A partir de quina edat es pot sol·licitar el permís de conduir tipus A1?",
+          "answers": [
+            { "option": "A", "answer": "16 anys" },
+            { "option": "B", "answer": "18 anys" },
+            { "option": "C", "answer": "20 anys" }
+          ],
+          "correct_answer": "A"
+        },
+        {
+          "number": 30,
+          "question": "Quina és la durada mínima d'un permís de conduir per a vehicles de tipus B?",
+          "answers": [
+            { "option": "A", "answer": "10 anys" },
+            { "option": "B", "answer": "5 anys" },
+            { "option": "C", "answer": "3 anys" }
+          ],
+          "correct_answer": "A"
+        }
+      ]
+    }
+  }
+  

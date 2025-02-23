@@ -1,53 +1,38 @@
 <section class="w-full h-screen flex items-center justify-center do-test">
-
+    
     <div class="max-w-4xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden">
         
         <div class="bg-primaryColor text-white p-6">
-            <h2 class="text-2xl font-bold">Prueba de control de conocimientos - B</h2>
-            <span class="text-sm font-medium">Tiempo restante: [min]</span>
+            <h2 class="text-2xl font-bold">Prova de control de coneixements - B</h2>
+            <span class="text-sm font-medium">Temps restant: {{ timeLeft | timeFormat }}</span>
         </div>
 
-        <div class="p-6 border-b border-gray-200">
-            <img src="https://floridafarmbureau.com/wp-content/uploads/2023/11/GettyImages-1415809555-scaled.jpg" alt="Question Image" class="w-full h-[25vh] rounded-lg object-cover">
+        <div class="p-6 border-b border-gray-200" *ngIf="exam">
+            <img [src]="exam.questions[actualQuestion].img" alt="Imatge de la pregunta" class="w-full h-[25vh] rounded-lg object-cover">
         </div>
 
-        <div class="p-6 border-b border-gray-200">
+        <div class="p-6 border-b border-gray-200" *ngIf="exam">
             <h3 class="text-xl font-semibold text-gray-800">
-                01. Siempre que el recorrido hacia atrás no supere los 15 metros ni invada un cruce de vías, podrá circular marcha atrás...
+                {{ exam.questions[actualQuestion].question }}
+                01. Sempre que el recorregut cap enrere no superi els 15 metres ni envaeixi una cruïlla de vies, podrà circular marxa enrere...
             </h3>
         </div>
 
-        <div class="p-6 space-y-4">
-            <label class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200">
+        <div class="p-6 space-y-4" *ngIf="exam">
+            <label class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" *ngFor="let answer of exam.questions[actualQuestion].answers">
                 <input type="radio" name="question" class="form-radio h-5 w-5 text-primaryColor">
-                <span class="ml-3 text-gray-700 font-medium">A) como maniobra complementaria de la parada.</span>
-            </label>
-
-            <label class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200">
-                <input type="radio" name="question" class="form-radio h-5 w-5 text-primaryColor">
-                <span class="ml-3 text-gray-700 font-medium">B) en autovías y autopistas que discurran por poblado.</span>
-            </label>
-
-            <label class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200">
-                <input type="radio" name="question" class="form-radio h-5 w-5 text-primaryColor">
-                <span class="ml-3 text-gray-700 font-medium">C) cuando no sea posible cambiar de dirección o sentido de la marcha.</span>
+                <span class="ml-3 text-gray-700 font-medium">{{answer.option}}) {{answer.answer}}</span>
             </label>
         </div>
 
-        <!-- <div class="flex justify-between p-6 bg-gray-50">
-            <button class="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105">⬅ Anterior</button>
-            <button class="px-6 py-3 bg-[#FF181E] hover:bg-[#E0151A] text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105">Siguiente ➡</button>
-            <button class="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all duration-200 transform hover:scale-105">Finalizar Test</button>
-        </div> -->
-
-        <div class="p-6 bg-gray-50 border-t border-gray-200">
-            <div class="grid grid-cols-6 gap-3">
-                <template x-for="i in 30" :key="i">
-                    <button class="px-4 py-2 bg-gray-200 rounded-lg text-gray-700 font-semibold hover:bg-gray-300 transition-all duration-200" :class="{ 'bg-[#FF181E] text-white hover:bg-[#E0151A]': i === 1 }">
-                        <span x-text="i < 10 ? '0' + i : i"></span>
-                    </button>
-                </template>
-            </div>
+        <div class="p-6 flex flex-wrap justify-start">
+            <button 
+                *ngFor="let page of [].constructor(exam.questions.length); let i = index" 
+                (click)="actualQuestion = i"
+                [class.bg-primaryColor]="actualQuestion === i"
+                class="m-1 w-10 h-10 rounded-md flex items-center justify-center border border-gray-300 hover:bg-primaryColor hover:text-white transition-all">
+                <span class="text-lg">{{ i + 1 }}</span>
+            </button>
         </div>
 
     </div>
