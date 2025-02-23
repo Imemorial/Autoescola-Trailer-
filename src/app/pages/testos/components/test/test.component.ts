@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class TestComponent {
 
+    doTest () {
+      console.log("Doing Test");
+    }      
+
 }
