@@ -10,6 +10,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/services/services.component').then((c) => c.ServicesComponent)
     },
     {
+        path: 'testos',
+        loadComponent: () => import('./pages/testos/testos.component').then((c) => c.TestosComponent)
+    },
+    {
         path: 'contacto',
         loadComponent: () => import('./pages/contact/contact.component').then((c) => c.ContactComponent)
     },
@@ -28,10 +32,6 @@ export const routes: Routes = [
     {
         path: 'cookies',
         loadComponent: () => import('./pages/cookies/cookies.component').then((c) => c.CookiesComponent)
-    },
-    {
-        path: 'test',
-        loadComponent: () => import('./pages/test/test.component').then((c) => c.TestComponent)
     },
     {
         path: 'exam',
