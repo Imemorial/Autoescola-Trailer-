@@ -1,5 +1,4 @@
 <section class="w-full h-screen flex items-center justify-center do-test">
-    
     <div class="max-w-3xl w-full bg-white shadow-2xl rounded-2xl h-[75vh] overflow-auto">
         
         <div class="bg-primaryColor text-white p-6">
@@ -14,14 +13,26 @@
         <div class="p-6 border-b border-gray-200" *ngIf="exam">
             <h3 class="text-xl font-semibold text-gray-800">
                 {{ exam.questions[actualQuestion].question }}
-                01. Sempre que el recorregut cap enrere no superi els 15 metres ni envaeixi una cruïlla de vies, podrà circular marxa enrere...
             </h3>
         </div>
 
         <div class="p-6 space-y-4" *ngIf="exam">
-            <label class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" *ngFor="let answer of exam.questions[actualQuestion].answers">
-                <input type="radio" name="question" class="form-radio h-5 w-5 text-primaryColor">
-                <span class="ml-3 text-gray-700 font-medium">{{answer.option}}) {{answer.answer}}</span>
+            <label 
+                class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" 
+                *ngFor="let answer of exam.questions[actualQuestion].answers">
+                
+                <input 
+                    type="radio" 
+                    name="question{{actualQuestion}}" 
+                    class="form-radio h-5 w-5 text-primaryColor"
+                    [value]="answer.option" 
+                    (change)="selectAnswer(actualQuestion, answer.option)"
+                    [checked]="exam.questions[actualQuestion].selectedAnswer === answer.option"
+                    [disabled]="sendTest">
+                
+                <span class="ml-3 text-gray-700 font-medium">
+                    {{ answer.option }}) {{ answer.answer }}
+                </span>
             </label>
         </div>
 
@@ -30,16 +41,16 @@
                 *ngFor="let page of [].constructor(exam.questions.length); let i = index" 
                 (click)="actualQuestion = i"
                 [class.bg-primaryColor]="actualQuestion === i"
+                [ngClass]="{'incorrect' : sended && exam.questions[i].selectedAnswer !== exam.questions[i].correct_answer, 'correct' : sended && exam.questions[i].selectedAnswer == exam.questions[i].correct_answer}"
                 class="m-1 w-10 h-10 rounded-md flex items-center justify-center border border-gray-300 hover:bg-primaryColor hover:text-white transition-all">
                 <span class="text-lg">{{ i + 1 }}</span>
             </button>
         </div>
 
         <div class="p-6 flex justify-center">
-            <button class="px-6 py-3 bg-primaryColor text-white font-bold rounded-md transition-all">
+            <button class="px-6 py-3 bg-primaryColor text-white font-bold rounded-md transition-all" (click)="sended ? close() : sendTest()"  [innerHTML]="sended ? 'Tancar' : 'Finalitzar test'">
                 Finalitzar Test
             </button>
         </div>
-       
     </div>
 </section>

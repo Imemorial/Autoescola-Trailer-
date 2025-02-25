@@ -16,7 +16,7 @@ export class TestosComponent {
   doTest : boolean = false;
 
   setTest (event : any) {
-    this.doTest = true;  
+    this.doTest = event;  
   }
 
 
