@@ -9,6 +9,7 @@ export interface Answer {
     question: string;
     answers: Answer[];
     correct_answer: string;
+    correct : boolean;
   }
   
   export interface Exam {
