@@ -18,23 +18,28 @@
 
         <div class="p-6 space-y-4" *ngIf="exam">
             <label 
-                class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" 
-                *ngFor="let answer of exam.questions[actualQuestion].answers">
-                
-                <input 
-                    type="radio" 
-                    name="question{{actualQuestion}}" 
-                    class="form-radio h-5 w-5 text-primaryColor"
-                    [value]="answer.option" 
-                    (change)="selectAnswer(actualQuestion, answer.option)"
-                    [checked]="exam.questions[actualQuestion].selectedAnswer === answer.option"
-                    [disabled]="sendTest">
-                
-                <span class="ml-3 text-gray-700 font-medium">
-                    {{ answer.option }}) {{ answer.answer }}
-                </span>
-            </label>
-        </div>
+            class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" 
+            *ngFor="let answer of exam.questions[actualQuestion].answers; index as questionIndex"
+            [ngClass]="{
+                'correct-input' : sended && answer.option === exam.questions[questionIndex].correct_answer,
+                'incorrect-input' : sended && exam.questions[actualQuestion].selectedAnswer === answer.option && answer.option !== exam.questions[questionIndex].correct_answer
+            }"
+        >
+            <input 
+                type="radio" 
+                name="question{{actualQuestion}}" 
+                class="form-radio h-5 w-5 text-primaryColor"
+                [value]="answer.option" 
+                (change)="selectAnswer(actualQuestion, answer.option)"
+                [checked]="exam.questions[actualQuestion].selectedAnswer === answer.option"
+                [disabled]="sended">
+            
+            <span class="ml-3 text-gray-700 font-medium">
+                {{ answer.option }}) {{ answer.answer }}
+            </span>
+        </label>
+        
+</div>
 
         <div class="p-6 flex flex-wrap justify-start">
             <button 

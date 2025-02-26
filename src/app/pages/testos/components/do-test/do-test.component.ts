@@ -53,6 +53,8 @@ export class DoTestComponent {
     this.sended = true;
     let correctAnswers = 0;
 
+    console.log(this.exam)
+
     if (this.exam && this.exam.questions) {
       this.exam.questions.forEach((question: any) => {
         if (question.selectedAnswer) {
