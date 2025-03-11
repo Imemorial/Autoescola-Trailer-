@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shaders/header/header.component';
-import { FooterComponent } from "./shaders/footer/footer.component";
+import { FooterComponent } from './shaders/footer/footer.component';
 import { LoaderComponent } from './shaders/loader/loader.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { UpComponent } from './shaders/up/up.component';
@@ -10,9 +10,15 @@ import AOS from 'aos';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, LoaderComponent, UpComponent],
+  imports: [
+    RouterOutlet, 
+    HeaderComponent, 
+    FooterComponent, 
+    LoaderComponent, 
+    UpComponent, 
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
 
@@ -38,5 +44,4 @@ export class AppComponent {
 
     this.updateMetaTags();
   }
-
 }
