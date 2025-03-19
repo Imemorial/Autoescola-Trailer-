@@ -14,8 +14,8 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/testos/testos.component').then((c) => c.TestosComponent)
     },
     {
-        path: 'pagaments',
-        loadComponent: () => import('./pages/payment/payment.component').then((c) => c.PaymentComponent)
+        path: 'gallery',
+        loadComponent: () => import('./pages/gallery/gallery.component').then((c) => c.GalleryComponent)
     },
     {
         path: 'contacto',
@@ -42,12 +42,8 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/exam/exam.component').then((c) => c.ExamComponent)
     },
     {
-        path: 'recuperar',
-        loadComponent: () => import('./pages/lost/lost.component').then((c) => c.LostComponent)
-    },
-    {
-        path: 'gallery',
-        loadComponent: () => import('./pages/gallery/gallery.component').then((c) => c.GalleryComponent)
+        path: 'pagaments',
+        loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent)
     },
     {
         path: '',

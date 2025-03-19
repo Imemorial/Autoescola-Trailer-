@@ -1,0 +1,66 @@
+<section class="flex justify-center items-center padding">
+    <div class="flex flex-col md:flex-row bg-white rounded-lg w-full md:w-4/5">
+      <div class="w-full md:w-1/4 p-4 md:p-6 rounded-t-lg md:rounded-l-lg text-white">
+        <ul class="flex md:flex-col overflow-x-auto md:overflow-visible">
+          <li
+            (click)="select(i)"
+            class="flex-1 text-center py-3 bg-primaryColor cursor-pointer transition duration-300 whitespace-nowrap md:w-full"
+            [ngClass]="{
+              'bg-primaryColor text-white': i === actual,
+              'bg-white text-black border': i !== actual
+            }"
+            *ngFor="let license of licences; index as i"
+          >
+            {{ license.license }}
+          </li>
+        </ul>
+      </div>
+  
+      <div class="w-full md:w-3/4 p-4 md:p-8">
+        <div class="bg-white rounded-lg p-4 md:p-6">
+          <h2 class="text-2xl md:text-3xl font-semibold mb-4 text-gray-800">
+            Permís per a:
+            <span id="category-name" class="font-medium text-primaryColor"
+              >Selecciona una opció</span
+            >
+          </h2>
+          <p class="text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, aliquam fugit architecto eveniet rem blanditiis quis culpa odit sequi reiciendis enim nam aperiam hic ipsa placeat quidem vel, repellat reprehenderit?
+          </p>
+  
+          <div class="mt-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                *ngFor="let type of licences[actual].types"
+                class="bg-white rounded-lg shadow-sm p-4 md:p-5 border h-auto md:h-[20vh] relative"
+              >
+                <h4 class="text-lg md:text-xl font-semibold text-gray-800">
+                  {{ type.type }}
+                </h4>
+                <p class="text-xs md:text-sm text-gray-600">
+                  Descripció de la pràctica relacionada amb la circulació.
+                </p>
+  
+                <div class="info w-full absolute bottom-0 left-0 p-4">
+                  <div class="info p-3 rounded-md flex flex-col md:flex-row items-start md:items-center justify-between">
+                    <h6 class="text-xs md:text-sm font-semibold text-primaryColor">
+                      <span class="text-gray-400 font-normal mr-1">Durada: </span>{{ type.duration }}
+                    </h6>
+                    <h6 class="text-xs md:text-sm font-semibold text-primaryColor">
+                      <span class="text-gray-400 font-normal mr-1">Preu: </span>{{ type.price | number : "1.2-2" }}€
+                    </h6>
+                  </div>
+                </div>
+                <button
+                  class="w-full mt-3 py-2 bg-primaryColor text-white rounded-lg hover:bg-primaryColorDark transition duration-300"
+                 (click)="pay(type.price)">
+                  Realitzar pagament
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

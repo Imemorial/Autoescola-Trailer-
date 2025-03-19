@@ -66,3 +66,15 @@ body {
         border-radius: 20px;
     }
 }
+
+.principal-title{
+    @apply text-lg text-primaryColor font-medium;
+}
+
+.principal-subtitle{
+    @apply text-4xl font-bold text-gray-900 mt-3;
+}
+
+.principal-paragraph{
+    @apply max-w-2xl mx-auto text-gray-500 mt-2;
+}
