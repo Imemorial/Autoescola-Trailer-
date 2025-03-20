@@ -49,4 +49,11 @@ export class PaymentComponent {
     this._paymentService.checkout(amount);
   }
 
+  onLicenseChange(event: Event): void {
+    const selectElement = event.target as HTMLSelectElement;
+    const selectedIndex = selectElement.selectedIndex; 
+
+    this.select(selectedIndex);
+  }
+
 }
