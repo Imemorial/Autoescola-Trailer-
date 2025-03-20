@@ -9,11 +9,11 @@
 
       <div class="accordion-group">
           <div *ngFor="let faq of faqs; index as i" 
-              class="accordion py-4 px-6 border-b border-solid border-gray-200 rounded-2xl hover:bg-indigo-50" 
+              class="accordion py-4 px-6 border-b border-solid border-red-200 rounded-2xl hover:bg-red-50" 
               data-aos="fade-up" [attr.data-aos-delay]="200 * i" data-aos-duration="800">
               
               <button 
-                  class="accordion-toggle w-full text-left font-medium text-gray-900 hover:text-indigo-600 flex justify-between items-center"
+                  class="accordion-toggle w-full text-left font-medium text-gray-900 hover:text-red-600 flex justify-between items-center"
                   (click)="toggleFaq(i)">
                   <h5>{{ faq.question }}</h5>
                   <svg 
