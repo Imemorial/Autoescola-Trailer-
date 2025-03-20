@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { TopComponent } from "./components/top/top.component";
-import { CaseStudiesComponent } from "../../shaders/case-studies/case-studies.component";
 import { ContactComponent } from '../../shaders/contact/contact.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { AboutComponent } from "./components/about/about.component";
