@@ -46,6 +46,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent)
     },
     {
+        path: 'recuperar',
+        loadComponent: () => import('./pages/lost/lost.component').then((c) => c.LostComponent)
+    },
+    {
         path: '',
         redirectTo: 'inicio',
         pathMatch: 'full'
