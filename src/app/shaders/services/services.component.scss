@@ -72,9 +72,11 @@ svg{
     height: fit-content;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     margin: auto;
+    z-index: 9999 !important;
+    transform: translateX(10px) !important;
 }
 
 #slider-button-right{
@@ -82,7 +84,8 @@ svg{
     height: fit-content;
     position: absolute;
     top: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     margin: auto;
+    transform: translateX(-10px) !important;
 }

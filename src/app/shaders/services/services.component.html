@@ -8,7 +8,7 @@
   </p>
 
   <div #splide class="splide w-7/12 mx-auto relative" id="permisos-slider" data-aos="fade-up" data-aos-delay="800">
-    <div class="splide__track">
+    <div class="splide__track parent">
       <ul class="splide__list">
         <li class="splide__slide" *ngFor="let service of services; index as i" data-aos="fade-up" data-aos-delay="1000">
           <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
@@ -17,6 +17,17 @@
           </div>
         </li>
       </ul>
+
+      <button id="slider-button-left" class="bg-primaryColor text-white p-2 rounded-full focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+      <button id="slider-button-right" class="bg-primaryColor text-white p-2 rounded-full focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" transform="rotate(180)">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
     </div>
     <div class="image-container mx-auto my-4">
       <img src="https://www.autoescolapallars.com/img/pallars-logo-cabecera.jpg" 
@@ -25,15 +36,5 @@
            data-aos="fade-up" 
            data-aos-delay="1000">
     </div>
-    <button id="slider-button-left" class="bg-primaryColor text-white p-2 rounded-full focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
-    </button>
-    <button id="slider-button-right" class="bg-primaryColor text-white p-2 rounded-full focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" transform="rotate(180)">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-      </svg>
-    </button>
   </div>
 </div>
