@@ -16,6 +16,8 @@ export class HeaderComponent {
 
   opened : boolean = false;
 
+  dropdown : boolean = false;
+
   private routerSubscription!: Subscription;
 
   constructor(private _router: Router) {}

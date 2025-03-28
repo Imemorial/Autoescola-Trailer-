@@ -2,11 +2,11 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: 'inicio',
+        path: 'inici',
         loadComponent: () => import('./pages/home/home.component').then((c) => c.HomeComponent)
     },
     {
-        path: 'servicios',
+        path: 'serveis',
         loadComponent: () => import('./pages/services/services.component').then((c) => c.ServicesComponent)
     },
     {
@@ -14,19 +14,19 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/testos/testos.component').then((c) => c.TestosComponent)
     },
     {
-        path: 'gallery',
+        path: 'galeria',
         loadComponent: () => import('./pages/gallery/gallery.component').then((c) => c.GalleryComponent)
     },
     {
-        path: 'contacto',
+        path: 'contacte',
         loadComponent: () => import('./pages/contact/contact.component').then((c) => c.ContactComponent)
     },
     {
-        path: 'nosotros',
+        path: 'nosaltres',
         loadComponent: () => import('./pages/about-us/about-us.component').then((c) => c.AboutUsComponent)
     },
     {
-        path: 'terminos',
+        path: 'termes',
         loadComponent: () => import('./pages/terms/terms.component').then((c) => c.TermsComponent)
     },
     {
@@ -38,10 +38,6 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/cookies/cookies.component').then((c) => c.CookiesComponent)
     },
     {
-        path: 'exam',
-        loadComponent: () => import('./pages/exam/exam.component').then((c) => c.ExamComponent)
-    },
-    {
         path: 'pagaments',
         loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent)
     },
@@ -51,7 +47,7 @@ export const routes: Routes = [
     },
     {
         path: '',
-        redirectTo: 'inicio',
+        redirectTo: 'inici',
         pathMatch: 'full'
     }
 ];

@@ -1,9 +1,9 @@
-<section class="padding">
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-      <img class="w-full h-[35vh] size-40 object-cover"
-           *ngFor="let image of images; index as i"
-           [src]="image.image_url"
-           [alt]="image.title"
-           [attr.data-aos]="'fade-up'">
+<section class="padding flex items-center justify-center">
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 flex items-center justify-center">
+    <img class="w-full h-[35vh] object-cover mx-auto"
+         *ngFor="let image of images; index as i"
+         [src]="image.image_url"
+         [alt]="image.title"
+         [attr.data-aos]="'fade-up'">
   </div>
 </section>

@@ -1,16 +1,15 @@
 <header [ngClass]="{'scrolled': scrolled}">
-    <!-- <h1 class="text-2xl" routerLink="/inicio"><span>A</span>utoescola<span>t</span>railer</h1> -->
 
-    <img src="/assets/images/logo.png" width="150" height="150" alt="logo">
+    <img src="/assets/images/logo.png" routerLink="/inici" width="150" height="150" alt="logo">
 
     <nav [ngClass]="{'opened': opened}">
-        <a routerLink="inicio" routerLinkActive="active" class="text-lg">Inici</a>
-        <a routerLink="servicios" routerLinkActive="active" class="text-lg">Serveis</a>
-        <a routerLink="nosotros" routerLinkActive="active" class="text-lg">Nosaltres</a>
-        <a routerLink="gallery" routerLinkActive="active" class="text-lg">Galeria</a>
-        <a routerLink="testos" routerLinkActive="active" class="text-lg">Testos</a>
-        <a routerLink="pagaments" routerLinkActive="active" class="text-lg">Pagaments</a>
-        <a routerLink="contacto" routerLinkActive="active" class="text-lg">Contacta</a>
+        <a routerLink="/inici" routerLinkActive="active" class="text-lg">Inici</a>
+        <a routerLink="/serveis" routerLinkActive="active" class="text-lg">Serveis</a>
+        <a routerLink="/nosaltres" routerLinkActive="active" class="text-lg">Nosaltres</a>
+        <a routerLink="/galeria" routerLinkActive="active" class="text-lg">Galeria</a>
+        <a routerLink="/testos" routerLinkActive="active" class="text-lg">Testos</a>
+        <a routerLink="/pagaments" routerLinkActive="active" class="text-lg">Pagaments</a>
+        <a routerLink="/contacte" routerLinkActive="active" class="text-lg">Contacta</a>
 
         <button class="close" (click)="opened = false">
             <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
