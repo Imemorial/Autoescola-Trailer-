@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { payments } from './pages/payments/payments.routes';
 
 export const routes: Routes = [
     {
@@ -39,7 +40,8 @@ export const routes: Routes = [
     },
     {
         path: 'pagaments',
-        loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent)
+        loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent),
+        children: payments
     },
     {
         path: 'recuperar',

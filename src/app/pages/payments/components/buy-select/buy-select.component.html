@@ -1,0 +1,13 @@
+<app-payments-top></app-payments-top>
+
+<section class="max-w-6xl mx-auto text-center padding">
+  <h2 class="text-4xl font-extrabold text-gray-800 mb-3">Tria el permís de {{type}} amb què et vols matricular</h2>
+  <p class="text-lg text-gray-600 mb-12">Estàs preparat per començar la teva aventura sobre dues rodes? Selecciona el tipus de permís de moto que vols obtenir. Tu decideixes el camí!</p>
+
+  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8">
+    <div *ngFor="let filteredService of filteredServices; index as i" class="bg-white pointer p-8 rounded-2xl shadow-xl flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
+      <img [src]="filteredService.image" class="w-28 h-28 mb-6 transition-transform duration-300 ease-in-out">
+      <p class="mt-4 text-xl font-semibold text-gray-700">{{filteredService.title}}</p>
+    </div>
+  </div>
+</section>

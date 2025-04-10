@@ -1,4 +1,5 @@
 export interface Service {
-    image: string;
-    title: string;
+    image:  string;
+    title : string;
+    type : string;
 }
