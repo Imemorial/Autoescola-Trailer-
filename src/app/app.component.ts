@@ -6,6 +6,7 @@ import { LoaderComponent } from './shaders/loader/loader.component';
 import { Meta, Title } from '@angular/platform-browser';
 import { UpComponent } from './shaders/up/up.component';
 import AOS from 'aos';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +17,14 @@ import AOS from 'aos';
     FooterComponent, 
     LoaderComponent, 
     UpComponent, 
+    TranslateModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  title = 'ItnovaStudio';
 
   constructor(private meta: Meta, private titleService: Title) { }
 
@@ -35,6 +39,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    // Inicia AOS para animaciones
     AOS.init({
       duration: 1200,
       once: true,
@@ -42,6 +47,7 @@ export class AppComponent {
       delay: 100,
     });
 
+    // Actualiza las meta tags
     this.updateMetaTags();
   }
 }

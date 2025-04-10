@@ -15,14 +15,14 @@ export class ServicesComponent {
   @ViewChild('splide', { static: true }) splideElement!: ElementRef<HTMLDivElement>;
 
   services: any[] = [
-    { image: '/assets/icons/am.png', title: 'Carnet AM' },
-    { image: '/assets/icons/a1.png', title: 'Carnet A1' },
-    { image: '/assets/icons/a2.png', title: 'Carnet A2' },
-    { image: '/assets/icons/a.png', title: 'Carnet A' },
-    { image: '/assets/icons/car.png', title: 'Carnet B' },
-    { image: '/assets/icons/be.png', title: 'Carnet B+E' },
-    { image: '/assets/icons/c.png', title: 'Carnet C' },
-    { image: '/assets/icons/ce.png', title: 'Carnet C+E' },
+    { image: '/assets/icons/am.png', title: 'Permis AM' },
+    { image: '/assets/icons/a1.png', title: 'Permis A1' },
+    { image: '/assets/icons/a2.png', title: 'Permis A2' },
+    { image: '/assets/icons/a.png', title: 'Permis A' },
+    { image: '/assets/icons/car.png', title: 'Permis B' },
+    { image: '/assets/icons/be.png', title: 'Permis B+E' },
+    { image: '/assets/icons/c.png', title: 'Permis C' },
+    { image: '/assets/icons/ce.png', title: 'Permis C+E' },
     { image: '/assets/icons/cap.png', title: 'Permís CAP' },
     { image: '/assets/icons/adr.png', title: 'Permís ADR' },
     { image: '/assets/icons/tractor.png', title: 'LVA' },
