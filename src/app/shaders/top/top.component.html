@@ -1,13 +1,10 @@
-<section class="top h-[40vh] w-full flex items-center justify-center p-10">
+<section 
+  class="top h-[40vh] w-full flex items-center justify-center p-10 relative bg-cover bg-center" 
+  [style.backgroundImage]="'url(' + photo + ')'"
+>
+  <div class="absolute inset-0 darkness z-0"></div>
 
-  <div class="info">
-    <h2 class="text-5xl text-center font-bold text-white font uppercase">{{title}}</h2>
+  <div class="info relative z-10">
+    <h2 class="text-5xl text-center font-bold text-white uppercase">{{ title }}</h2>
   </div>
-
-  <img [src]="photo" alt="img-top">
-
-  <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-    <polygon points="40,10 10,70 70,70" fill="white" />
-  </svg>
-
 </section>

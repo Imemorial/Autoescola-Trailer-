@@ -25,3 +25,7 @@
         z-index: 0;
     }
 }
+
+.darkness {
+    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.8), hsla(0, 0%, 0%, 0.8));
+}
