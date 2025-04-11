@@ -1,55 +1,59 @@
 <div class="relative overflow-hidden">
-  <div class="max-w-[85rem] mx-auto padding">
-      <div class="max-w-2xl text-center mx-auto">
-          <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl dark:text-white">
-              Dissenyat per a tu perquè sigui més <span class="text-primaryColor">fàcil</span>
-          </h1>
-          <p class="mt-3 text-lg text-gray-800 dark:text-neutral-400">
-              Forma't aquí. Condueix a qualsevol lloc.
-          </p>
-      </div>
-
-      <div class="mt-10 relative max-w-5xl mx-auto">
-          <div class="w-full object-cover h-96 sm:h-[480px] bg-[url('/assets/images/tests/img-1.jpg')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
-
-          <div class="absolute inset-0 size-full">
-              <div class="flex flex-col justify-center items-center size-full">
-                  <!-- Dropdown -->
-                  <div class="relative">
-                      <button (click)="toggleDropdown()"
-                          class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800">
-                          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                              viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                              stroke-linecap="round" stroke-linejoin="round">
-                              <polygon points="5 3 19 12 5 21 5 3" />
-                          </svg>
-                          Fer un test ara
+    <div class="max-w-[85rem] mx-auto padding">
+        <div class="max-w-2xl text-center mx-auto">
+            <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl">
+                Dissenyat per a tu perquè sigui més <span class="text-primaryColor">fàcil</span>
+            </h1>
+            <p class="mt-3 text-lg text-gray-800">
+                Forma't aquí. Condueix a qualsevol lloc.
+            </p>
+        </div>
+  
+        <div class="mt-10 relative max-w-5xl mx-auto">
+            <div class="w-full object-cover h-96 sm:h-[480px] bg-[url('/assets/images/tests/img-1.jpg')] bg-no-repeat bg-center bg-cover rounded-xl"></div>
+  
+            <div class="absolute inset-0 size-full">
+                <div class="flex flex-col justify-center items-center size-full">
+                    <!-- Dropdown -->
+                    <div class="relative">
+                        <button (click)="toggleDropdown()"
+                            class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50">
+                            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg>
+                            Fer un test ara
                         </button>
-
-                      <div *ngIf="dropdownOpen" class="absolute mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-neutral-900 dark:border-neutral-700">
-                          <a (click)="open()"
-                              class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-800">
-                              Fer test de prova</a>
-                          <a href="https://www.carnetcnae.com/"
-                              class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-800">Tu autoescuela
-                              </a>
-                          <a href="https://ponsgo.com/"
-                              class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100 dark:text-white dark:hover:bg-neutral-800">Ponsgo
-                              </a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div
-              class="absolute bottom-12 -start-20 -z-[1] size-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-neutral-900">
-              <div class="bg-white size-48 rounded-lg dark:bg-neutral-900"></div>
-          </div>
-
-          <div
-              class="absolute -top-12 -end-20 -z-[1] size-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
-              <div class="bg-white size-48 rounded-full dark:bg-neutral-900"></div>
-          </div>
-      </div>
+  
+                        <div *ngIf="dropdownOpen" class="absolute mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+                            <a (click)="open()"
+                                class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">
+                                Fer test de prova</a>
+                            <a href="https://www.carnetcnae.com/"
+                                class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">eTestWeb
+                            </a>
+                            <a href="https://ponsgo.com/"
+                                class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Ponsgo
+                            </a>
+                            <a href="https://ponsgo.com/"
+                                class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Tu Autoescuela.net
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            <div
+                class="absolute bottom-12 -start-20 -z-[1] size-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg">
+                <div class="bg-white size-48 rounded-lg"></div>
+            </div>
+  
+            <div
+                class="absolute -top-12 -end-20 -z-[1] size-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
+                <div class="bg-white size-48 rounded-full"></div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
+  
