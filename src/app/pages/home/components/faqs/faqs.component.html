@@ -25,7 +25,7 @@
               </button>
               
               <div *ngIf="faq.open" class="accordion-content mt-2 text-gray-700 transition-all duration-500 ease-in-out">
-                  <p>{{ faq.answer }}</p>
+                <p [innerHTML]="faq.answer"></p>
               </div>
           </div>
       </div>

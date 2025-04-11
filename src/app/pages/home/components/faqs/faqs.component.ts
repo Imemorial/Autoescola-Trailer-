@@ -15,7 +15,21 @@ export class FaqsComponent {
     { question: "Com puc inscriure'm?", answer: "Pots inscriure’t presencialment a la nostra oficina de Mollerussa o a través de la nostra pàgina web omplin un formulari.", open: false },
     { question: 'Quins són els nostres horaris?', answer: 'Oficina: de 10:00 a 13:00 i de 16:00 a 20:00', open: false },
     { question: 'Com puc inscriurem al curs intensiu?', answer: "Posa't en contacte amb l'oficina i us informarem de les dates i els horaris.", open: false },
+    { question: 'Quins són els nostres horaris?', answer: "Oficina: Mati de 10:30 Tarda de 16:20. Practiques Mati i tarda", open: false },
+    {
+      question: 'Que necessites?',
+      answer: `
+        <p><strong>Per l'examen pràctic:</strong> portar la revisió mèdica i abonar les taxes d'exàmens.</p>
+        <p><strong>Per circulació:</strong> tenir les pràctiques aprovades i l'examen de circulació.</p>
+      `,
+      open: false
+    }
+    
+    
+    
+    
   ];
+  
 
   toggleFaq(index: number) {
     console.log(index)
