@@ -606,12 +606,32 @@
           <h2 class="principal-subtitle">La teva autoescola.</h2>
           <p class="mb-3 text-lg leading-snug text-body-color mt-3"> Més de 30 anys formant conductors amb passió per la seguretat vial i l'excel·lència al volant. </p>
 
-          <ul>
-            <li><a href="https://www.carnetcnae.com/" class="block py-2 text-lg text-gray-800 hover:bg-red-100 font-bold"><span class="text-primaryColor font-bold">-</span> Tu Autoescuela</a></li>
-            <li><a href="https://ponsgo.com/" class="block py-2 text-lg text-gray-800 hover:bg-red-100 font-bold"><span class="text-primaryColor font-bold">-</span> Ponsgo</a></li>
-            <li><a href="https://www.pxp.com/" class="block py-2 text-lg text-gray-800 hover:bg-red-100 font-bold"><span class="text-primaryColor font-bold">-</span> PxP</a></li>
-            <li><a href="https://www.carnetcnae.com/" class="block py-2 text-lg text-gray-800 hover:bg-red-100 font-bold"><span class="text-primaryColor font-bold">-</span> eTestWeb</a></li>
-          </ul>
+          <div class="relative">
+            <button (click)="toggleDropdown()"
+                class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50">
+                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3" />
+                </svg>
+                Fer un test ara
+            </button>
+
+            <div *ngIf="dropdownOpen" class="absolute mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+                <a (click)="open()"
+                    class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">
+                    Fer test de prova</a>
+                <a href="https://www.carnetcnae.com/"
+                    class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">eTestWeb
+                </a>
+                <a href="https://ponsgo.com/"
+                    class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Ponsgo
+                </a>
+                <a href="https://ponsgo.com/"
+                    class="block px-4 py-2 text-sm text-gray-800 hover:bg-gray-100">Tu Autoescuela.net
+                </a>
+            </div>
+        </div>
         </div>
       </div>
     </div>
