@@ -1,27 +1,56 @@
-<footer class="bg-black text-md text-gray-400 flex flex-col p-10">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-    <div class="flex flex-col space-y-3 text-center md:text-left md:flex-row md:space-x-6 md:space-y-0 p-5">
-      <a routerLink="/inici" class="hover:text-white">Inici</a>
-      <a routerLink="/serveis" class="hover:text-white">Serveis</a>
-      <a routerLink="/nosaltres" class="hover:text-white">Nosaltres</a>
-      <a routerLink="/galeria" class="hover:text-white">Galeria</a>
-      <a routerLink="/testos" class="hover:text-white">Testos</a>
-      <a routerLink="/pagaments" class="hover:text-white">Pagaments</a>
-      <a routerLink="/contacte" class="hover:text-white">Contacta</a>
+<footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 bg-gray-800">
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+    <div class="col-span-full hidden lg:col-span-1 lg:block">
+      <a class="flex-none font-semibold text-xl text-white" href="/" aria-label="Autoescola Trailer">Autoescola Trailer</a>
+      <p class="mt-3 text-sm text-gray-400">
+        La teva autoescola de confiança per aprendre a conduir amb seguretat i qualitat.
+      </p>
     </div>
 
-    <div class="flex space-x-3 mt-6 md:mt-0">
-      <a href="https://www.facebook.com/autoescolatrailer" target="_blank" class="flex items-center justify-center hover:bg-gray-600 rounded-full w-10 h-10 bg-cover bg-center">
-        <svg fill="#fff" height="25" width="25" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M-143,145v512h512V145H-143z M339,627h-452V175h452V627z"></path> <path d="M77.7,528.9h49.6v-133h39.3l2.9-38.3h-42.2v-29.9c0-10.3,9.2-14,19.5-14s21.3,3.2,21.3,3.2l6.6-39.2c0,0-14-4.8-47.4-4.8 c-20.5,0-32.4,7.8-41.1,19.3c-8.2,10.9-8.5,28.4-8.5,39.7v25.7H51.2v38.3h26.5V528.9z"></path> </g> </g></svg>
-      </a>
+    <div>
+      <h4 class="text-sm font-semibold text-gray-100 uppercase">L'empresa</h4>
+      <div class="mt-3 grid space-y-3 text-sm">
+        <a routerLink="/inici" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Inici</a>
+        <a routerLink="/serveis" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Serveis</a>
+        <a routerLink="/galeria" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Galeria</a>
+        <a routerLink="/testos" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Testos</a>
+        <a routerLink="/pagaments" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Pagaments</a>
+      </div>
+    </div>
 
-      <a href="https://www.instagram.com/autoescolatrailer" target="_blank" class="flex items-center justify-center hover:bg-gray-600 rounded-full w-10 h-10 bg-cover bg-center">
-        <svg width="25" height="25" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" fill="#fff" stroke="#fff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.91px;}.cls-2{fill:#fff;}</style></defs><rect class="cls-1" x="1.5" y="1.5" width="21" height="21" rx="3.82"></rect><circle class="cls-1" cx="12" cy="12" r="4.77"></circle><circle class="cls-2" cx="18.2" cy="5.8" r="1.43"></circle></g></svg>
-      </a>
+    <div>
+      <h4 class="text-sm font-semibold text-gray-100 uppercase">Contacte</h4>
+      <div class="mt-3 grid space-y-3 text-sm">
+        <a routerLink="/nosaltres" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Nosaltres</a>
+        <a routerLink="/pagaments" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Pagaments</a>
+        <a routerLink="/contacte" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Contacta</a>
+      </div>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold text-gray-100 uppercase">Adreça</h4>
+      <div class="mt-3 text-sm text-gray-400">
+        Carrer de Ferrer i Busquets, 26<br>
+        25230 Mollerussa, Lleida
+      </div>
     </div>
   </div>
 
-  <div class="text-center text-gray-500 mt-6">
-    <p>© {{year}} Autoescola Trailer, Disseny Web <a href="https://www.itnovastudio.com" class="text-orange-600 hover:underline font-bold" target="_blank">itnovastudio</a>. Tots els drets reservats.</p>
+  <div class="flex flex-wrap justify-between items-center gap-3 border-t pt-6 mt-6">
+    <div class="space-x-4 text-sm">
+      <a routerLink="/termes" class="text-gray-400 hover:text-gray-200">Avís legal</a>
+      <a routerLink="/politica" class="text-gray-400 hover:text-gray-200">Política de privacitat</a>
+      <a routerLink="/cookies" class="text-gray-400 hover:text-gray-200">Cookies</a>
+    </div>
+
+    <div class="space-x-4">
+      <a href="https://www.facebook.com/autoescolatrailer.com" class="text-gray-500 hover:text-gray-800" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/autoescolatrailer/" class="text-gray-500 hover:text-gray-800" aria-label="Instagram">Instagram</a>
+      <a href="https://wa.me/573017139103" class="text-gray-500 hover:text-gray-800" aria-label="WhatsApp">WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="mt-6 text-center text-sm text-gray-400">
+    © 2025 <span class="text-orange-500">ITNovastudio</span> tots els drets reservats.
   </div>
 </footer>

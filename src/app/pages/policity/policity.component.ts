@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-policity',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './policity.component.html',
   styleUrl: './policity.component.scss'
 })
