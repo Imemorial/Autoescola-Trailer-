@@ -1,29 +1,27 @@
-<section class="py-20 bg-primaryColor">
+<section #statsSection class="py-20 bg-primaryColor">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="flex flex-col flex-1 gap-10 lg:gap-0 lg:flex-row lg:justify-between">
-      
-      <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100" data-aos="fade-up" data-aos-delay="100">
-        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center counter" [attr.data-target]="'30'">
-          +30
+
+      <div class="w-full lg:w-1/4 lg:pl-6 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center">
+          +{{ animatedValues[0] | number }}
         </div>
-        <span class="text-xl text-white text-center block">Anys D'experiencia</span>
+        <span class="text-xl text-white text-center block">Anys d'experiència</span>
       </div>
 
-      <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100" data-aos="fade-up" data-aos-delay="200">
-        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center counter" [attr.data-target]="'5000'">
-          +5.000
+      <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center">
+          +{{ animatedValues[1] | number }}
         </div>
-        <span class="text-xl text-white text-center block">Alumnes aprobats</span>
+        <span class="text-xl text-white text-center block">Alumnes aprovats</span>
       </div>
 
-      <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100" data-aos="fade-up" data-aos-delay="300">
-        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center counter" [attr.data-target]="'150000'">
-          +150.000
+      <div class="w-full lg:w-1/4 border-b pb-10 lg:border-b-0 lg:pb-0 lg:border-r border-gray-100">
+        <div class="font-manrope font-bold text-5xl text-white mb-5 text-center">
+          +{{ animatedValues[2] | number }}
         </div>
-        <span class="text-xl text-white text-center block">Practiques de circulació</span>
+        <span class="text-xl text-white text-center block">Pràctiques de circulació</span>
       </div>
-
-      
 
     </div>
   </div>
