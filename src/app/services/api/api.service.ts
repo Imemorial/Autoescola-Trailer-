@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private _baseUrl: string = 'http://127.0.0.1:8000/api/test';
-  private _uuid : string = '420da3d2-3697-4903-af75-e2f3b164cf75'
+  private _baseUrl: string = 'https://management.itnovastudio.com/api/test';
+  private _uuid : string = '6387346c-573c-4e63-9a04-f04a262ff525'
   private _apiUrl : string = `${this._baseUrl}/${this._uuid}`;
 
   constructor(private _httpClient: HttpClient) { }
