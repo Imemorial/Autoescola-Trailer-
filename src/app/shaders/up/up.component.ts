@@ -6,7 +6,8 @@ import { Component, HostListener } from '@angular/core';
   standalone: true,
   imports: [NgIf, NgClass],
   templateUrl: './up.component.html',
-  styleUrl: './up.component.scss'
+  styleUrl: './up.component.scss',
+  
 })
 export class UpComponent {
 
