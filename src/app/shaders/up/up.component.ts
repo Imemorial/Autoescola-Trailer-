@@ -10,15 +10,6 @@ import { Component, HostListener } from '@angular/core';
 })
 export class UpComponent {
 
-  showScroll: boolean = false;
-
-  @HostListener('window:scroll', [])
-  onScroll(): void {
-    this.showScroll = window.scrollY > 200;
-  }
-
-  scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  opened : boolean = false;
 
 }
