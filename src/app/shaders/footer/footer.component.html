@@ -1,56 +1,58 @@
-<footer class="mt-auto w-full py-10 px-4 sm:px-6 lg:px-8 bg-gray-800">
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
-    <div class="col-span-full hidden lg:col-span-1 lg:block">
-      <a class="flex-none font-semibold text-xl text-white" href="/" aria-label="Autoescola Trailer">Autoescola Trailer</a>
-      <p class="mt-3 text-sm text-gray-400">
+<footer class="mt-auto w-full bg-gray-900 text-gray-400 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+    
+    <div>
+      <a href="/" class="text-2xl font-bold text-white block mb-3">Autoescola Trailer</a>
+      <p class="text-sm">
         La teva autoescola de confiança per aprendre a conduir amb seguretat i qualitat.
       </p>
     </div>
 
-    <div>
-      <h4 class="text-sm font-semibold text-gray-100 uppercase">L'empresa</h4>
-      <div class="mt-3 grid space-y-3 text-sm">
-        <a routerLink="/inici" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Inici</a>
-        <a routerLink="/serveis" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Serveis</a>
-        <a routerLink="/galeria" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Galeria</a>
-        <a routerLink="/testos" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Testos</a>
-        <a routerLink="/pagaments" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Pagaments</a>
-      </div>
+    <div class="ml-0 lg:ml-10">
+      <h4 class="text-sm font-semibold text-gray-100 uppercase mb-4">L'empresa</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a routerLink="/inici" class="hover:text-gray-200">Inici</a></li>
+        <li><a routerLink="/serveis" class="hover:text-gray-200">Serveis</a></li>
+        <li><a routerLink="/galeria" class="hover:text-gray-200">Galeria</a></li>
+        <li><a routerLink="/testos" class="hover:text-gray-200">Testos</a></li>
+        <li><a routerLink="/pagaments" class="hover:text-gray-200">Pagaments</a></li>
+      </ul>
     </div>
 
     <div>
-      <h4 class="text-sm font-semibold text-gray-100 uppercase">Contacte</h4>
-      <div class="mt-3 grid space-y-3 text-sm">
-        <a routerLink="/nosaltres" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Nosaltres</a>
-        <a routerLink="/pagaments" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Pagaments</a>
-        <a routerLink="/contacte" routerLinkActive="active" class="text-gray-400 hover:text-gray-200">Contacta</a>
-      </div>
+      <h4 class="text-sm font-semibold text-gray-100 uppercase mb-4">Contacte</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a routerLink="/nosaltres" class="hover:text-gray-200">Nosaltres</a></li>
+        <li><a routerLink="/pagaments" class="hover:text-gray-200">Pagaments</a></li>
+      </ul>
     </div>
 
     <div>
-      <h4 class="text-sm font-semibold text-gray-100 uppercase">Adreça</h4>
-      <div class="mt-3 text-sm text-gray-400">
+      <h4 class="text-sm font-semibold text-gray-100 uppercase mb-4">Adreça</h4>
+      <p class="text-sm leading-relaxed">
         Carrer de Ferrer i Busquets, 26<br>
         25230 Mollerussa, Lleida
-      </div>
+      </p>
     </div>
   </div>
 
-  <div class="flex flex-wrap justify-between items-center gap-3 border-t pt-6 mt-6">
-    <div class="space-x-4 text-sm">
-      <a routerLink="/termes" class="text-gray-400 hover:text-gray-200">Avís legal</a>
-      <a routerLink="/politica" class="text-gray-400 hover:text-gray-200">Política de privacitat</a>
-      <a routerLink="/cookies" class="text-gray-400 hover:text-gray-200">Cookies</a>
+  <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6 gap-4">
+    
+    <div class="flex flex-wrap gap-4 text-sm">
+      <a routerLink="/termes" class="hover:text-gray-200">Avís legal</a>
+      <a routerLink="/politica" class="hover:text-gray-200">Política de privacitat</a>
+      <a routerLink="/cookies" class="hover:text-gray-200">Cookies</a>
     </div>
 
-    <div class="space-x-4">
-      <a href="https://www.facebook.com/autoescolatrailer.com" class="text-gray-500 hover:text-gray-800" aria-label="Facebook">Facebook</a>
-      <a href="https://www.instagram.com/autoescolatrailer/" class="text-gray-500 hover:text-gray-800" aria-label="Instagram">Instagram</a>
-      <a href="https://wa.me/573017139103" class="text-gray-500 hover:text-gray-800" aria-label="WhatsApp">WhatsApp</a>
+    <div class="flex gap-4 text-sm">
+      <a href="https://www.facebook.com/autoescolatrailer.com" class="hover:text-white" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/autoescolatrailer/" class="hover:text-white" aria-label="Instagram">Instagram</a>
+      <a href="https://wa.me/573017139103" class="hover:text-white" aria-label="WhatsApp">WhatsApp</a>
     </div>
   </div>
 
-  <div class="mt-6 text-center text-sm text-gray-400">
-    © 2025 <span class="text-orange-500">ITNovastudio</span> tots els drets reservats.
+  <div class="mt-6 text-center text-sm text-gray-500">
+    © 2025 Autoescola Trailer · Disseny web per 
+    <a href="https://www.itnovastudio.com" class="text-orange-500 hover:underline" target="_blank" rel="noopener">ITNOVASTUDIO</a> · Tots els drets reservats.
   </div>
 </footer>
