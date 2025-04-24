@@ -7,12 +7,14 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private baseUrl: string = 'https://management.itnovastudio.com/api/test/01bbfedb-5e47-4731-b788-7ae03b2a9724';
+  private _baseUrl: string = 'http://127.0.0.1:8000/api/test';
+  private _uuid : string = '420da3d2-3697-4903-af75-e2f3b164cf75'
+  private _apiUrl : string = `${this._baseUrl}/${this._uuid}`;
 
   constructor(private _httpClient: HttpClient) { }
 
-  getData(): Observable<any> {
-    return this._httpClient.get(`${this.baseUrl}`);
+  getNews(): Observable<any> {
+    return this._httpClient.get(`${this._apiUrl}/Noticies`);
   }
   
 }

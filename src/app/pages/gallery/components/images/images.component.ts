@@ -17,14 +17,14 @@ export class ImagesComponent {
 
   ngOnInit() {
 
-    this._apiService.getData().subscribe((images : any) => {
+    // this._apiService.getData().subscribe((images : any) => {
 
-      console.log(images);
+    //   console.log(images);
 
-      if(images)
-          this.images = images;
+    //   if(images)
+    //       this.images = images;
 
-    });
+    // });
   }
 
 }
