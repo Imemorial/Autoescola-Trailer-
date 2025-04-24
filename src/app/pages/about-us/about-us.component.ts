@@ -16,16 +16,16 @@ export class AboutUsComponent {
 
   constructor(private meta: Meta, private titleService: Title) { }
 
-  updateMetaTagsSobreNosotros() {
-    this.titleService.setTitle('ItnovaStudio - Sobre Nosotros');
-    this.meta.addTag({ name: 'description', content: 'En ItnovaStudio, somos un equipo de expertos dedicados a ofrecer soluciones tecnológicas a medida en desarrollo web, software personalizado y ecommerce.' });
-    this.meta.addTag({ name: 'keywords', content: 'ItnovaStudio, sobre nosotros, equipo, soluciones digitales, desarrollo web, software personalizado, ecommerce, tecnología a medida' });
-    this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Sobre Nosotros' });
-    this.meta.addTag({ property: 'og:description', content: 'Conoce al equipo detrás de ItnovaStudio y cómo ayudamos a transformar ideas en soluciones tecnológicas a medida.' });
+  updateMetaTagsAutoescola() {
+    this.titleService.setTitle('AutoescolaTrailer - Sobre nosaltres');
+    this.meta.addTag({ name: 'description', content: 'Coneix l\'equip darrere d\'AutoescolaTrailer a Mollerussa. Oferim formació personalitzada per obtenir el teu carnet de conduir de manera eficient i ràpida.' });
+    this.meta.addTag({ name: 'keywords', content: 'AutoescolaTrailer, Mollerussa, equip, formació conducció, carnet de conduir, cursos personalitzats, formació a mida' });
+    this.meta.addTag({ property: 'og:title', content: 'AutoescolaTrailer - Sobre nosaltres' });
+    this.meta.addTag({ property: 'og:description', content: 'Descobreix l\'equip d\'AutoescolaTrailer a Mollerussa i els nostres serveis de formació personalitzada per aconseguir el teu carnet de conduir de forma eficaç.' });
   }
 
-ngOnInit() {
-  this.updateMetaTagsSobreNosotros();
-}
+  ngOnInit() {
+    this.updateMetaTagsAutoescola();
+  }
 
 }
