@@ -13,6 +13,10 @@ export class ApiService {
 
   constructor(private _httpClient: HttpClient) { }
 
+  getImages(): Observable<any> {
+    return this._httpClient.get(`${this._apiUrl}/Galeria`);
+  }
+
   getNews(): Observable<any> {
     return this._httpClient.get(`${this._apiUrl}/Noticies`);
   }
