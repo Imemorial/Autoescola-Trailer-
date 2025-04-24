@@ -21,9 +21,9 @@
             class="flex items-center p-4 bg-gray-50 border border-gray-200 rounded-lg hover:bg-gray-100 cursor-pointer transition-all duration-200" 
             *ngFor="let answer of exam.questions[actualQuestion].answers; index as questionIndex"
             [ngClass]="{
-                'correct-input' : sended && answer.option === exam.questions[questionIndex].correct_answer,
-                'incorrect-input' : sended && exam.questions[actualQuestion].selectedAnswer === answer.option && answer.option !== exam.questions[questionIndex].correct_answer
-            }"
+                'correct-input' : sended && answer.option === exam.questions[actualQuestion].correct_answer,
+                'incorrect-input' : sended && exam.questions[actualQuestion].selectedAnswer === answer.option && answer.option !== exam.questions[actualQuestion].correct_answer
+              }"
         >
             <input 
                 type="radio" 
