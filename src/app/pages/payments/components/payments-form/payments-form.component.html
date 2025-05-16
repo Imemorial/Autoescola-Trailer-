@@ -1,0 +1,81 @@
+<div
+  class="fixed top-0 left-0 w-full h-screen flex items-center justify-center px-4"
+  style="background-color: hsla(0, 0%, 0%, 0.75);"
+>
+  <form
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()"
+    class="bg-white w-full max-w-xl shadow-xl p-10 rounded-2xl animate-fade-in border border-gray-300"
+    novalidate
+  >
+    <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Registre de Pagament</h2>
+
+    <div class="space-y-6">
+      <div>
+        <label class="block text-gray-700 text-sm font-medium mb-2" for="studentName">
+          Nom de l'Alumne <span class="text-red-500">*</span>
+        </label>
+        <input
+          id="studentName"
+          type="text"
+          formControlName="studentName"
+          class="bg-gray-100 border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+          placeholder="Joan Pérez"
+        />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 text-sm font-medium mb-2" for="description">
+          Descripció del Curs o Servei <span class="text-red-500">*</span>
+        </label>
+        <input
+          id="description"
+          type="text"
+          formControlName="description"
+          class="bg-gray-100 border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+          placeholder="Classes pràctiques, matrícula, etc."
+        />
+      </div>
+
+      <div>
+        <label class="block text-gray-700 text-sm font-medium mb-2" for="amount">
+          Quantitat a Pagar (€) <span class="text-red-500">*</span>
+        </label>
+        <input
+          id="amount"
+          type="number"
+          formControlName="amount"
+          min="0.01"
+          step="0.01"
+          class="bg-gray-100 border border-gray-300 rounded-lg w-full py-3 px-4 text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500 transition"
+          placeholder="150"
+        />
+        <p *ngIf="form.get('amount')?.invalid && form.get('amount')?.touched" class="text-red-500 text-xs italic mt-1">
+          Introdueixi una quantitat vàlida en euros.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-10">
+      <button
+        type="submit"
+        [disabled]="!form.valid"
+        [ngClass]="{
+          'bg-red-500 hover:bg-red-600 cursor-pointer text-white': form.valid,
+          'bg-red-300 cursor-not-allowed text-white': !form.valid
+        }"
+        class="font-semibold text-base py-3 px-8 rounded-lg transition duration-200 shadow-md"
+      >
+        Registrar Pagament
+      </button>
+    </div>
+
+    <div class="text-center text-gray-400 text-xs mt-10">
+      &copy; 2025 Autoescola Ràpida. Tots els drets reservats.
+    </div>
+
+    <div class="absolute bottom-5 right-5 text-gray-400 text-xs italic pointer-events-none select-none">
+      ITNOVASTUDIO
+    </div>
+  </form>
+</div>
