@@ -3,7 +3,7 @@ import { TopComponent } from '../../shaders/top/top.component';
 import { TestComponent } from './components/test/test.component';
 import { DoTestComponent } from './components/do-test/do-test.component';
 import { NgIf } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';  // Import Meta and Title for SEO
+import { Meta, Title } from '@angular/platform-browser'; 
 
 @Component({
   selector: 'app-testos',

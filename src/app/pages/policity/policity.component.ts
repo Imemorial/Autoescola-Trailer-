@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Meta, Title } from '@angular/platform-browser';  // Import Meta and Title for SEO
+import { Meta, Title } from '@angular/platform-browser';  
 import { RouterModule } from '@angular/router';
 
 @Component({
