@@ -6,7 +6,7 @@ import { loadStripe, Stripe } from '@stripe/stripe-js';
 })
 export class PaymentsService {
 
-  private stripePromise = loadStripe('pk_test_51QEZaXRvNhLMcjftUwAFWNAxbkGEobt7dpcT09Xt4rCEQxspFBVGmoE0sTV6HAqNCf9Daw9f9r13Op2OuCmGCiUk00awi2vVNp');
+  private stripePromise = loadStripe('pk_test_51ROhzvEKxIZ8rBpy5N2bl7NqVJGOmYxYrLnTR6fkGJZSVbM0aRiQqgPeWtEeMqEs6hUHvsazFwGdDzQg4N1rY7RZ005urh9eph');
 
   constructor() { }
 
