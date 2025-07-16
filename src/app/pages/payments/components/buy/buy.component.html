@@ -1,21 +1,21 @@
 <app-payments-top></app-payments-top>
 
-<section class="max-w-6xl mx-auto text-center padding">
-  <h2 class="text-4xl font-extrabold text-gray-800 mb-3">Tria el carnet amb què et vols matricular</h2>
-  <p class="text-lg text-gray-600 mb-12">Estàs preparat per començar la teva aventura a la carretera? Selecciona el tipus de carnet que vols obtenir. Tu decideixes el camí!</p>
+<section class="max-w-6xl mx-auto text-center py-12 px-2">
+  <h2 class="text-4xl font-extrabold text-gray-800 mb-3">Tria el permís que vols obtenir</h2>
+  <p class="text-lg text-gray-600 mb-8">Comença la teva aventura a la carretera! Selecciona el permís que vols obtenir i matricula't fàcilment.</p>
 
-  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8">
-    <div [routerLink]="['/pagaments/matriculat', 'coche']" class="bg-white pointer p-8 rounded-2xl shadow-xl flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
-      <img src="/assets/icons/car.png" class="w-28 h-28 mb-6 transition-transform duration-300 ease-in-out">
-      <p class="mt-4 text-xl font-semibold text-gray-700">Coche</p>
+  <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4">
+    <div [routerLink]="['/pagaments/matriculat', 'coche']" class="bg-white cursor-pointer p-8 rounded-xl shadow hover:shadow-lg flex flex-col items-center transition-all duration-200 border border-gray-100">
+      <img src="/assets/icons/a.png" alt="Coche" class="w-20 h-20 mb-4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">Coche</h3>
     </div>
-    <div [routerLink]="['/pagaments/matriculat', 'moto']" class="bg-white pointer p-8 rounded-2xl shadow-xl flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
-      <img src="/assets/icons/a2.png" class="w-28 h-28 mb-6 transition-transform duration-300 ease-in-out">
-      <p class="mt-4 text-xl font-semibold text-gray-700">Motos</p>
+    <div [routerLink]="['/pagaments/matriculat', 'moto']" class="bg-white cursor-pointer p-8 rounded-xl shadow hover:shadow-lg flex flex-col items-center transition-all duration-200 border border-gray-100">
+      <img src="/assets/icons/a1.png" alt="Motos" class="w-20 h-20 mb-4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">Motos</h3>
     </div>
-    <div [routerLink]="['/pagaments/matriculat', 'altres']" class="bg-white pointer p-8 rounded-2xl shadow-xl flex flex-col items-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl hover:bg-gray-50">
-      <svg class="w-28 h-28 mb-6 transition-transform duration-300 ease-in-out" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#FF181E" fill-rule="evenodd" d="M3 8a2 2 0 100 4 2 2 0 000-4zm5 2a2 2 0 114 0 2 2 0 01-4 0zm7 0a2 2 0 114 0 2 2 0 01-4 0z"></path> </g></svg>
-      <p class="mt-4 text-xl font-semibold text-gray-700">Altres</p>
+    <div [routerLink]="['/pagaments/matriculat', 'altres']" class="bg-white cursor-pointer p-8 rounded-xl shadow hover:shadow-lg flex flex-col items-center transition-all duration-200 border border-gray-100">
+      <img src="/assets/icons/a2.png" alt="Altres" class="w-20 h-20 mb-4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-1">Altres</h3>
     </div>
   </div>
 </section>

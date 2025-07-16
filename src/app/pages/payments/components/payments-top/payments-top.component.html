@@ -1,13 +1,13 @@
 <section class="bg-primaryColor text-white py-10 shadow-md h-[40vh] flex flex-col items-center justify-center">
     <h2 class="text-4xl font-bold">Autoescola Trailer</h2>
-    <p class="text-lg mt-2 opacity-90">Elecció del vehicle</p>
+    <p class="text-lg mt-2 opacity-90">Tria el teu vehicle</p>
 </section>
 
 <nav class="bg-red-600 text-white py-4 px-10">
     <ul class="flex items-center space-x-4">
-        <li><a href="#" class="text-lg hover:opacity-80">Pagos</a></li>
+        <li><a href="#" class="text-lg hover:opacity-80">Pagaments</a></li>
         <li><span class="text-lg text-white">/</span></li>
-        <li><a routerLink="/pagaments/matriculat" class="text-lg hover:opacity-80" [ngClass]="{'text-white font-bold' : !type || type.length  === 0}">Matricularte</a></li>
+        <li><a routerLink="/pagaments/matriculat" class="text-lg hover:opacity-80" [ngClass]="{'text-white font-bold' : !type || type.length  === 0}">Matricula't</a></li>
 
         <ng-container *ngIf="type && type.length > 0">
             <li><span class="text-lg text-white">/</span></li>

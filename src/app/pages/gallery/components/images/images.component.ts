@@ -22,10 +22,17 @@ export class ImagesComponent {
   constructor(private _apiService: ApiService) {}
 
   ngOnInit() {
-    this._apiService.getImages().subscribe((images: any) => {
-      if (images) {
-        this.images = images;
-        this.loadMore(); 
+    if (this.images.length > 0) return; // Evita recargar si ya hay datos
+    this._apiService.getImages().subscribe({
+      next: (images: any) => {
+        console.log('Imágenes recibidas:', images);
+        if (images) {
+          this.images = images;
+          this.loadMore(); 
+        }
+      },
+      error: (err) => {
+        console.error('Error al obtener imágenes:', err);
       }
     });
   }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { PaymentsService } from '../../../../services/payments/payments.service';
@@ -12,6 +12,7 @@ import { PaymentsService } from '../../../../services/payments/payments.service'
 })
 export class PaymentsFormComponent {
   form: FormGroup;
+  @Output() closed = new EventEmitter<void>();
 
   constructor(
     private _formBuilder: FormBuilder,
@@ -30,5 +31,9 @@ export class PaymentsFormComponent {
       this._paymentsService.checkout(amount);
       this.form.reset();
     }
+  }
+
+  close() {
+    this.closed.emit();
   }
 }

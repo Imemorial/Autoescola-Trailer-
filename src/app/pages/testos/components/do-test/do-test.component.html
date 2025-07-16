@@ -7,7 +7,7 @@
         </div>
 
         <div class="p-6 border-b border-gray-200" *ngIf="exam">
-            <img [src]="exam.questions[actualQuestion].img" alt="Imatge de la pregunta" class="w-full h-[25vh] rounded-lg object-cover">
+            <img [src]="exam.questions[actualQuestion].img" alt="Imatge de la pregunta" class="w-full h-[25vh] rounded-lg object-cover" loading="lazy">
         </div>
 
         <div class="p-6 border-b border-gray-200" *ngIf="exam">

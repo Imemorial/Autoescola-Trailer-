@@ -23,10 +23,16 @@ export class NewsComponent {
   }
 
   fetchNews() {
-    this._apiService.getNews().subscribe((data) => {
-      if (data) {
-        this.news = data;
-        this.loadMore(); 
+    if (this.news.length > 0) return; // Evita recargar si ya hay datos
+    this._apiService.getNews().subscribe({
+      next: (data) => {
+        if (data) {
+          this.news = data;
+          this.loadMore(); 
+        }
+      },
+      error: (err) => {
+        console.error('Error al obtener noticias:', err);
       }
     });
   }
