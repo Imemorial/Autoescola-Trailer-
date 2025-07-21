@@ -6,18 +6,18 @@ import { loadStripe, Stripe } from '@stripe/stripe-js';
 })
 export class PaymentsService {
 
-  private stripePromise = loadStripe('pk_test_51ROhzvEKxIZ8rBpy5N2bl7NqVJGOmYxYrLnTR6fkGJZSVbM0aRiQqgPeWtEeMqEs6hUHvsazFwGdDzQg4N1rY7RZ005urh9eph');
+  private stripePromise = loadStripe('pk_live_51ROhznEDvAc9AOLDJOs61SUu0cj1wirpTiGCciiaO1fVc2tWots5WVMOZrsNljt6lJYU5K2GLvkoiIVpqzJtj07k00b5KVLXww');
 
   constructor() { }
 
-  async checkout(amount: number) {
+  async checkout(amount: number, studentName?: string, description?: string) {
     const stripe = await this.stripePromise;
     if (!stripe) throw new Error("Stripe no se ha cargado");
 
     const response = await fetch('http://localhost:3000/create-checkout-session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ amount }),
+      body: JSON.stringify({ amount, studentName, description }),
     });
 
     const session = await response.json();

@@ -28,9 +28,16 @@ export class PaymentsFormComponent {
   onSubmit(): void {
     if (this.form.valid) {
       const amount = parseFloat(this.form.value.amount);
-      this._paymentsService.checkout(amount);
+      const studentName = this.form.value.studentName;
+      const description = this.form.value.description;
+      console.log('Enviando a Stripe:', { amount, studentName, description });
+      this.openStripeCheckout(amount, studentName, description);
       this.form.reset();
     }
+  }
+
+  openStripeCheckout(amount: number, studentName?: string, description?: string) {
+    this._paymentsService.checkout(amount, studentName, description);
   }
 
   close() {
