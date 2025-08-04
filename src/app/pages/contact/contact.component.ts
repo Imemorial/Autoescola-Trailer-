@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { TopComponent } from '../../shaders/top/top.component';
 import { ContactComponent as Contact } from '../../shaders/contact/contact.component';
-import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-contact-page',
@@ -12,18 +12,49 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class ContactComponent {
 
-  constructor(private meta: Meta, private titleService: Title) { }
-
-  updateMetaTagsContacto() {
-    this.titleService.setTitle('Contacta amb AutoescolaTrailer a Mollerussa');
-    this.meta.addTag({ name: 'description', content: 'Contacta amb AutoescolaTrailer a Mollerussa per a qualsevol consulta sobre cursos de conducció, obtenció del carnet de conduir i serveis personalitzats.' });
-    this.meta.addTag({ name: 'keywords', content: 'contacte AutoescolaTrailer, consulta, cursos de conducció, carnet de conduir, Mollerussa, formació a mida, serveis personalitzats' });
-    this.meta.addTag({ property: 'og:title', content: 'Contacta amb AutoescolaTrailer a Mollerussa' });
-    this.meta.addTag({ property: 'og:description', content: '¿Tens alguna consulta sobre cursos de conducció o serveis personalitzats? Contacta amb AutoescolaTrailer a Mollerussa per obtenir més informació.' });
-  }
+  constructor(private seoService: SeoService) { }
 
   ngOnInit() {
-    this.updateMetaTagsContacto();
-  }
+    // Add breadcrumb data for contact page
+    this.seoService.addBreadcrumbData([
+      { name: 'Inici', url: '/inici' },
+      { name: 'Contacte', url: '/contacte' }
+    ]);
 
+    // Add contact-specific structured data
+    const contactData = {
+      '@context': 'https://schema.org',
+      '@type': 'ContactPage',
+      'name': 'Contacte AutoescolaTrailer',
+      'description': 'Pàgina de contacte de l\'AutoescolaTrailer Mollerussa',
+      'mainEntity': {
+        '@type': 'LocalBusiness',
+        'name': 'AutoescolaTrailer Mollerussa',
+        'telephone': '+34 973 123 456',
+        'email': 'info@autoescolatrailer.com',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Carrer Principal, 123',
+          'addressLocality': 'Mollerussa',
+          'postalCode': '25230',
+          'addressRegion': 'Lleida',
+          'addressCountry': 'ES'
+        },
+        'geo': {
+          '@type': 'GeoCoordinates',
+          'latitude': 41.6300,
+          'longitude': 0.8900
+        },
+        'openingHours': 'Mo-Fr 08:00-20:00, Sa 09:00-14:00',
+        'contactPoint': {
+          '@type': 'ContactPoint',
+          'telephone': '+34 973 123 456',
+          'contactType': 'customer service',
+          'availableLanguage': 'Catalan'
+        }
+      }
+    };
+
+    this.seoService.addStructuredData(contactData);
+  }
 }

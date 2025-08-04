@@ -5,7 +5,7 @@ import { NgFor } from '@angular/common';
 import { AboutServicesComponent } from "./components/about-services/about-services.component";
 import { StatsComponent } from './components/stats/stats.component';
 import { LostComponent } from './components/lost/lost.component';
-import { Meta, Title } from '@angular/platform-browser';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-services',
@@ -16,18 +16,64 @@ import { Meta, Title } from '@angular/platform-browser';
 })
 export class ServicesComponent {
 
-  constructor(private meta: Meta, private titleService: Title) { }
-
-  updateMetaTagsServices() {
-    this.titleService.setTitle('Serveis d\'Autoescola Trailer a Mollerussa');
-    this.meta.addTag({ name: 'description', content: 'Descobreix els serveis de formació i conducció personalitzada que ofereix AutoescolaTrailer a Mollerussa. Cursos per obtenir el teu carnet de conduir de manera ràpida i efectiva.' });
-    this.meta.addTag({ name: 'keywords', content: 'autoescola, serveis de conducció, formació a mida, carnet de conduir, cursos personalitzats, autoescola a Mollerussa' });
-    this.meta.addTag({ property: 'og:title', content: 'Serveis d\'Autoescola Trailer a Mollerussa' });
-    this.meta.addTag({ property: 'og:description', content: 'Obten el teu carnet de conduir amb els serveis personalitzats d\'AutoescolaTrailer a Mollerussa. Formació professional i eficient.' });
-  }
+  constructor(private seoService: SeoService) { }
 
   ngOnInit() {
-    this.updateMetaTagsServices();
-  }
+    // Add breadcrumb data for services page
+    this.seoService.addBreadcrumbData([
+      { name: 'Inici', url: '/inici' },
+      { name: 'Serveis', url: '/serveis' }
+    ]);
 
+    // Add service-specific structured data
+    const serviceData = {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      'name': 'Serveis de Formació de Conducció',
+      'description': 'Llista de serveis oferts per AutoescolaTrailer Mollerussa',
+      'itemListElement': [
+        {
+          '@type': 'ListItem',
+          'position': 1,
+          'item': {
+            '@type': 'Service',
+            'name': 'Curs de Conducció Bàsica',
+            'description': 'Curs complet per obtenir el carnet de conduir de categoria B',
+            'provider': {
+              '@type': 'LocalBusiness',
+              'name': 'AutoescolaTrailer Mollerussa'
+            }
+          }
+        },
+        {
+          '@type': 'ListItem',
+          'position': 2,
+          'item': {
+            '@type': 'Service',
+            'name': 'Tests de Conducció',
+            'description': 'Tests interactius per a la preparació de l\'examen de conducció',
+            'provider': {
+              '@type': 'LocalBusiness',
+              'name': 'AutoescolaTrailer Mollerussa'
+            }
+          }
+        },
+        {
+          '@type': 'ListItem',
+          'position': 3,
+          'item': {
+            '@type': 'Service',
+            'name': 'Formació Personalitzada',
+            'description': 'Cursos adaptats a les necessitats específiques de cada alumne',
+            'provider': {
+              '@type': 'LocalBusiness',
+              'name': 'AutoescolaTrailer Mollerussa'
+            }
+          }
+        }
+      ]
+    };
+
+    this.seoService.addStructuredData(serviceData);
+  }
 }

@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://autoescolatrailer.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /inici
+Allow: /serveis
+Allow: /testos
+Allow: /galeria
+Allow: /contacte
+Allow: /nosaltres
+Allow: /termes
+Allow: /politica
+Allow: /cookies
+Allow: /pagaments
+Allow: /recuperar 

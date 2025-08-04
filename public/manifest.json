@@ -1,0 +1,62 @@
+{
+  "name": "AutoescolaTrailer Mollerussa",
+  "short_name": "AutoescolaTrailer",
+  "description": "Autoescola professional a Mollerussa especialitzada en formació de conducció",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6600",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "ca",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "/assets/images/logo2.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/logo2.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "business"],
+  "screenshots": [
+    {
+      "src": "/assets/images/home/img-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Serveis",
+      "short_name": "Serveis",
+      "description": "Veure els nostres serveis",
+      "url": "/serveis",
+      "icons": [
+        {
+          "src": "/assets/images/logo2.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contacte",
+      "short_name": "Contacte",
+      "description": "Contactar amb nosaltres",
+      "url": "/contacte",
+      "icons": [
+        {
+          "src": "/assets/images/logo2.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+} 

@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shaders/header/header.component';
 import { FooterComponent } from './shaders/footer/footer.component';
 import { LoaderComponent } from './shaders/loader/loader.component';
-import { Meta, Title } from '@angular/platform-browser';
 import { UpComponent } from './shaders/up/up.component';
 import AOS from 'aos';
 import { TranslateModule } from '@ngx-translate/core';
+import { SeoService } from './services/seo/seo.service';
+import { PerformanceService } from './services/seo/performance.service';
 
 @Component({
   selector: 'app-root',
@@ -24,22 +25,15 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class AppComponent {
 
-  title = 'ItnovaStudio';
+  title = 'AutoescolaTrailer Mollerussa';
 
-  constructor(private meta: Meta, private titleService: Title) { }
-
-  updateMetaTags() {
-    this.titleService.setTitle('ItnovaStudio - Desarrollo Web, Software Personalizado, Ecommerce');
-  
-    this.meta.addTag({ name: 'description', content: 'ItnovaStudio se especializa en desarrollo web, software personalizado y soluciones ecommerce de alta calidad.' });
-    this.meta.addTag({ name: 'keywords', content: 'ItnovaStudio, desarrollo web, software personalizado, ecommerce, soluciones digitales, desarrollo a medida' });
-  
-    this.meta.addTag({ property: 'og:title', content: 'ItnovaStudio - Desarrollo Web, Software Personalizado, Ecommerce' });
-    this.meta.addTag({ property: 'og:description', content: 'Descubre cómo ItnovaStudio puede ayudarte con desarrollo web, software personalizado y ecommerce.' });
-  }
+  constructor(
+    private seoService: SeoService,
+    private performanceService: PerformanceService
+  ) { }
 
   ngOnInit() {
-    // Inicia AOS para animaciones
+    // Inicia AOS per a animacions
     AOS.init({
       duration: 1200,
       once: true,
@@ -47,7 +41,41 @@ export class AppComponent {
       delay: 100,
     });
 
-    // Actualiza las meta tags
-    this.updateMetaTags();
+    // Initialize performance optimizations
+    this.initializePerformanceOptimizations();
+
+    // El SEO service s'encarrega automàticament de gestionar les meta tags
+    // segons la ruta actual
+  }
+
+  private initializePerformanceOptimizations(): void {
+    // Preload critical resources
+    this.performanceService.preloadCriticalResources();
+
+    // Preconnect to external domains
+    this.performanceService.preconnectToExternalDomains();
+
+    // DNS prefetch
+    this.performanceService.dnsPrefetch();
+
+    // Optimize font loading
+    this.performanceService.optimizeFontLoading();
+
+    // Optimize CSS delivery
+    this.performanceService.optimizeCSSDelivery();
+
+    // Optimize JavaScript loading
+    this.performanceService.optimizeJSLoading();
+
+    // Optimize Core Web Vitals
+    this.performanceService.optimizeCoreWebVitals();
+
+    // Setup service worker for caching
+    this.performanceService.setupServiceWorker();
+
+    // Lazy load images after page load
+    setTimeout(() => {
+      this.performanceService.lazyLoadImages();
+    }, 100);
   }
 }

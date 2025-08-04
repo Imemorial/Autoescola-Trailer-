@@ -1,19 +1,21 @@
-<div class="text-center special-section padding">
-  <h6 class="text-lg text-primaryColor font-medium text-center" data-aos="fade-up" data-aos-delay="200">Tipus de Permis i Llicències</h6>
-  <h2 class="principal-subtitle text-center" data-aos="fade-up" data-aos-delay="400">
-    Permisos i Llicències de l'Autoescola Trailer.
-  </h2>
-  <p class="principal-paragraph mx-auto " data-aos="fade-up" data-aos-delay="700">
-    Algunes categories no les oferim directament, però <strong>col·laborem amb l'Autoescola Pallars</strong> i tota la seva atenció per poder gestionar els serveis administratius d'obtenció de permisos, sense desplaçaments.
-  </p>
+<div class="text-center padding">
+  <div class="max-w-4xl mx-auto">
+    <h6 class="text-lg text-primaryColor font-medium text-center mb-4" data-aos="fade-up" data-aos-delay="200">Tipus de Permis i Llicències</h6>
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 text-center mb-6" data-aos="fade-up" data-aos-delay="400">
+      Permisos i Llicències de l'Autoescola Trailer.
+    </h2>
+    <p class="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-12" data-aos="fade-up" data-aos-delay="700">
+      Algunes categories no les oferim directament, però <strong class="text-primaryColor">col·laborem amb l'Autoescola Pallars</strong> i tota la seva atenció per poder gestionar els serveis administratius d'obtenció de permisos, sense desplaçaments.
+    </p>
+  </div>
 
   <div #splide class="splide md:w-7/12 w-12/12 mx-auto relative" id="permisos-slider" data-aos="fade-up" data-aos-delay="800">
     <div class="splide__track parent">
       <ul class="splide__list">
         <li class="splide__slide" *ngFor="let service of services; index as i" data-aos="fade-up" data-aos-delay="1000">
-          <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
-            <img [src]="service.image" [alt]="service.title + 'img'" data-aos="zoom-in" data-aos-delay="1200">
-            <p class="mt-2 text-xl font-semibold">{{service.title}}</p>
+          <div class="bg-white p-8 rounded-xl shadow-lg flex flex-col items-center hover:shadow-xl transition-shadow duration-300">
+            <img [src]="service.image" [alt]="service.title + 'img'" class="w-20 h-20 mb-4" data-aos="zoom-in" data-aos-delay="1200">
+            <p class="text-lg font-semibold text-gray-800 text-center">{{service.title}}</p>
           </div>
         </li>
       </ul>
@@ -30,13 +32,13 @@
       </button>
     </div>
 
-    <div class="image-container mx-auto my-4 opacity-70">
+    <div class="image-container mx-auto my-8 opacity-70">
       <img src="assets/img-1.png" 
            alt="Logo de Autoescola Pallars" 
-           class="mx-auto rounded-lg w-2/6" 
+           class="mx-auto rounded-lg w-32 h-32 object-contain" 
            data-aos="fade-up" 
            data-aos-delay="1000">
-      <p class="text-sm text-gray-500 mt-2">Col·laboració amb Autoescola Pallars</p>
+      <p class="text-sm text-gray-500 mt-3 text-center">Col·laboració amb Autoescola Pallars</p>
     </div>
   
   </div>
