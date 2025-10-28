@@ -5,15 +5,19 @@
   </div>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 lg:mb-14">
-    <a *ngFor="let item of visibleNews" class="group flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition" >
+    <a *ngFor="let item of visibleNews" class="group flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl hover:shadow-md focus:outline-hidden focus:shadow-md transition overflow-hidden hover:-translate-y-0.5 duration-200 ease-out" >
       <div class="aspect-w-16 aspect-h-9">
-        <img class="w-full object-cover rounded-t-xl h-[40vh]" [src]="item.image_url" [alt]="item.title">
+        <img class="w-full object-cover rounded-t-xl h-[40vh]" 
+             [src]="item.image_url || '/assets/images/gallery/img-1.jpeg'" 
+             [alt]="item.title">
       </div>
       <div class="p-4 md:p-5">
-        <p class="mt-2 text-xs uppercase text-gray-600">{{ item.title }}</p>
-        <h3 class="mt-2 text-lg font-medium text-gray-800 group-hover:text-primaryColor">
-          {{ item.description }}
+        <h3 class="mt-1 text-xl font-semibold text-gray-900 group-hover:text-primaryColor line-clamp-2">
+          {{ item.title }}
         </h3>
+        <p class="mt-2 text-sm text-gray-600 line-clamp-3">
+          {{ item.description || item.content }}
+        </p>
       </div>
     </a>
   </div>

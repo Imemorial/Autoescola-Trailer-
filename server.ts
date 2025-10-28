@@ -17,12 +17,36 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  // Add security headers middleware
+  server.use((req, res, next) => {
+    // Security headers
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('X-Frame-Options', 'DENY');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
+    res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+    
+    // Handle Service Worker with correct MIME type
+    if (req.url === '/sw.js' || req.url.startsWith('/sw.js')) {
+      res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+      res.setHeader('Service-Worker-Allowed', '/');
+    }
+    
+    next();
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
-  // Serve static files from /browser
-  server.get('**', express.static(browserDistFolder, {
+  
+  // Serve static files from /browser with proper content types
+  server.use(express.static(browserDistFolder, {
     maxAge: '1y',
     index: 'index.html',
+    setHeaders: (res, path) => {
+      // Ensure sw.js is served with correct content type
+      if (path.endsWith('.js')) {
+        res.setHeader('Content-Type', 'application/javascript');
+      }
+    }
   }));
 
   // All regular routes use the Angular engine

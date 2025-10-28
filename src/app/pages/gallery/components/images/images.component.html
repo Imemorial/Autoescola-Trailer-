@@ -5,8 +5,8 @@
            class="relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer"
            [attr.data-aos]="'fade-up'"
            (click)="openModal(i)">
-        <img [src]="image.image_url"
-             [alt]="image.title"
+        <img [src]="image.image_url || '/assets/images/gallery/img-1.jpeg'"
+             [alt]="image.title || 'Imatge de galeria'"
              loading="lazy"
              class="w-full h-60 object-cover transform transition-transform duration-500 group-hover:scale-110" />
       </div>
@@ -27,6 +27,9 @@
         <path d="M3 3.32001L21 21.32" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
     </button>
-    <img [src]="selectedImage?.image_url" [alt]="selectedImage?.title" loading="lazy" class="w-full max-h-[80vh] object-contain rounded-lg">
+    <img [src]="selectedImage?.image_url || '/assets/images/gallery/img-1.jpeg'" 
+         [alt]="selectedImage?.title || 'Imatge de galeria'" 
+         loading="lazy" 
+         class="w-full max-h-[80vh] object-contain rounded-lg">
   </div>
 </div>

@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../../../services/api/api.service';
 import { NgFor, NgIf } from '@angular/common';
+import { Post } from '../../../../interfaces/api.interfaces';
 
 @Component({
   selector: 'app-images',
@@ -9,13 +10,13 @@ import { NgFor, NgIf } from '@angular/common';
   templateUrl: './images.component.html',
   styleUrl: './images.component.scss'
 })
-export class ImagesComponent {
+export class ImagesComponent implements OnInit {
 
   
-  images: any[] = [];
-  visibleImages: any[] = [];
+  images: Post[] = [];
+  visibleImages: Post[] = [];
   isModalOpen: boolean = false;
-  selectedImage: any = null;
+  selectedImage: Post | null = null;
   private imagesBatchSize = 4; 
   private currentBatch = 0;
 
@@ -24,7 +25,7 @@ export class ImagesComponent {
   ngOnInit() {
     if (this.images.length > 0) return; // Evita recargar si ya hay datos
     this._apiService.getImages().subscribe({
-      next: (images: any) => {
+      next: (images: Post[]) => {
         console.log('Imágenes recibidas:', images);
         if (images) {
           this.images = images;

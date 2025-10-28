@@ -2,80 +2,41 @@
   <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14" data-aos="fade-down">
     <h6 class="text-lg text-primaryColor font-medium text-center">Notícies</h6>
     <h2 class="text-4xl font-manrope text-center font-bold text-gray-900 leading-[3.25rem]">
-      Novetats de l’autoescola
+      Novetats de l'autoescola
     </h2>
   </div>
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5" href="#" data-aos="zoom-in">
+    <a *ngFor="let blog of blogs; index as i" 
+       class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5" 
+       href="#" 
+       [attr.data-aos]="'zoom-in'" 
+       [attr.data-aos-delay]="(i * 100)">
       <div class="aspect-w-16 aspect-h-11">
-        <img class="w-full object-cover rounded-xl h-[35vh] object-cover" src="/assets/images/lost/img-1.jpg" alt="Blog Image">
+        <img class="w-full object-cover rounded-xl h-[35vh] object-cover" 
+             [src]="blog.image_url || '/assets/images/lost/img-1.jpg'" 
+             [alt]="blog.title">
       </div>
       <div class="my-6">
         <h3 class="text-xl font-semibold text-gray-800 group-hover:text-black">
-          Nou sistema d'aprenentatge interactiu
+          {{ blog.title }}
         </h3>
         <p class="mt-5 text-gray-600">
-          A Trailer hem implementat una nova plataforma interactiva perquè puguis aprendre a conduir des de casa.
+          {{ blog.description || blog.content }}
         </p>
       </div>
       <div class="mt-auto flex items-center gap-x-3">
-        <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <img class="size-8 rounded-full" 
+             src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" 
+             alt="Avatar">
         <div>
-          <h5 class="text-sm text-gray-800">Per Raquel Castro</h5>
-        </div>
-      </div>
-    </a>
-
-    <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5" href="#" data-aos="zoom-in" data-aos-delay="100">
-      <div class="aspect-w-16 aspect-h-11">
-        <img class="w-full object-cover rounded-xl h-[35vh] object-cover" src="/assets/images/gallery/img-1.jpeg" alt="Blog Image">
-      </div>
-      <div class="my-6">
-        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-black">
-          Classes especials per a conductors novells
-        </h3>
-        <p class="mt-5 text-gray-600">
-          A partir d'ara, oferim classes personalitzades per als qui volen començar a conduir amb confiança i seguretat.
-        </p>
-      </div>
-      <div class="mt-auto flex items-center gap-x-3">
-        <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div>
-          <h5 class="text-sm text-gray-800">Per Raquel Castro</h5>
-        </div>
-      </div>
-    </a>
-
-    <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition duration-300 rounded-xl p-5" href="#" data-aos="zoom-in" data-aos-delay="200">
-      <div class="aspect-w-16 aspect-h-11">
-        <img class="w-full object-cover rounded-xl h-[35vh] object-cover" src="/assets/images/about-us/img-1.jpg" alt="Blog Image">
-      </div>
-      <div class="my-6">
-        <h3 class="text-xl font-semibold text-gray-800 group-hover:text-black">
-          Novetats a les nostres instal·lacions
-        </h3>
-        <p class="mt-5 text-gray-600">
-          Hem renovat la nostra sala d'espera i les pistes de pràctiques perquè la teva experiència sigui encara millor.
-        </p>
-      </div>
-      <div class="mt-auto flex items-center gap-x-3">
-        <img class="size-8 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div>
-          <h5 class="text-sm text-gray-800">Per Raquel Castro</h5>
+          <h5 class="text-sm text-gray-800">Per Autoescola Trailer</h5>
         </div>
       </div>
     </a>
   </div>
 
-  <div class="mt-12 text-center" data-aos="fade-up" data-aos-delay="300">
-    <a class="py-3 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-primaryColor shadow-2xs hover:bg-gray-50" href="#">
-      Més notícies
-      <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-        stroke-linecap="round" stroke-linejoin="round">
-        <path d="m9 18 6-6-6-6" />
-      </svg>
-    </a>
+  <div class="mt-12 text-center" *ngIf="blogs.length === 0" data-aos="fade-up" data-aos-delay="300">
+    <p class="text-gray-600">Carregant notícies...</p>
   </div>
 </div>
