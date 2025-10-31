@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, Router, NavigationEnd } from '@angular/router';
 import { HeaderComponent } from './shaders/header/header.component';
 import { FooterComponent } from './shaders/footer/footer.component';
 import { LoaderComponent } from './shaders/loader/loader.component';
@@ -8,6 +8,8 @@ import AOS from 'aos';
 import { TranslateModule } from '@ngx-translate/core';
 import { SeoService } from './services/seo/seo.service';
 import { PerformanceService } from './services/seo/performance.service';
+import { NgIf } from '@angular/common';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,8 @@ import { PerformanceService } from './services/seo/performance.service';
     FooterComponent, 
     LoaderComponent, 
     UpComponent, 
-    TranslateModule
+    TranslateModule,
+    NgIf
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
@@ -26,11 +29,33 @@ import { PerformanceService } from './services/seo/performance.service';
 export class AppComponent {
 
   title = 'AutoescolaTrailer Mollerussa';
+  showHeader: boolean = true;
 
   constructor(
     private seoService: SeoService,
-    private performanceService: PerformanceService
-  ) { }
+    private performanceService: PerformanceService,
+    private router: Router
+  ) {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      // Rutas válidas del sitio
+      const validRoutes = ['/inici', '/serveis', '/testos', '/galeria', '/contacte', '/nosaltres', 
+                          '/termes', '/politica', '/cookies', '/pagaments', '/recuperar', '/'];
+      
+      const currentPath = this.router.url.split('?')[0];
+      
+      // Verificar si la ruta actual es válida
+      const isValidRoute = validRoutes.some(route => {
+        return currentPath === route || 
+               currentPath.startsWith(route + '/') ||
+               (route === '/' && currentPath === '/');
+      });
+      
+      // Si no es una ruta válida y no es la raíz, es 404
+      this.showHeader = isValidRoute;
+    });
+  }
 
   ngOnInit() {
     // Inicia AOS per a animacions

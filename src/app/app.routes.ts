@@ -38,11 +38,11 @@ export const routes: Routes = [
         path: 'cookies',
         loadComponent: () => import('./pages/cookies/cookies.component').then((c) => c.CookiesComponent)
     },
-    {
-        path: 'pagaments',
-        loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent),
-        children: payments
-    },
+    // {
+    //     path: 'pagaments',
+    //     loadComponent: () => import('./pages/payments/payments.component').then((c) => c.PaymentsComponent),
+    //     children: payments
+    // },
     {
         path: 'recuperar',
         loadComponent: () => import('./pages/lost/lost.component').then((c) => c.LostComponent)
