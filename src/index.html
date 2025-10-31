@@ -6,8 +6,20 @@
   <title>AutoescolaTrailer Mollerussa - Formació i conducció professional</title>
   <base href="/">
   
-  <!-- Viewport and Mobile Optimization -->
+  <!-- Critical: Viewport first for mobile optimization -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Security Headers (early for protection) -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  
+  <!-- Performance: Preconnect to critical external domains (before any other resources) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://cdn-cookieyes.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
   
   <!-- Primary Meta Tags -->
   <meta name="title" content="AutoescolaTrailer Mollerussa - Formació i conducció professional">
@@ -43,24 +55,37 @@
   <meta property="twitter:image" content="https://autoescolatrailer.com/assets/images/logo2.png">
   <meta property="twitter:image:alt" content="AutoescolaTrailer Mollerussa - Logo">
   
-  <!-- Favicon and App Icons -->
+  <!-- Favicon and App Icons (deferred loading) -->
   <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/logo2.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/logo2.png">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/logo2.png">
   <link rel="manifest" href="/manifest.json">
   
-  <!-- Preconnect to external domains for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://cdn-cookieyes.com">
+  <!-- Google Tag Manager (async, non-blocking) -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZZMPBSV');
+  </script>
   
-  <!-- DNS Prefetch for performance -->
-  <link rel="dns-prefetch" href="https://www.google-analytics.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <!-- Cookie Consent (async, non-blocking) -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/2a4a13c2dd1b0154dc084ef9/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZZMPBSV"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
-  <!-- Structured Data for Local Business -->
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="sr-only sr-only-focusable">Saltar al contingut principal</a>
+  
+  <app-root></app-root>
+  
+  <!-- Structured Data (moved to body end for non-blocking SEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -125,7 +150,6 @@
   }
   </script>
   
-  <!-- Organization Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -146,7 +170,6 @@
   }
   </script>
   
-  <!-- WebSite Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -161,37 +184,6 @@
   }
   </script>
   
-  <!-- Cookie Consent -->
-  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/2a4a13c2dd1b0154dc084ef9/script.js"></script>
-  
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-MZZMPBSV');</script>
-  
-  <!-- Security Headers -->
-  <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
-  
-  <!-- Performance Optimization -->
-  <meta http-equiv="Cache-Control" content="public, max-age=31536000">
-  <meta http-equiv="Expires" content="31536000">
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZZMPBSV"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  
-  <!-- Skip to main content for accessibility -->
-  <a href="#main-content" class="sr-only sr-only-focusable">Saltar al contingut principal</a>
-  
-  <app-root></app-root>
-  
-  <!-- Structured Data for Breadcrumbs -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
