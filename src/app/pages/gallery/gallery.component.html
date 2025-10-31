@@ -1,2 +1,40 @@
-<app-top [title]="'Galeria'" [photo]="'/assets/images/gallery/img-1.jpeg'"></app-top>
-<app-images></app-images>
+<div class="overflow-hidden">
+    <!-- Top component loads immediately - critical for LCP -->
+    <app-top [title]="'Galeria'" [photo]="'/assets/images/gallery/img-1.jpeg'"></app-top>
+    
+    <!-- Images gallery section with defer loading -->
+    @defer (on viewport) {
+        <app-images></app-images>
+    } @placeholder (minimum 100ms) {
+        <section class="py-10 mt-10 padding">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                    <div class="group overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-[4/3] bg-gray-200"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+</div>
