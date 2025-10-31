@@ -51,5 +51,9 @@ export const routes: Routes = [
         path: '',
         redirectTo: 'inici',
         pathMatch: 'full'
+    },
+    {
+        path: '**',
+        loadComponent: () => import('./pages/not-found/not-found.component').then((c) => c.NotFoundComponent)
     }
 ];

@@ -1,0 +1,55 @@
+<div class="min-h-screen flex items-center justify-center px-4 bg-gray-50">
+    <div class="max-w-2xl w-full text-center">
+        <!-- Número 404 grande y discreto -->
+        <div class="mb-6">
+            <h1 class="text-8xl sm:text-9xl font-bold text-primaryColor opacity-10 select-none">404</h1>
+        </div>
+
+        <!-- Icono de señal de tráfico (stop) con estilo minimalista -->
+        <div class="mb-8 flex justify-center">
+            <div class="relative">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 bg-primaryColor rounded-full flex items-center justify-center shadow-lg">
+                    <svg class="w-10 h-10 sm:w-12 sm:h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mensaje principal -->
+        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+            Pàgina no trobada
+        </h2>
+        
+        <p class="text-base sm:text-lg text-gray-600 mb-10 max-w-md mx-auto leading-relaxed">
+            Sembla que has pres una sortida equivocada. La pàgina que busques no existeix o s'ha mogut.
+        </p>
+
+        <!-- Botones de acción -->
+        <div class="flex flex-col sm:flex-row gap-3 justify-center items-center mb-12">
+            <a routerLink="/inici" class="inline-block w-full sm:w-auto">
+                <button class="w-full sm:w-auto px-8 py-3 bg-primaryColor text-white font-semibold rounded-md hover:opacity-90 transition-all shadow-md">
+                    Tornar a l'inici
+                </button>
+            </a>
+            
+            <a routerLink="/serveis" class="inline-block w-full sm:w-auto">
+                <button class="w-full sm:w-auto px-8 py-3 bg-white text-primaryColor border-2 border-primaryColor font-semibold rounded-md hover:bg-primaryColor hover:text-white transition-all">
+                    Veure serveis
+                </button>
+            </a>
+        </div>
+
+        <!-- Enlaces útiles -->
+        <div class="pt-8 border-t border-gray-200">
+            <p class="text-xs sm:text-sm text-gray-500 mb-4 uppercase tracking-wide">Enllaços útils</p>
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+                <a routerLink="/testos" class="text-primaryColor hover:underline transition-all">Tests</a>
+                <a routerLink="/galeria" class="text-primaryColor hover:underline transition-all">Galeria</a>
+                <a routerLink="/contacte" class="text-primaryColor hover:underline transition-all">Contacte</a>
+                <a routerLink="/nosaltres" class="text-primaryColor hover:underline transition-all">Sobre nosaltres</a>
+            </div>
+        </div>
+    </div>
+</div>
+
