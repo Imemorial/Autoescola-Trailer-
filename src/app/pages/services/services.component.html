@@ -1,8 +1,67 @@
 <div class="overflow-hidden">
     <app-top [title]="'Els nostres serveis'" [photo]="'/assets/images/services/img-3.jpeg'"></app-top>
-    <app-about-services></app-about-services>
-    <app-services-shaders></app-services-shaders>
-    <app-stats></app-stats>
-    <app-lost></app-lost>
+
+    @defer (on viewport) {
+        <app-about-services></app-about-services>
+    } @placeholder (minimum 100ms) {
+        <section class="py-10 sm:py-16 lg:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-y-12 md:gap-x-20 items-center">
+                    <div class="space-y-4">
+                        <div class="h-6 w-48 bg-gray-200 rounded"></div>
+                        <div class="h-10 w-80 bg-gray-200 rounded"></div>
+                        <div class="h-6 w-full bg-gray-200 rounded"></div>
+                        <div class="h-6 w-3/4 bg-gray-200 rounded"></div>
+                    </div>
+                    <div class="h-64 w-full bg-gray-200 rounded-2xl"></div>
+                </div>
+            </div>
+        </section>
+    }
+
+    @defer (on viewport) {
+        <app-services-shaders></app-services-shaders>
+    } @placeholder (minimum 100ms) {
+        <div class="text-center py-16">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="h-6 w-64 bg-gray-200 rounded mx-auto mb-4"></div>
+                <div class="h-10 w-full max-w-2xl bg-gray-200 rounded mx-auto mb-6"></div>
+                <div class="h-6 w-full max-w-xl bg-gray-200 rounded mx-auto mb-10"></div>
+                <div class="h-64 bg-gray-200 rounded-xl w-full max-w-3xl mx-auto"></div>
+            </div>
+        </div>
+    }
+
+    @defer (on viewport) {
+        <app-stats></app-stats>
+    } @placeholder (minimum 100ms) {
+        <section class="py-10 sm:py-16 lg:py-24">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-y-12 md:gap-x-20 items-center">
+                    <div class="space-y-4">
+                        <div class="h-4 w-32 bg-gray-200 rounded"></div>
+                        <div class="h-12 w-full bg-gray-200 rounded"></div>
+                        <div class="h-6 w-full bg-gray-200 rounded"></div>
+                        <div class="h-6 w-3/4 bg-gray-200 rounded"></div>
+                    </div>
+                    <div class="h-64 w-full max-w-xs ml-auto bg-gray-200 rounded-2xl"></div>
+                </div>
+            </div>
+        </section>
+    }
+
+    @defer (on viewport) {
+        <app-lost></app-lost>
+    } @placeholder (minimum 100ms) {
+        <section class="py-16">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="h-40 bg-gray-200 rounded"></div>
+                    <div class="h-40 bg-gray-200 rounded"></div>
+                    <div class="h-40 bg-gray-200 rounded"></div>
+                </div>
+            </div>
+        </section>
+    }
 </div>
 
