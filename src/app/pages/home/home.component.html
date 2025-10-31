@@ -1,22 +1,130 @@
 <div class="overflow-hidden">
+    <!-- Top component loads immediately - critical for LCP -->
     <app-top></app-top>
+    
+    <!-- About section with defer loading - loads when enters viewport -->
     <div class="bg-gray-50">
-        <app-about></app-about>
+        @defer (on viewport) {
+            <app-about></app-about>
+        } @placeholder (minimum 100ms) {
+            <div class="max-w-5xl padding mx-auto py-16">
+                <div class="max-w-3xl mb-10 lg:mb-14">
+                    <div class="h-6 w-48 bg-gray-200 rounded mb-2"></div>
+                    <div class="h-10 w-96 bg-gray-200 rounded"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
+                    <div class="w-full aspect-video bg-gray-200 rounded-xl"></div>
+                    <div class="space-y-6">
+                        <div class="h-20 bg-gray-200 rounded"></div>
+                        <div class="h-20 bg-gray-200 rounded"></div>
+                        <div class="h-20 bg-gray-200 rounded"></div>
+                        <div class="h-20 bg-gray-200 rounded"></div>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
+    
+    <!-- Services section with defer loading - loads when enters viewport -->
     <div class="bg-white">
-        <app-services-shaders></app-services-shaders>
+        @defer (on viewport) {
+            <app-services-shaders></app-services-shaders>
+        } @placeholder (minimum 100ms) {
+            <div class="text-center padding py-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="h-6 w-64 bg-gray-200 rounded mx-auto mb-4"></div>
+                    <div class="h-12 w-full max-w-2xl bg-gray-200 rounded mx-auto mb-6"></div>
+                    <div class="h-6 w-full max-w-xl bg-gray-200 rounded mx-auto mb-12"></div>
+                    <div class="h-64 bg-gray-200 rounded-xl w-full max-w-3xl mx-auto"></div>
+                </div>
+            </div>
+        }
     </div>
+    
+    <!-- Stats section with defer loading - loads when enters viewport -->
     <div class="bg-gray-50">
-        <app-stats></app-stats>
+        @defer (on viewport) {
+            <app-stats></app-stats>
+        } @placeholder (minimum 100ms) {
+            <section class="py-10 sm:py-16 lg:py-24">
+                <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="grid md:grid-cols-2 gap-y-12 md:gap-x-20 items-center">
+                        <div class="space-y-4">
+                            <div class="h-4 w-32 bg-gray-200 rounded"></div>
+                            <div class="h-12 w-full bg-gray-200 rounded"></div>
+                            <div class="h-6 w-full bg-gray-200 rounded"></div>
+                            <div class="h-6 w-3/4 bg-gray-200 rounded"></div>
+                        </div>
+                        <div class="h-[50vh] w-full max-w-xs ml-auto bg-gray-200 rounded-2xl"></div>
+                    </div>
+                </div>
+            </section>
+        }
     </div>
+    
+    <!-- FAQs section with defer loading - loads when enters viewport -->
     <div class="bg-white">
-        <app-faqs></app-faqs>
+        @defer (on viewport) {
+            <app-faqs></app-faqs>
+        } @placeholder (minimum 100ms) {
+            <div class="padding py-16">
+                <div class="max-w-4xl mx-auto">
+                    <div class="h-6 w-48 bg-gray-200 rounded mx-auto mb-4"></div>
+                    <div class="h-12 w-full max-w-2xl bg-gray-200 rounded mx-auto mb-12"></div>
+                    <div class="space-y-4">
+                        <div class="h-20 bg-gray-200 rounded-lg"></div>
+                        <div class="h-20 bg-gray-200 rounded-lg"></div>
+                        <div class="h-20 bg-gray-200 rounded-lg"></div>
+                        <div class="h-20 bg-gray-200 rounded-lg"></div>
+                        <div class="h-20 bg-gray-200 rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
+    
+    <!-- News section with defer loading - loads when enters viewport -->
     <div class="bg-gray-100">
-        <app-news></app-news>
+        @defer (on viewport) {
+            <app-news></app-news>
+        } @placeholder (minimum 100ms) {
+            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
+                    <div class="h-8 w-64 bg-gray-200 rounded mx-auto mb-4"></div>
+                    <div class="h-6 w-full max-w-xl bg-gray-200 rounded mx-auto"></div>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="h-80 bg-gray-200 rounded-2xl"></div>
+                    <div class="h-80 bg-gray-200 rounded-2xl"></div>
+                    <div class="h-80 bg-gray-200 rounded-2xl"></div>
+                    <div class="h-80 bg-gray-200 rounded-2xl"></div>
+                </div>
+            </div>
+        }
     </div>
+    
+    <!-- Contact section with defer loading - loads when enters viewport -->
     <div class="bg-white py-24 px-5">
-        <app-contact></app-contact>
+        @defer (on viewport) {
+            <app-contact></app-contact>
+        } @placeholder (minimum 100ms) {
+            <section class="max-w-7xl mx-auto">
+                <div class="mb-6 max-w-3xl text-center mx-auto mb-12">
+                    <div class="h-8 w-32 bg-gray-200 rounded mx-auto mb-4"></div>
+                    <div class="h-12 w-full max-w-xl bg-gray-200 rounded mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="h-12 bg-gray-200 rounded"></div>
+                        <div class="h-12 bg-gray-200 rounded"></div>
+                        <div class="h-12 bg-gray-200 rounded"></div>
+                        <div class="h-32 bg-gray-200 rounded"></div>
+                        <div class="h-12 bg-gray-200 rounded w-32"></div>
+                    </div>
+                    <div class="h-96 bg-gray-200 rounded-lg"></div>
+                </div>
+            </section>
+        }
     </div>
 </div>
 
