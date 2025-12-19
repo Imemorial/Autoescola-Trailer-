@@ -6,88 +6,88 @@
 
   <!-- Homepage (Principal) -->
   <url>
-    <loc>https://autoescolatrailer.com/</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Inici (Home) -->
   <url>
-    <loc>https://autoescolatrailer.com/inici</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/inici</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Serveis (Services) - Página principal de servicios -->
   <url>
-    <loc>https://autoescolatrailer.com/serveis</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/serveis</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Testos (Tests) - Tests interactivos -->
   <url>
-    <loc>https://autoescolatrailer.com/testos</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/testos</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Galeria (Gallery) -->
   <url>
-    <loc>https://autoescolatrailer.com/galeria</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/galeria</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Contacte (Contact) -->
   <url>
-    <loc>https://autoescolatrailer.com/contacte</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/contacte</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Nosaltres (About Us) -->
   <url>
-    <loc>https://autoescolatrailer.com/nosaltres</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/nosaltres</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Recuperar (Lost/Recover) -->
   <url>
-    <loc>https://autoescolatrailer.com/recuperar</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/recuperar</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- Termes i Condicions (Terms and Conditions) -->
   <url>
-    <loc>https://autoescolatrailer.com/termes</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/termes</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Política de Privacitat (Privacy Policy) -->
   <url>
-    <loc>https://autoescolatrailer.com/politica</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/politica</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <!-- Política de Cookies (Cookie Policy) -->
   <url>
-    <loc>https://autoescolatrailer.com/cookies</loc>
-    <lastmod>2024-12-20</lastmod>
+    <loc>https://autoescolatrailer.cat/cookies</loc>
+    <lastmod>2025-01-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

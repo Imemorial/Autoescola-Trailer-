@@ -31,7 +31,7 @@ export class ContactComponent {
         '@type': 'LocalBusiness',
         'name': 'AutoescolaTrailer Mollerussa',
         'telephone': '+34 973 123 456',
-        'email': 'info@autoescolatrailer.com',
+        'email': 'info@autoescolatrailer.cat',
         'address': {
           '@type': 'PostalAddress',
           'streetAddress': 'Carrer Principal, 123',

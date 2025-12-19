@@ -40,7 +40,7 @@ export class SeoService {
       '@type': 'LocalBusiness',
       'name': 'AutoescolaTrailer Mollerussa',
       'description': 'Autoescola professional a Mollerussa especialitzada en formació de conducció i preparació per a l\'examen del carnet de conduir.',
-      'url': 'https://autoescolatrailer.com',
+      'url': 'https://autoescolatrailer.cat',
       'telephone': '+34 973 123 456',
       'address': {
         '@type': 'PostalAddress',
@@ -97,10 +97,10 @@ export class SeoService {
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           'name': 'AutoescolaTrailer Mollerussa',
-          'url': 'https://autoescolatrailer.com',
+          'url': 'https://autoescolatrailer.cat',
           'potentialAction': {
             '@type': 'SearchAction',
-            'target': 'https://autoescolatrailer.com/search?q={search_term_string}',
+            'target': 'https://autoescolatrailer.cat/search?q={search_term_string}',
             'query-input': 'required name=search_term_string'
           }
         }
@@ -263,7 +263,7 @@ export class SeoService {
         '@type': 'ListItem',
         'position': index + 1,
         'name': item.name,
-        'item': `https://autoescolatrailer.com${item.url}`
+        'item': `https://autoescolatrailer.cat${item.url}`
       }))
     };
 
