@@ -4,34 +4,26 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <!-- Homepage (Principal) -->
-  <url>
-    <loc>https://autoescolatrailer.cat/</loc>
-    <lastmod>2025-01-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-
   <!-- Inici (Home) -->
   <url>
     <loc>https://autoescolatrailer.cat/inici</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Serveis (Services) - Página principal de servicios -->
+  <!-- Serveis (Services) -->
   <url>
     <loc>https://autoescolatrailer.cat/serveis</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Testos (Tests) - Tests interactivos -->
+  <!-- Testos (Tests) -->
   <url>
     <loc>https://autoescolatrailer.cat/testos</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -39,7 +31,7 @@
   <!-- Galeria (Gallery) -->
   <url>
     <loc>https://autoescolatrailer.cat/galeria</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -47,7 +39,7 @@
   <!-- Contacte (Contact) -->
   <url>
     <loc>https://autoescolatrailer.cat/contacte</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -55,7 +47,7 @@
   <!-- Nosaltres (About Us) -->
   <url>
     <loc>https://autoescolatrailer.cat/nosaltres</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -63,31 +55,31 @@
   <!-- Recuperar (Lost/Recover) -->
   <url>
     <loc>https://autoescolatrailer.cat/recuperar</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
 
-  <!-- Termes i Condicions (Terms and Conditions) -->
+  <!-- Termes i Condicions -->
   <url>
     <loc>https://autoescolatrailer.cat/termes</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Política de Privacitat (Privacy Policy) -->
+  <!-- Política de Privacitat -->
   <url>
     <loc>https://autoescolatrailer.cat/politica</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
-  <!-- Política de Cookies (Cookie Policy) -->
+  <!-- Política de Cookies -->
   <url>
     <loc>https://autoescolatrailer.cat/cookies</loc>
-    <lastmod>2025-01-02</lastmod>
+    <lastmod>2026-05-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

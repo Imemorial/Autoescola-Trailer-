@@ -30,11 +30,11 @@ export class ContactComponent {
       'mainEntity': {
         '@type': 'LocalBusiness',
         'name': 'AutoescolaTrailer Mollerussa',
-        'telephone': '+34 973 123 456',
-        'email': 'info@autoescolatrailer.cat',
+        'telephone': '+34 973 712 020',
+        'email': 'autoescola_trailer@hotmail.es',
         'address': {
           '@type': 'PostalAddress',
-          'streetAddress': 'Carrer Principal, 123',
+          'streetAddress': 'Carrer Ferrer i Busquets, 26',
           'addressLocality': 'Mollerussa',
           'postalCode': '25230',
           'addressRegion': 'Lleida',
@@ -48,7 +48,7 @@ export class ContactComponent {
         'openingHours': 'Mo-Fr 08:00-20:00, Sa 09:00-14:00',
         'contactPoint': {
           '@type': 'ContactPoint',
-          'telephone': '+34 973 123 456',
+          'telephone': '+34 973 712 020',
           'contactType': 'customer service',
           'availableLanguage': 'Catalan'
         }
