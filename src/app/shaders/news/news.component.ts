@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api/api.service';
+import { ContentService } from '../../services/content/content.service';
 import { NgFor, NgIf } from '@angular/common';
-import { Post } from '../../interfaces/api.interfaces';
+import { ContentItem } from '../../interfaces/content.interfaces';
 
 @Component({
   selector: 'app-news',
@@ -12,12 +12,12 @@ import { Post } from '../../interfaces/api.interfaces';
 })
 export class NewsComponent implements OnInit {
 
-  public news: Post[] = [];
-  public visibleNews: Post[] = [];
+  public news: ContentItem[] = [];
+  public visibleNews: ContentItem[] = [];
   private newsBatchSize = 4;
   private currentBatch = 0;
 
-  constructor(private _apiService: ApiService) {}
+  constructor(private contentService: ContentService) {}
 
   ngOnInit() {
     this.fetchNews();
@@ -25,8 +25,8 @@ export class NewsComponent implements OnInit {
 
   fetchNews() {
     if (this.news.length > 0) return; // Evita recargar si ya hay datos
-    this._apiService.getNews().subscribe({
-      next: (data: Post[]) => {
+    this.contentService.getNewsItems().subscribe({
+      next: (data) => {
         if (data) {
           this.news = data;
           this.loadMore(); 

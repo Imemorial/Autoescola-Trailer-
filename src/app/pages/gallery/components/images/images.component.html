@@ -1,18 +1,25 @@
 <section class="py-10 mt-10 padding">
   <div class="max-w-6xl mx-auto px-4">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-      <div *ngFor="let image of visibleImages; index as i" 
-           class="group cursor-pointer overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm transition-transform duration-300 ease-out hover:shadow-md"
+      <article *ngFor="let image of visibleImages"
+           class="group cursor-pointer overflow-hidden rounded-2xl bg-white ring-1 ring-gray-100 shadow-sm transition-all duration-300 ease-out hover:shadow-md hover:-translate-y-1"
            [attr.data-aos]="'fade-up'"
-           (click)="openModal(i)">
-        <div class="relative aspect-w-4 aspect-h-3 bg-gray-50">
+           (click)="openModal(image)">
+        <div class="relative aspect-w-4 aspect-h-3 bg-gray-50 overflow-hidden">
           <img [src]="image.image_url || '/assets/images/gallery/img-1.jpeg'"
                [alt]="image.title || 'Imatge de galeria'"
                loading="lazy"
-               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
-          <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-black/0 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+               class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
         </div>
-      </div>
+        <div class="p-4" *ngIf="image.title || image.description || image.content">
+          <h3 class="text-lg font-semibold text-gray-900 group-hover:text-primaryColor line-clamp-2" *ngIf="image.title">
+            {{ image.title }}
+          </h3>
+          <p class="mt-2 text-sm text-gray-600 line-clamp-3" *ngIf="image.description || image.content">
+            {{ image.description || image.content }}
+          </p>
+        </div>
+      </article>
     </div>
     <div class="text-center mt-8" *ngIf="visibleImages.length < images.length">
       <button (click)="loadMore()" aria-label="Carregar més" class="inline-flex items-center gap-2 rounded-full bg-primaryColor text-white px-6 py-3 font-medium shadow-sm transition-colors duration-200 hover:bg-primaryColor/90 focus:outline-none focus:ring-2 focus:ring-primaryColor/30">
@@ -33,6 +40,12 @@
     <img [src]="selectedImage?.image_url || '/assets/images/gallery/img-1.jpeg'" 
          [alt]="selectedImage?.title || 'Imatge de galeria'" 
          loading="lazy" 
-         class="w-full max-h-[80vh] object-contain rounded-xl">
+         class="w-full max-h-[70vh] object-contain rounded-xl">
+    <div class="px-3 py-4 md:px-4" *ngIf="selectedImage?.title || selectedImage?.description || selectedImage?.content">
+      <h3 class="text-xl font-semibold text-gray-900" *ngIf="selectedImage?.title">{{ selectedImage?.title }}</h3>
+      <p class="mt-2 text-sm text-gray-600" *ngIf="selectedImage?.description || selectedImage?.content">
+        {{ selectedImage?.description || selectedImage?.content }}
+      </p>
+    </div>
   </div>
 </div>

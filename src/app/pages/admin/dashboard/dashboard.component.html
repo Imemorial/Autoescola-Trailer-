@@ -1,0 +1,22 @@
+<div class="space-y-8">
+  <section>
+    <h2 class="text-2xl font-semibold text-gray-900">Benvingut al panell</h2>
+    <p class="mt-2 text-gray-600">
+      Des d'aquí pots pujar fotos per a la pàgina de Galeria i per a la secció de notícies de la pàgina d'inici.
+    </p>
+  </section>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <a routerLink="/admin/galeria"
+       class="block bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <h3 class="text-lg font-semibold text-gray-900">Gestionar Galeria</h3>
+      <p class="mt-2 text-sm text-gray-600">Puja i elimina imatges que es mostraran a /galeria.</p>
+    </a>
+
+    <a routerLink="/admin/noticies"
+       class="block bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+      <h3 class="text-lg font-semibold text-gray-900">Gestionar Notícies</h3>
+      <p class="mt-2 text-sm text-gray-600">Puja entrades amb foto per a la secció "Les nostres últimes notícies".</p>
+    </a>
+  </div>
+</div>

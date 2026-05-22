@@ -1,0 +1,33 @@
+<div class="min-h-screen bg-gray-50">
+  <header class="bg-white border-b border-gray-200">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div>
+        <p class="text-sm text-primaryColor font-medium">Panell d'administració</p>
+        <h1 class="text-xl font-semibold text-gray-900">Autoescola Tràiler</h1>
+      </div>
+
+      <nav class="flex flex-wrap items-center gap-2">
+        <a routerLink="/admin" routerLinkActive="bg-primaryColor text-white" [routerLinkActiveOptions]="{ exact: true }"
+           class="px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+          Inici
+        </a>
+        <a routerLink="/admin/galeria" routerLinkActive="bg-primaryColor text-white"
+           class="px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+          Galeria
+        </a>
+        <a routerLink="/admin/noticies" routerLinkActive="bg-primaryColor text-white"
+           class="px-4 py-2 rounded-full text-sm font-medium text-gray-700 hover:bg-gray-100 transition-colors">
+          Notícies
+        </a>
+        <button type="button" (click)="logout()"
+                class="px-4 py-2 rounded-full text-sm font-medium text-white bg-gray-900 hover:bg-gray-800 transition-colors">
+          Tancar sessió
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <router-outlet></router-outlet>
+  </main>
+</div>

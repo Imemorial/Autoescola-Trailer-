@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api/api.service';
+import { ContentService } from '../../services/content/content.service';
 import { NgFor, NgIf } from '@angular/common';
-import { Post } from '../../interfaces/api.interfaces';
+import { ContentItem } from '../../interfaces/content.interfaces';
 
 @Component({
   selector: 'app-blogs',
@@ -12,9 +12,9 @@ import { Post } from '../../interfaces/api.interfaces';
 })
 export class BlogsComponent implements OnInit {
 
-  public blogs: Post[] = [];
+  public blogs: ContentItem[] = [];
 
-  constructor(private _apiService: ApiService) {}
+  constructor(private contentService: ContentService) {}
 
   ngOnInit() {
     this.fetchBlogs();
@@ -22,8 +22,8 @@ export class BlogsComponent implements OnInit {
 
   fetchBlogs() {
     if (this.blogs.length > 0) return; // Evita recargar si ya hay datos
-    this._apiService.getNews().subscribe({
-      next: (data: Post[]) => {
+    this.contentService.getNewsItems().subscribe({
+      next: (data) => {
         if (data) {
           this.blogs = data;
         }

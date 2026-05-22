@@ -41,9 +41,10 @@ export class AppComponent {
     ).subscribe(() => {
       // Rutas válidas del sitio
       const validRoutes = ['/inici', '/serveis', '/testos', '/galeria', '/contacte', '/nosaltres', 
-                          '/termes', '/politica', '/cookies', '/pagaments', '/recuperar', '/'];
+                          '/termes', '/politica', '/cookies', '/pagaments', '/recuperar', '/admin', '/'];
       
       const currentPath = this.router.url.split('?')[0];
+      const isAdminRoute = currentPath.startsWith('/admin');
       
       // Verificar si la ruta actual es válida
       const isValidRoute = validRoutes.some(route => {
@@ -53,7 +54,7 @@ export class AppComponent {
       });
       
       // Si no es una ruta válida y no es la raíz, es 404
-      this.showHeader = isValidRoute;
+      this.showHeader = isValidRoute && !isAdminRoute;
     });
   }
 

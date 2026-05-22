@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../../../services/api/api.service';
+import { ContentService } from '../../../../services/content/content.service';
 import { NgFor, NgIf } from '@angular/common';
-import { Post } from '../../../../interfaces/api.interfaces';
+import { ContentItem } from '../../../../interfaces/content.interfaces';
 
 @Component({
   selector: 'app-images',
@@ -13,20 +13,19 @@ import { Post } from '../../../../interfaces/api.interfaces';
 export class ImagesComponent implements OnInit {
 
   
-  images: Post[] = [];
-  visibleImages: Post[] = [];
+  images: ContentItem[] = [];
+  visibleImages: ContentItem[] = [];
   isModalOpen: boolean = false;
-  selectedImage: Post | null = null;
+  selectedImage: ContentItem | null = null;
   private imagesBatchSize = 4; 
   private currentBatch = 0;
 
-  constructor(private _apiService: ApiService) {}
+  constructor(private contentService: ContentService) {}
 
   ngOnInit() {
     if (this.images.length > 0) return; // Evita recargar si ya hay datos
-    this._apiService.getImages().subscribe({
-      next: (images: Post[]) => {
-        console.log('Imágenes recibidas:', images);
+    this.contentService.getGalleryItems().subscribe({
+      next: (images) => {
         if (images) {
           this.images = images;
           this.loadMore(); 
@@ -44,8 +43,8 @@ export class ImagesComponent implements OnInit {
     this.currentBatch += this.imagesBatchSize;
   }
 
-  openModal(index: number): void {
-    this.selectedImage = this.images[index];
+  openModal(image: ContentItem): void {
+    this.selectedImage = image;
     this.isModalOpen = true;
   }
 
